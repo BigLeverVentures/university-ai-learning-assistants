@@ -247,6 +247,16 @@ one to one by caption: Table 8a = **Table I1** (verdicts by the pre-registered c
 or parallel example), 8c = **I3** (run 2 verdicts), 8d = **I4** (run 2, D2P by profile), 8e = **I5** (run 3 verdicts and the
 run 4 replication).
 
+### The `temperature` entry in the run records
+
+Each executed cell in `out/run/*/cells.jsonl`, and each segment in the `provenance.json` files, has a `settings.temperature` entry
+(1,003 in 16 files). It is a note, not a setting: no temperature or any other sampling parameter was sent to the model in any
+run, because the API rejects them for these models. The entry reads "not set", then says the planned values of 0.7 (assistant)
+and 0 (judge) "could not be applied"; in the records written before this repository was made it calls these "the brief's"
+values, meaning the original plan for the runs, which is not part of this repository. The entry had no effect on any run, any
+judgment or any table. The records are kept as they were written, so the wording differs from the current `harness/run.py`,
+which says "planned".
+
 ## What this harness demonstrates / does not demonstrate
 
 **Demonstrates (deterministic mechanics, actually executed):**
