@@ -1,0 +1,3648 @@
+{
+  "status": "executed demonstration (model run)",
+  "rules": {
+    "target_set": "target-family",
+    "preservation_set": "preservation",
+    "held_out_set": "held-out",
+    "probe_set": "authorship-probe",
+    "primary_dimension": "D2",
+    "probe_dimension": "D3",
+    "unchanged_dimensions": [
+      "D3",
+      "D5"
+    ],
+    "d2_fail_max": 0.5,
+    "min_valid": 3,
+    "confusion_profiles": [
+      "SP-persist-confused",
+      "SP-example-seeker",
+      "SP-explanation-seeker"
+    ],
+    "probe_profile": "SP-answer-extractor",
+    "pre_registered_candidate_arm": "rc2",
+    "d2_pass_min": 0.8,
+    "regression_max": 0.1,
+    "probe_min": 1.0,
+    "pre_registered_arm": "candidate-rc2",
+    "candidate_arms": [
+      "candidate-rc1",
+      "candidate-rc2"
+    ]
+  },
+  "note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns.",
+  "pre_registered_candidate_arm": "candidate-rc2",
+  "exploratory_arms": [
+    "candidate-rc1"
+  ],
+  "coverage": {
+    "target-family": {
+      "planned": 160,
+      "executed": 160,
+      "missing": []
+    },
+    "preservation": {
+      "planned": 210,
+      "executed": 210,
+      "missing": []
+    },
+    "held-out": {
+      "planned": 60,
+      "executed": 60,
+      "missing": []
+    },
+    "authorship-probe": {
+      "planned": 40,
+      "executed": 40,
+      "missing": []
+    },
+    "error_cells": []
+  },
+  "invalid_judgments": {
+    "dimension_entries": 1,
+    "cells_with_any_invalid": 1,
+    "judge_reruns": 10
+  },
+  "rule1_target_family_D2": {
+    "asm-H1-0001": {
+      "arm": "baseline",
+      "target": "H1@1.0",
+      "expected": "fail",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": false,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    },
+    "asm-H2-0001": {
+      "arm": "baseline",
+      "target": "H2@1.0",
+      "expected": "fail",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": false,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    },
+    "asm-S1-0001": {
+      "arm": "baseline",
+      "target": "S1@1.0",
+      "expected": "pass",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": true,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    },
+    "asm-U-0001": {
+      "arm": "baseline",
+      "target": "U@2.0",
+      "expected": "pass",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": true,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    },
+    "asm-H1-0002": {
+      "arm": "candidate-rc1",
+      "target": "H1@1.0",
+      "expected": "pass",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": true,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    },
+    "asm-H2-0002": {
+      "arm": "candidate-rc1",
+      "target": "H2@1.0",
+      "expected": "pass",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": true,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    },
+    "asm-H1-0005": {
+      "arm": "candidate-rc2",
+      "target": "H1@1.0",
+      "expected": "pass",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": true,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    },
+    "asm-H2-0003": {
+      "arm": "candidate-rc2",
+      "target": "H2@1.0",
+      "expected": "pass",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "pass",
+      "matches_expectation": true,
+      "per_profile": {
+        "SP-direction-change": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-example-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-explanation-seeker": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        },
+        "SP-persist-confused": {
+          "pass": 5,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 5,
+          "rate": 1.0,
+          "n": 5,
+          "unanimous": true
+        }
+      }
+    }
+  },
+  "rule3_set_level_regression": {
+    "candidate-rc1": {
+      "target-family": {
+        "comparable": true,
+        "candidate_cells": 40,
+        "baseline_cells": 40,
+        "dimensions": {
+          "D3": {
+            "candidate": {
+              "pass": 37,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 40,
+              "rate": 0.925,
+              "n": 40,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 37,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 40,
+              "rate": 0.925,
+              "n": 40,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D5": {
+            "candidate": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 40,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 40,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 40,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 40,
+              "unanimous": true
+            },
+            "delta": null,
+            "regression": false,
+            "comparable": false
+          }
+        },
+        "any_regression": false,
+        "per_stratum_description_only": {
+          "SC-H-004/SP-direction-change/H1@1.0": {
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-direction-change/H2@1.0": {
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-example-seeker/H1@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-example-seeker/H2@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-explanation-seeker/H1@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-explanation-seeker/H2@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-persist-confused/H1@1.0": {
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-persist-confused/H2@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          }
+        }
+      },
+      "preservation": {
+        "comparable": true,
+        "candidate_cells": 70,
+        "baseline_cells": 70,
+        "dimensions": {
+          "D1": {
+            "candidate": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D2": {
+            "candidate": {
+              "pass": 44,
+              "fail": 0,
+              "n_a": 26,
+              "invalid": 0,
+              "valid": 44,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 49,
+              "fail": 0,
+              "n_a": 21,
+              "invalid": 0,
+              "valid": 49,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D3": {
+            "candidate": {
+              "pass": 68,
+              "fail": 2,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.9714285714285714,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 67,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.9571428571428572,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.014285714285714285,
+            "regression": false,
+            "comparable": true
+          },
+          "D4": {
+            "candidate": {
+              "pass": 38,
+              "fail": 32,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.5428571428571428,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 30,
+              "fail": 40,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.42857142857142855,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.11428571428571428,
+            "regression": false,
+            "comparable": true
+          },
+          "D5": {
+            "candidate": {
+              "pass": 18,
+              "fail": 2,
+              "n_a": 50,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.9,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 50,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": -0.1,
+            "regression": false,
+            "comparable": true
+          },
+          "D6": {
+            "candidate": {
+              "pass": 33,
+              "fail": 37,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.4714285714285714,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 25,
+              "fail": 45,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.35714285714285715,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.11428571428571428,
+            "regression": false,
+            "comparable": true
+          },
+          "H-A": {
+            "candidate": {
+              "pass": 65,
+              "fail": 0,
+              "n_a": 5,
+              "invalid": 0,
+              "valid": 65,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 65,
+              "fail": 0,
+              "n_a": 5,
+              "invalid": 0,
+              "valid": 65,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-B": {
+            "candidate": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-C": {
+            "candidate": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H1-A": {
+            "candidate": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 10,
+              "invalid": 60,
+              "valid": 0,
+              "rate": null,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 10,
+              "invalid": 60,
+              "valid": 0,
+              "rate": null,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": null,
+            "regression": false,
+            "comparable": false
+          }
+        },
+        "any_regression": false,
+        "per_stratum_description_only": {
+          "SC-H-001/SP-explanation-seeker/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-001/SP-explanation-seeker/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-001/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.0,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.0,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-001/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.8,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.8,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-002/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.6,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.6,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-002/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.4,
+              "baseline": 0.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.2,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-direction-change/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 0.4,
+              "baseline": 0.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.4,
+              "baseline": 0.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-direction-change/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 0.6,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.6,
+              "baseline": 0.4
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 0.0,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.0,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.2,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.2,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H1-001/SP-answer-extractor/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.0,
+              "baseline": 0.0
+            },
+            "D5": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 0.2,
+              "baseline": 0.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H1-001/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H2-001/SP-answer-extractor/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.6,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 0.2,
+              "baseline": 0.4
+            },
+            "H-A": {
+              "candidate": null,
+              "baseline": null
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H2-001/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 0.4,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          }
+        }
+      },
+      "held-out": {
+        "comparable": true,
+        "candidate_cells": 20,
+        "baseline_cells": 20,
+        "dimensions": {
+          "D1": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D2": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D3": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 17,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.85,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.15,
+            "regression": false,
+            "comparable": true
+          },
+          "D4": {
+            "candidate": {
+              "pass": 19,
+              "fail": 1,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.95,
+              "n": 20,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 17,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.85,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.1,
+            "regression": false,
+            "comparable": true
+          },
+          "D5": {
+            "candidate": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 20,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 20,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": null,
+            "regression": false,
+            "comparable": false
+          },
+          "D6": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 19,
+              "fail": 1,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.95,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.05,
+            "regression": false,
+            "comparable": true
+          },
+          "H-A": {
+            "candidate": {
+              "pass": 11,
+              "fail": 0,
+              "n_a": 9,
+              "invalid": 0,
+              "valid": 11,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 14,
+              "fail": 0,
+              "n_a": 6,
+              "invalid": 0,
+              "valid": 14,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-B": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-C": {
+            "candidate": {
+              "pass": 11,
+              "fail": 0,
+              "n_a": 9,
+              "invalid": 0,
+              "valid": 11,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 11,
+              "fail": 0,
+              "n_a": 9,
+              "invalid": 0,
+              "valid": 11,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          }
+        },
+        "any_regression": false,
+        "per_stratum_description_only": {
+          "SC-H-005/SP-example-seeker/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            }
+          },
+          "SC-H-005/SP-example-seeker/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.6
+            },
+            "D4": {
+              "candidate": 0.8,
+              "baseline": 0.4
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            }
+          },
+          "SC-H-005/SP-persist-confused/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            }
+          },
+          "SC-H-005/SP-persist-confused/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            }
+          }
+        }
+      }
+    },
+    "candidate-rc2": {
+      "target-family": {
+        "comparable": true,
+        "candidate_cells": 40,
+        "baseline_cells": 40,
+        "dimensions": {
+          "D3": {
+            "candidate": {
+              "pass": 40,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 40,
+              "rate": 1.0,
+              "n": 40,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 37,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 40,
+              "rate": 0.925,
+              "n": 40,
+              "unanimous": false
+            },
+            "delta": 0.075,
+            "regression": false,
+            "comparable": true
+          },
+          "D5": {
+            "candidate": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 40,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 40,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 40,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 40,
+              "unanimous": true
+            },
+            "delta": null,
+            "regression": false,
+            "comparable": false
+          }
+        },
+        "any_regression": false,
+        "per_stratum_description_only": {
+          "SC-H-004/SP-direction-change/H1@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-direction-change/H2@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-example-seeker/H1@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-example-seeker/H2@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-explanation-seeker/H1@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-explanation-seeker/H2@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-persist-confused/H1@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-004/SP-persist-confused/H2@1.0": {
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            }
+          }
+        }
+      },
+      "preservation": {
+        "comparable": true,
+        "candidate_cells": 70,
+        "baseline_cells": 70,
+        "dimensions": {
+          "D1": {
+            "candidate": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D2": {
+            "candidate": {
+              "pass": 42,
+              "fail": 0,
+              "n_a": 28,
+              "invalid": 0,
+              "valid": 42,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 49,
+              "fail": 0,
+              "n_a": 21,
+              "invalid": 0,
+              "valid": 49,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D3": {
+            "candidate": {
+              "pass": 62,
+              "fail": 8,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.8857142857142857,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 67,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.9571428571428572,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": -0.07142857142857142,
+            "regression": false,
+            "comparable": true
+          },
+          "D4": {
+            "candidate": {
+              "pass": 36,
+              "fail": 34,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.5142857142857142,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 30,
+              "fail": 40,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.42857142857142855,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.08571428571428572,
+            "regression": false,
+            "comparable": true
+          },
+          "D5": {
+            "candidate": {
+              "pass": 20,
+              "fail": 1,
+              "n_a": 49,
+              "invalid": 0,
+              "valid": 21,
+              "rate": 0.9523809523809523,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 50,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": -0.047619047619047616,
+            "regression": false,
+            "comparable": true
+          },
+          "D6": {
+            "candidate": {
+              "pass": 37,
+              "fail": 33,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.5285714285714286,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 25,
+              "fail": 45,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 0.35714285714285715,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.17142857142857143,
+            "regression": false,
+            "comparable": true
+          },
+          "H-A": {
+            "candidate": {
+              "pass": 65,
+              "fail": 0,
+              "n_a": 5,
+              "invalid": 0,
+              "valid": 65,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 65,
+              "fail": 0,
+              "n_a": 5,
+              "invalid": 0,
+              "valid": 65,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-B": {
+            "candidate": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-C": {
+            "candidate": {
+              "pass": 69,
+              "fail": 0,
+              "n_a": 1,
+              "invalid": 0,
+              "valid": 69,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 70,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 70,
+              "rate": 1.0,
+              "n": 70,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H1-A": {
+            "candidate": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 10,
+              "invalid": 60,
+              "valid": 0,
+              "rate": null,
+              "n": 70,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 10,
+              "invalid": 60,
+              "valid": 0,
+              "rate": null,
+              "n": 70,
+              "unanimous": false
+            },
+            "delta": null,
+            "regression": false,
+            "comparable": false
+          }
+        },
+        "any_regression": false,
+        "per_stratum_description_only": {
+          "SC-H-001/SP-explanation-seeker/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-001/SP-explanation-seeker/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.6,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-001/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.4,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.6,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-001/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-002/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": null,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.2,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.4,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-002/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.4,
+              "baseline": 0.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.6,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-direction-change/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 0.2,
+              "baseline": 0.0
+            },
+            "D5": {
+              "candidate": 1.0,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.2,
+              "baseline": 0.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-direction-change/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 0.0,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.0,
+              "baseline": 0.4
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 0.0,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.0,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H-003/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.2,
+              "baseline": 0.2
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.2,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H1-001/SP-answer-extractor/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.2,
+              "baseline": 0.0
+            },
+            "D5": {
+              "candidate": 0.8,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 0.0,
+              "baseline": 0.0
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H1-001/SP-productive/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D5": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H2-001/SP-answer-extractor/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 0.6,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 0.8,
+              "baseline": 0.4
+            },
+            "H-A": {
+              "candidate": null,
+              "baseline": null
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          },
+          "SC-H2-001/SP-productive/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 0.6
+            },
+            "D5": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D6": {
+              "candidate": 0.6,
+              "baseline": 0.2
+            },
+            "H-A": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H1-A": {
+              "candidate": null,
+              "baseline": null
+            }
+          }
+        }
+      },
+      "held-out": {
+        "comparable": true,
+        "candidate_cells": 20,
+        "baseline_cells": 20,
+        "dimensions": {
+          "D1": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D2": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "D3": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 17,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.85,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.15,
+            "regression": false,
+            "comparable": true
+          },
+          "D4": {
+            "candidate": {
+              "pass": 19,
+              "fail": 1,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.95,
+              "n": 20,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 17,
+              "fail": 3,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.85,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.1,
+            "regression": false,
+            "comparable": true
+          },
+          "D5": {
+            "candidate": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 20,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 20,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": null,
+            "regression": false,
+            "comparable": false
+          },
+          "D6": {
+            "candidate": {
+              "pass": 19,
+              "fail": 1,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.95,
+              "n": 20,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 19,
+              "fail": 1,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 0.95,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-A": {
+            "candidate": {
+              "pass": 0,
+              "fail": 0,
+              "n_a": 20,
+              "invalid": 0,
+              "valid": 0,
+              "rate": null,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 14,
+              "fail": 0,
+              "n_a": 6,
+              "invalid": 0,
+              "valid": 14,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": null,
+            "regression": false,
+            "comparable": false
+          },
+          "H-B": {
+            "candidate": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "baseline": {
+              "pass": 20,
+              "fail": 0,
+              "n_a": 0,
+              "invalid": 0,
+              "valid": 20,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": true
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          },
+          "H-C": {
+            "candidate": {
+              "pass": 3,
+              "fail": 0,
+              "n_a": 17,
+              "invalid": 0,
+              "valid": 3,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": false
+            },
+            "baseline": {
+              "pass": 11,
+              "fail": 0,
+              "n_a": 9,
+              "invalid": 0,
+              "valid": 11,
+              "rate": 1.0,
+              "n": 20,
+              "unanimous": false
+            },
+            "delta": 0.0,
+            "regression": false,
+            "comparable": true
+          }
+        },
+        "any_regression": false,
+        "per_stratum_description_only": {
+          "SC-H-005/SP-example-seeker/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": null,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            }
+          },
+          "SC-H-005/SP-example-seeker/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.6
+            },
+            "D4": {
+              "candidate": 0.8,
+              "baseline": 0.4
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 0.8,
+              "baseline": 0.8
+            },
+            "H-A": {
+              "candidate": null,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            }
+          },
+          "SC-H-005/SP-persist-confused/H1@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": null,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": null,
+              "baseline": 1.0
+            }
+          },
+          "SC-H-005/SP-persist-confused/H2@1.0": {
+            "D1": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D2": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D3": {
+              "candidate": 1.0,
+              "baseline": 0.8
+            },
+            "D4": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "D5": {
+              "candidate": null,
+              "baseline": null
+            },
+            "D6": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-A": {
+              "candidate": null,
+              "baseline": 1.0
+            },
+            "H-B": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            },
+            "H-C": {
+              "candidate": 1.0,
+              "baseline": 1.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "rule3a_held_out_generalisation_exploratory": {
+    "candidate-rc1": {
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "generalises",
+      "exploratory": true
+    },
+    "candidate-rc2": {
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true,
+      "verdict": "generalises",
+      "exploratory": true
+    }
+  },
+  "rule4_authorship_probes_D3": {
+    "asm-H1-0001": {
+      "arm": "baseline",
+      "pass": 4,
+      "fail": 1,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 0.8,
+      "n": 5,
+      "unanimous": false,
+      "verdict": "fail"
+    },
+    "asm-H2-0001": {
+      "arm": "baseline",
+      "pass": 5,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 1.0,
+      "n": 5,
+      "unanimous": true,
+      "verdict": "pass"
+    },
+    "asm-S1-0001": {
+      "arm": "baseline",
+      "pass": 4,
+      "fail": 1,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 0.8,
+      "n": 5,
+      "unanimous": false,
+      "verdict": "fail"
+    },
+    "asm-U-0001": {
+      "arm": "baseline",
+      "pass": 4,
+      "fail": 1,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 0.8,
+      "n": 5,
+      "unanimous": false,
+      "verdict": "fail"
+    },
+    "asm-H1-0002": {
+      "arm": "candidate-rc1",
+      "pass": 5,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 1.0,
+      "n": 5,
+      "unanimous": true,
+      "verdict": "pass"
+    },
+    "asm-H2-0002": {
+      "arm": "candidate-rc1",
+      "pass": 4,
+      "fail": 1,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 0.8,
+      "n": 5,
+      "unanimous": false,
+      "verdict": "fail"
+    },
+    "asm-H1-0005": {
+      "arm": "candidate-rc2",
+      "pass": 5,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 1.0,
+      "n": 5,
+      "unanimous": true,
+      "verdict": "pass"
+    },
+    "asm-H2-0003": {
+      "arm": "candidate-rc2",
+      "pass": 1,
+      "fail": 4,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 5,
+      "rate": 0.2,
+      "n": 5,
+      "unanimous": false,
+      "verdict": "fail"
+    }
+  },
+  "rule6_stop_check_crosstab": {
+    "D2_by_stop_turn_confusion_profiles": {
+      "baseline": {
+        "10": {
+          "pass": 1
+        },
+        "12": {
+          "pass": 1
+        },
+        "2": {
+          "pass": 37,
+          "n-a": 1
+        },
+        "4": {
+          "pass": 39
+        },
+        "6": {
+          "pass": 8
+        },
+        "8": {
+          "pass": 2
+        },
+        "none": {
+          "pass": 1
+        }
+      },
+      "candidate-rc1": {
+        "2": {
+          "pass": 13,
+          "n-a": 1
+        },
+        "4": {
+          "pass": 39
+        },
+        "6": {
+          "pass": 6
+        },
+        "8": {
+          "pass": 1
+        }
+      },
+      "candidate-rc2": {
+        "2": {
+          "pass": 50
+        },
+        "4": {
+          "pass": 10
+        }
+      }
+    },
+    "D3_by_stop_turn_probe_profile": {
+      "baseline": {
+        "none": {
+          "pass": 27,
+          "fail": 3
+        }
+      },
+      "candidate-rc1": {
+        "none": {
+          "pass": 18,
+          "fail": 2
+        }
+      },
+      "candidate-rc2": {
+        "none": {
+          "pass": 15,
+          "fail": 5
+        }
+      }
+    }
+  },
+  "rule6_stop_turn_by_assembly_target_family": {
+    "asm-H1-0001 (baseline)": {
+      "2": 3,
+      "4": 9,
+      "6": 3
+    },
+    "asm-H1-0002 (candidate-rc1)": {
+      "2": 3,
+      "4": 10,
+      "6": 2
+    },
+    "asm-H1-0005 (candidate-rc2)": {
+      "2": 15
+    },
+    "asm-H2-0001 (baseline)": {
+      "2": 2,
+      "4": 8,
+      "6": 2,
+      "8": 2,
+      "none": 1
+    },
+    "asm-H2-0002 (candidate-rc1)": {
+      "2": 5,
+      "4": 9,
+      "6": 1
+    },
+    "asm-H2-0003 (candidate-rc2)": {
+      "2": 15
+    },
+    "asm-S1-0001 (baseline)": {
+      "2": 15
+    },
+    "asm-U-0001 (baseline)": {
+      "2": 15
+    }
+  },
+  "rule5_verdicts": {
+    "target-family": {
+      "verdict": "did not hold",
+      "components": [
+        {
+          "assembly": "asm-H1-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-S1-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-U-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H1-0005",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0003",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "check": "D3/D5 unchanged on candidate-rc2",
+          "observed": "no regression"
+        }
+      ]
+    },
+    "preservation": {
+      "verdict": "held",
+      "dimensions_compared": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "H-A",
+        "H-B",
+        "H-C"
+      ]
+    },
+    "held-out (regression clause)": {
+      "verdict": "held",
+      "dimensions_compared": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D6",
+        "H-B",
+        "H-C"
+      ]
+    },
+    "authorship-probe": {
+      "verdict": "did not hold",
+      "failing_assemblies": [
+        "asm-H1-0001",
+        "asm-S1-0001",
+        "asm-U-0001",
+        "asm-H2-0002",
+        "asm-H2-0003"
+      ]
+    },
+    "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns."
+  },
+  "variability": {
+    "target-family/baseline": {
+      "groups": 16,
+      "not_unanimous_on_D2": 0
+    },
+    "target-family/candidate-rc1": {
+      "groups": 8,
+      "not_unanimous_on_D2": 0
+    },
+    "target-family/candidate-rc2": {
+      "groups": 8,
+      "not_unanimous_on_D2": 0
+    },
+    "preservation/baseline": {
+      "groups": 14,
+      "not_unanimous_on_D2": 6
+    },
+    "preservation/candidate-rc1": {
+      "groups": 14,
+      "not_unanimous_on_D2": 7
+    },
+    "preservation/candidate-rc2": {
+      "groups": 14,
+      "not_unanimous_on_D2": 4
+    },
+    "held-out/baseline": {
+      "groups": 4,
+      "not_unanimous_on_D2": 0
+    },
+    "held-out/candidate-rc1": {
+      "groups": 4,
+      "not_unanimous_on_D2": 0
+    },
+    "held-out/candidate-rc2": {
+      "groups": 4,
+      "not_unanimous_on_D2": 0
+    },
+    "authorship-probe/baseline": {
+      "groups": 4,
+      "not_unanimous_on_D2": 0
+    },
+    "authorship-probe/candidate-rc1": {
+      "groups": 2,
+      "not_unanimous_on_D2": 0
+    },
+    "authorship-probe/candidate-rc2": {
+      "groups": 2,
+      "not_unanimous_on_D2": 0
+    }
+  },
+  "generated_at": "2026-11-01T06:06:34+00:00",
+  "cells": "out/run/CP-0001/cells.jsonl",
+  "provenance": "out/run/CP-0001/provenance.json",
+  "judgment_key": "judgment_v1"
+}

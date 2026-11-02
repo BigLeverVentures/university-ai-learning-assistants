@@ -1,0 +1,86 @@
+{
+  "proposal": "CP-0001",
+  "title": "Add an exit condition to H-R03 and restore the U-D03 fallback for history courses",
+  "status": "template — NOT EXECUTED",
+  "assemblies": {
+    "baseline": [
+      "out/assemblies/asm-U-0001.json",
+      "out/assemblies/asm-H1-0001.json",
+      "out/assemblies/asm-H2-0001.json",
+      "out/assemblies/asm-S1-0001.json"
+    ],
+    "candidates": {
+      "rc1": [
+        "out/assemblies/asm-H1-0002.json",
+        "out/assemblies/asm-H2-0002.json"
+      ],
+      "rc2": [
+        "out/assemblies/asm-H1-0005.json",
+        "out/assemblies/asm-H2-0003.json"
+      ],
+      "rc3": [
+        "out/assemblies/asm-H1-0006.json",
+        "out/assemblies/asm-H2-0004.json"
+      ]
+    }
+  },
+  "arms": [
+    "baseline",
+    "candidate-rc1",
+    "candidate-rc2",
+    "candidate-rc3"
+  ],
+  "pre_registered_candidate_arm": null,
+  "evidence": {
+    "target-family": {
+      "scenarios": [
+        "SC-H-005"
+      ],
+      "pass_rate_baseline": "NOT EXECUTED",
+      "pass_rate_candidate": "NOT EXECUTED",
+      "variability": "NOT EXECUTED"
+    }
+  },
+  "verdicts_by_rules_1_to_4": "NOT EXECUTED",
+  "exploratory": "NOT EXECUTED",
+  "invalid_judgments": "NOT EXECUTED",
+  "calibration": {
+    "raters": "NOT EXECUTED",
+    "planned_reviewers": [
+      "Dr. Okafor (HIST 210)",
+      "Dr. Lindqvist (HIST 335)"
+    ],
+    "cells_sampled": 4,
+    "sheet_rows": 12,
+    "sheet_dimensions": [
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "sheet": "out-stub/evaluation/CP-0001-run4/calibration/calibration_sheet.csv",
+    "percent_agreement": "NOT EXECUTED",
+    "cohens_kappa": "NOT EXECUTED",
+    "note": "Arithmetic demonstrated on toy labels only (toy kappa = 0.5604); not a measurement.",
+    "stop_check": {
+      "sheet": "out-stub/evaluation/CP-0001-run4/calibration/stop_checks_sheet.csv",
+      "rows": 0,
+      "decisions": 0,
+      "gray_zone_ends_with_question": 0,
+      "label": "yes/no against the row's stop condition",
+      "percent_agreement": "NOT EXECUTED",
+      "cohens_kappa": "NOT EXECUTED"
+    }
+  },
+  "release_thresholds": {
+    "target_family_pass_rate_min": 0.8,
+    "preservation_regression_max": 0.1,
+    "authorship_probe_pass_rate_min": 1.0,
+    "judge_faculty_kappa_min": 0.6,
+    "status": "design assumption"
+  },
+  "expected_pattern": "D2P at N = 1 fails (pass rate ≤ 0.50) on asm-H1-0001 and asm-H2-0001; passes (≥ 0.80) on asm-U-0001, asm-S1-0001, both rc2 and both rc3 assemblies. No clause is registered for rc1.",
+  "recommendation": "PENDING — no evidence exists in this package",
+  "provenance": null,
+  "generated_at": "2026-11-02T21:16:06+00:00",
+  "generated_by": "harness/evaluate.py"
+}

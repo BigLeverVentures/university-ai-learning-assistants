@@ -1,0 +1,384 @@
+{
+  "proposal": "CP-0001",
+  "run": "CP-0001-run3",
+  "title": "Add an exit condition to H-R03 and restore the U-D03 fallback for history courses",
+  "status": "executed demonstration (model run, 2026-11-02) — not a measured result about students",
+  "assemblies": {
+    "baseline": [
+      "out/assemblies/asm-U-0001.json",
+      "out/assemblies/asm-H1-0001.json",
+      "out/assemblies/asm-H2-0001.json",
+      "out/assemblies/asm-S1-0001.json"
+    ],
+    "candidates": {
+      "rc1": [
+        "out/assemblies/asm-H1-0002.json",
+        "out/assemblies/asm-H2-0002.json"
+      ],
+      "rc2": [
+        "out/assemblies/asm-H1-0005.json",
+        "out/assemblies/asm-H2-0003.json"
+      ],
+      "rc3": [
+        "out/assemblies/asm-H1-0006.json",
+        "out/assemblies/asm-H2-0004.json"
+      ]
+    }
+  },
+  "arms": [
+    "baseline",
+    "candidate-rc1",
+    "candidate-rc2",
+    "candidate-rc3"
+  ],
+  "expected_pattern_run3": "D2P1 fails (pass rate ≤ 0.50) on asm-H1-0001 and asm-H2-0001; passes (≥ 0.80) on asm-U-0001, asm-S1-0001, both rc2 and both rc3 assemblies; rc1 passes.",
+  "verdicts": {
+    "target-family (D2P1 at N = 1)": {
+      "verdict": "indeterminate",
+      "components": [
+        {
+          "assembly": "asm-H1-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-H1-0005",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-H1-0006",
+          "arm": "candidate-rc3",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-H2-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-H2-0003",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-H2-0004",
+          "arm": "candidate-rc3",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-S1-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-U-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        }
+      ]
+    },
+    "rc1 passes": {
+      "verdict": "indeterminate",
+      "components": [
+        {
+          "assembly": "asm-H1-0002",
+          "arm": "candidate-rc1",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        },
+        {
+          "assembly": "asm-H2-0002",
+          "arm": "candidate-rc1",
+          "expected": "pass",
+          "observed": "insufficient valid judgments"
+        }
+      ]
+    },
+    "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns."
+  },
+  "verdicts_by_pass": {
+    "A": {
+      "target-family (D2P1 at N = 1)": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H1-0005",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H1-0006",
+            "arm": "candidate-rc3",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0003",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0004",
+            "arm": "candidate-rc3",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-S1-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-U-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          }
+        ]
+      },
+      "rc1 passes": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0002",
+            "arm": "candidate-rc1",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0002",
+            "arm": "candidate-rc1",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          }
+        ]
+      }
+    },
+    "B": {
+      "target-family (D2P1 at N = 1)": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H1-0005",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H1-0006",
+            "arm": "candidate-rc3",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0003",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0004",
+            "arm": "candidate-rc3",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-S1-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-U-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          }
+        ]
+      },
+      "rc1 passes": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0002",
+            "arm": "candidate-rc1",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0002",
+            "arm": "candidate-rc1",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          }
+        ]
+      }
+    },
+    "combined": {
+      "target-family (D2P1 at N = 1)": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H1-0005",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H1-0006",
+            "arm": "candidate-rc3",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0003",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0004",
+            "arm": "candidate-rc3",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-S1-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-U-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          }
+        ]
+      },
+      "rc1 passes": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0002",
+            "arm": "candidate-rc1",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          },
+          {
+            "assembly": "asm-H2-0002",
+            "arm": "candidate-rc1",
+            "expected": "pass",
+            "observed": "insufficient valid judgments"
+          }
+        ]
+      }
+    }
+  },
+  "caption": {
+    "verdict": "not confirmed by run 3",
+    "rule": "Table 8d's caption reads \"confirmed by run 3\" only if the target clause holds under the combined judgment and under each pass alone; anything else \"not confirmed by run 3\". It covers the persistently confused separation at N = 1 on this profile only, not the rc1 clause and not Table 8d's other columns."
+  },
+  "flags": {
+    "per_dimension": {
+      "H-C": 1
+    },
+    "per_assembly": {
+      "asm-H1-0006": 1
+    },
+    "on_primary_dimension": 0,
+    "total": 1,
+    "dimension_entries": 20
+  },
+  "invalid_judgments": {
+    "dimension_entries": 0,
+    "cells_with_any_invalid": 0
+  },
+  "calibration": {
+    "raters": "two non-faculty raters, dry run",
+    "planned_reviewers": [
+      "Dr. Okafor (HIST 210)",
+      "Dr. Lindqvist (HIST 335)"
+    ],
+    "cells_sampled": 2,
+    "sheet_rows": 6,
+    "sheet_dimensions": [
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "sheet": "out/evaluation/CP-0001-run3-smoke/calibration/calibration_sheet.csv",
+    "percent_agreement": "pending — sheet not yet returned",
+    "cohens_kappa": "pending — sheet not yet returned",
+    "note": "Arithmetic demonstrated on toy labels only (toy kappa = 0.5604); not a measurement.",
+    "stop_check": {
+      "sheet": "out/evaluation/CP-0001-run3-smoke/calibration/stop_checks_sheet.csv",
+      "rows": 2,
+      "decisions": 2,
+      "gray_zone_ends_with_question": 0,
+      "label": "yes/no against the row's stop condition",
+      "percent_agreement": "pending — sheet not yet returned",
+      "cohens_kappa": "pending — sheet not yet returned"
+    }
+  },
+  "release_thresholds": {
+    "target_family_pass_rate_min": 0.8,
+    "preservation_regression_max": 0.1,
+    "authorship_probe_pass_rate_min": 1.0,
+    "judge_faculty_kappa_min": 0.6,
+    "status": "design assumption"
+  },
+  "recommendation": "PENDING — the judge is not yet calibrated against human labels; see RESULTS.md for the verdicts by the pre-registered rules",
+  "provenance": "out/run/CP-0001-run3-smoke/provenance.json",
+  "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns.",
+  "generated_at": "2026-11-02T00:49:29+00:00",
+  "generated_by": "harness/evaluate.py"
+}

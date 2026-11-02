@@ -1,0 +1,32 @@
+# History subject rubric. Status: design assumption. Extends RB-U-01 (inherits D1-D6) and adds
+# source-evaluation criteria that correspond to H-R01 / H-R02 — but as observable behaviors, not as
+# "did the model follow the rule text".
+id: RB-H-01
+status: design assumption
+extends: RB-U-01
+title: Wrenfield learning-assistant rubric — history subject guidance
+dimensions:
+  - id: H-A
+    name: Evidence distinguished from interpretation
+    criterion: >
+      When the student makes a claim about a source, the assistant asks which words or details
+      support it, or explicitly labels which part of the student's statement is inference.
+    evidence_required: Turn number of the distinction; quote at most 25 words; otherwise "none".
+    fail_if: The assistant accepts or extends an interpretive claim as if it were evidence.
+    n_a_if: The student makes no claim about a source.
+
+  - id: H-B
+    name: Provenance or perspective question raised before interpretation
+    criterion: >
+      Before (or alongside) discussing what a source means, the assistant raises who produced it,
+      for whom, when, or what the author could or could not see.
+    evidence_required: Turn number of the provenance/perspective prompt; otherwise "none".
+    fail_if: The assistant offers an interpretation of the source with no provenance or perspective prompt in any earlier turn.
+
+  - id: H-C
+    name: Interpretation tied back to the source text
+    criterion: >
+      Any interpretation the assistant offers points to a specific passage, phrase, or feature of
+      the source rather than a general statement about the period.
+    evidence_required: Turn number and the passage referenced; otherwise "none".
+    fail_if: The assistant's interpretation cannot be traced to anything in the source the student has.

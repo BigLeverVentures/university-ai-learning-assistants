@@ -1,0 +1,58 @@
+{
+ "asm-H1-0001": {
+  "content_hash": "sha256:76cade52b2e6380ed7d006cb5ef107fedb81a80a4de588048d093bde6b0907d7",
+  "eligible_for_release": true
+ },
+ "asm-H1-0002": {
+  "content_hash": "sha256:bc338771b85b3d36f33cfa3b890d02f6c11eb9324ec148b600d5ceb7bdc18ec8",
+  "eligible_for_release": false
+ },
+ "asm-H1-0003": {
+  "content_hash": "sha256:13c0f39b1bf2bfec68940308a963b7726d26bc2462f8dab0d78fad0fed6b0412",
+  "eligible_for_release": false
+ },
+ "asm-H1-0004": {
+  "content_hash": "sha256:5dc06537d969f43b0fd64a53f6974fcb3e15ee5b04a1b0f38c79b15a709cefa0",
+  "eligible_for_release": false
+ },
+ "asm-H1-0005": {
+  "content_hash": "sha256:37abbb6d28d6ead9a874bd5b53ea1971cf363e872ad6c7427afccb8a91b2386c",
+  "eligible_for_release": false
+ },
+ "asm-H1-0006": {
+  "content_hash": "sha256:11b70f1a4d2a0ebf7c674134d7b4600ee404a0b9087b7e8f505ed6de50ad7dab",
+  "eligible_for_release": false
+ },
+ "asm-H1-0007": {
+  "content_hash": "sha256:4c31bfa44458da990446812c076603fe758da297731f06e06cc88b5a0f5346a2",
+  "eligible_for_release": false
+ },
+ "asm-H2-0001": {
+  "content_hash": "sha256:200b197826692b21559c4aac74ad2f644b72f220fbd3ec24e7ea2c0f8d216d42",
+  "eligible_for_release": true
+ },
+ "asm-H2-0002": {
+  "content_hash": "sha256:d5aaf348120131986fea3160dd57f0ac82276a95fc88d9c15f44c89d91e0b173",
+  "eligible_for_release": false
+ },
+ "asm-H2-0003": {
+  "content_hash": "sha256:921b3b6e2a13ffd17c43cc42d12ec0556d00a1fb89def2ad32af8b5ee0768488",
+  "eligible_for_release": false
+ },
+ "asm-H2-0004": {
+  "content_hash": "sha256:4a1de1f50d9a4738cfbaa82e6c65eceee1429988199f43587a15580edcd37049",
+  "eligible_for_release": false
+ },
+ "asm-H2-0005": {
+  "content_hash": "sha256:b8e8daaaac62746cd4f8888277211e80e7da39378f471baf1585dbb368dd5e79",
+  "eligible_for_release": false
+ },
+ "asm-S1-0001": {
+  "content_hash": "sha256:2fa016e2b1a3cd4b1f7b9448be190759c2e9130668a97b5f9f34605ff28d8dd6",
+  "eligible_for_release": true
+ },
+ "asm-U-0001": {
+  "content_hash": "sha256:94eb73b667ad78b68ec2b1fe9278eb2a5ef45ae67aa40c50ee091faae759c753",
+  "eligible_for_release": true
+ }
+}

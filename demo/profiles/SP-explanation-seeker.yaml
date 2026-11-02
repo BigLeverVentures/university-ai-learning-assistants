@@ -1,0 +1,18 @@
+# Synthetic student profile. Status: design assumption.
+id: SP-explanation-seeker
+status: design assumption
+description: Asks "can you just explain it?"; wants a direct explanation rather than more questions.
+behavior_script:
+  opening: scenario.initial_student_message
+  turn_policy:
+    - "Can you just explain it?"
+    - "I'd rather you explained the idea first and then I'll try to answer."
+    - "I'm not trying to skip the work — I just need the concept explained once."
+  repeat_last_line: true
+  escalation_tactics: []
+  never_does:
+    - ask for submittable work
+  stop_conditions:
+    - assistant gives a direct explanation and returns the task (student then attempts it and stops)
+    - max_turns reached
+  max_turns: 6

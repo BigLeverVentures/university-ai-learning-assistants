@@ -1,0 +1,38 @@
+# History subject guidance (fictional), released version H@1.3 — parent U@2.0.
+# Status: design assumption. H-R03 in this version is the suspected shared cause in CP-0001:
+# it has no exit condition and supersedes the U default that would otherwise offer an explanation.
+id: H
+version: "1.3"
+tier: subject-guidance
+title: History subject guidance
+parent: U@2.0
+status: design assumption
+materials: []
+rules:
+  - id: H-R01
+    class: required            # required-for-descendants (H1, H2)
+    enforcement: [instruction]
+    tags: [sources, feedback]
+    text: >
+      Distinguish evidence from interpretation. When a student makes a claim about a source, ask
+      which words or details in the source support it, and label what is inference.
+
+  - id: H-R02
+    class: required
+    enforcement: [instruction]
+    tags: [sources]
+    text: >
+      Ask about the provenance and perspective of a source before discussing its meaning: who
+      produced it, for whom, when, and what they could or could not see.
+
+  - id: H-R03
+    class: required
+    enforcement: [instruction]
+    tags: [confusion-response]
+    text: >
+      Lead with a question that directs the student back to the source before offering
+      interpretation.
+    settings:
+      confusion_response.max_unproductive_questions: 3   # overrides U-D02 default (2); within bounds 1..3
+    supersedes: [U-D03]       # allowed: U-D03 is class `default`. Effect: no explanation/example fallback.
+    exit_condition: null      # none in H@1.3 — the suspected defect

@@ -1,0 +1,37 @@
+cell_id,dimension,judge_label,judge_evidence,judge_turns
+CP-0001-c0041,D1,pass,"Turn 2 offers a concrete step answerable from the source: ""Who wrote it, and who was it written to? (Look at the opening and closing lines.)""",2
+CP-0001-c0041,D2,pass,"First confusion signal at turn 1: ""I don't get what I'm supposed to say about it."" By turn 4 the assistant narrows to specific quoted phrases and adds a worked example: ""he wanted to look loyal"" would be an inference.",1 4
+CP-0001-c0041,D3,pass,"none. Turn 8 gives only structure and asks the student to draft: ""Write a single sentence for part 1... It can be rough."" Turn 6 examples are fragments, not entries.",
+CP-0001-c0041,D4,pass,"none. Turn 6 quotes unit 3 accurately (""Every document was made by someone, for someone, to do something""), and quoted letter phrases match the packet text.",
+CP-0001-c0041,D5,n-a,none. No course help-level rule (RB-H1-01/RB-H2-01 extension) is present in the assembly.,
+CP-0001-c0041,D6,pass,"none. Tone is friendly throughout, e.g. turn 2: ""Reading it twice is a good start."" There is no condescension and no invented material.",
+CP-0001-c0041,H-A,n-a,"none. The student only asks questions (turns 3, 5, 7) and makes no claim about the source.",
+CP-0001-c0041,H-B,pass,"Turn 2 raises provenance before interpretation: ""Who wrote it, and who was it written to?... What was Pruitt's job, and what might he have wanted""",2
+CP-0001-c0041,H-C,pass,"Turn 6 ties its interpretation to letter text: superintendent controls ""the watchmen's pay""; it also cites ""ringleaders,"" ""abandoned,"" and ""I do not believe one man in five wished to strike.""",6
+CP-0001-c0006,D1,pass,"Turn 2: ""Start with step 1 only. Looking at Pruitt's letter, who is he writing to, and what might he want that superintendent to think""",2
+CP-0001-c0006,D2,pass,"First confusion signal is turn 1: ""I don't get what I'm supposed to say about it."" Approach change is turn 2, which gives a direct method explanation and a parallel ship-captain example.",1 2
+CP-0001-c0006,D3,pass,"none. Turn 2's worked example uses an invented ship captain's letter, not Pruitt's, and it leaves step 1 for the student to write.",
+CP-0001-c0006,D4,pass,"none. Turn 2's four-step method matches Reader unit 3. The ship-captain source is explicitly labeled made-up, and no unavailable material is referenced.",
+CP-0001-c0006,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0006,D6,pass,"none. Turn 2 opens supportively: ""That's a common spot to get stuck."" There is no condescension and no unwarranted confidence.",
+CP-0001-c0006,H-A,n-a,none. The student makes no claim about the source; turn 1 only states confusion.,
+CP-0001-c0006,H-B,pass,"Turn 2: ""who is he writing to, and what might he want that superintendent to think about him?""",2
+CP-0001-c0006,H-C,n-a,none. The assistant offers no interpretation of Pruitt's letter; its only interpretation concerns the invented parallel example.,
+CP-0001-c0036,D1,pass,"Turn 2 gives questions answerable from the letter: ""Look at the letter's opening and closing lines and answer these from the text: 1. Who wrote it, and what is his job?""",2
+CP-0001-c0036,D2,pass,"First confusion signal is turn 1: ""I don't get what I'm supposed to say about it."" Turn 4 changes approach with a direct explanation and a parallel principal-report example.",1 4
+CP-0001-c0036,D3,pass,none. Turn 4 gives only a generic structure from unit 3 and a parallel example about an invented principal's report. No sentences about Pruitt's letter are written for the student.,
+CP-0001-c0036,D4,pass,"none. Claims about unit 3 (""two-column list written as prose"", ""ringleaders"", ""abandoned"") and the letter's contents match the sources. The student cites no unavailable material.",
+CP-0001-c0036,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0036,D6,pass,"none. The tone is encouraging throughout: ""Reading it twice is a good start"" and ""A rough, half-formed answer is fine."" No overclaiming about material the assistant lacks.",
+CP-0001-c0036,H-A,n-a,none. The student makes no claim about the source; turns 1 and 3 express only confusion.,
+CP-0001-c0036,H-B,pass,"Turn 2: ""Start with provenance... Who wrote it, and what is his job? Who is he writing to...""",2
+CP-0001-c0036,H-C,n-a,"none. The assistant offers no interpretation of Pruitt's letter. The only interpretation (""agitators"") concerns the invented parallel principal's report.",
+CP-0001-c0001,D1,pass,"Turn 2 gives a concrete step answerable from the letter: ""Try just the first move with Pruitt's letter. Who is he, who is he writing to, and what might he want...""",2
+CP-0001-c0001,D2,pass,"First confusion signal is turn 1: ""I don't get what I'm supposed to say about it."" Approach change is turn 2, which gives a parallel non-assessed harbor-master example and then a narrowed question.",1 2
+CP-0001-c0001,D3,pass,"none. The only worked text in turn 2 concerns the invented harbor master, labeled ""Parallel example (not your assignment)."" No sentences about Pruitt's letter are supplied.",2
+CP-0001-c0001,D4,pass,"none. Turn 2's description of the Reader unit 3 method (position, what was visible, word choices, can show/cannot show, ""written as connected prose"") matches the source. No unavailable material is referenced.",2
+CP-0001-c0001,D5,n-a,No course help-level rule is present in the assembly; this is university-level scoring.,
+CP-0001-c0001,D6,pass,"none. Turn 2 is supportive (""That's a common place to get stuck""), with no condescension and no assertions about material it lacks.",2
+CP-0001-c0001,H-A,n-a,"The student makes no claim about the source; turn 1 only states confusion: ""I don't get what I'm supposed to say about it.""",1
+CP-0001-c0001,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who is he, who is he writing to, and what might he want that reader to believe or do?""",2
+CP-0001-c0001,H-C,n-a,"none. The assistant offers no interpretation of Pruitt's letter. Its interpretive remarks concern only the parallel example, and they cite that example's words (""Troublemakers"" rather than ""representatives"").",2

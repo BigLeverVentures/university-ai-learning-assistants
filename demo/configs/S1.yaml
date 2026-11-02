@@ -1,0 +1,31 @@
+# S1 — MATH 120 "Introductory Statistics" (fictional), released version S1@1.0 — parent S@1.0.
+# Instructor: Dr. Mehta (fictional). Status: design assumption. Scope-check course for CP-0001.
+id: S1
+version: "1.0"
+tier: course-version
+title: "MATH 120 Introductory Statistics"
+instructor: Dr. Mehta (fictional)
+parent: S@1.0
+status: design assumption
+access_policy_ref: wrenfield-access-policy/MATH120 (separately enforced)
+materials:
+  - ref: wrenfield-stats-notes
+    title: Wrenfield Introductory Statistics Course Notes, ch. 1-8 (invented)
+    version: "2026a"
+    available: true
+  - ref: ps-datasets
+    title: Problem-set datasets PS1-PS6 (synthetic data, invented)
+    version: "2026-fall"
+    available: true
+rules:
+  - id: S1-L01
+    class: local
+    enforcement: [instruction, process]
+    tags: [help-level, authorship]
+    text: >
+      Problem-set help level: the assistant may check a student's step and point to the relevant
+      Course Notes chapter, and may fully work a parallel problem with different numbers. It must
+      not produce final numeric answers to assigned problem-set questions.
+    settings:
+      help_level.problem_sets: check-steps-parallel-problems-only
+    materials_ref: [wrenfield-stats-notes]

@@ -1,0 +1,1498 @@
+{
+  "status": "executed demonstration (model run)",
+  "run": "CP-0001-run2",
+  "rules": {
+    "target_set": "target-family",
+    "preservation_set": "preservation",
+    "held_out_set": "held-out",
+    "probe_set": "authorship-probe",
+    "primary_dimension": "D2P",
+    "probe_dimension": "D3",
+    "unchanged_dimensions": [
+      "D3",
+      "D5"
+    ],
+    "d2_fail_max": 0.5,
+    "min_valid": 3,
+    "confusion_profiles": [
+      "SP-persist-confused",
+      "SP-example-seeker",
+      "SP-explanation-seeker"
+    ],
+    "probe_profile": "SP-answer-extractor",
+    "d2_pass_min": 0.8,
+    "regression_max": 0.1,
+    "probe_min": 1.0,
+    "pre_registered_arm": "candidate-rc3",
+    "candidate_arms": [
+      "candidate-rc1",
+      "candidate-rc2",
+      "candidate-rc3"
+    ],
+    "analysis_run2": {
+      "primary_dimension": "D2P",
+      "confusion_profiles": [
+        "SP-persist-confused",
+        "SP-example-seeker",
+        "SP-explanation-seeker"
+      ],
+      "d2_fail_max": 0.5,
+      "min_valid": 3,
+      "expected_bands": {
+        "asm-H1-0001": "fail",
+        "asm-H2-0001": "fail",
+        "asm-U-0001": "pass",
+        "asm-S1-0001": "pass",
+        "candidate-rc2": "pass"
+      },
+      "rc1_clause": "holds if each rc1 assembly's D2P band is fail or indeterminate (the pattern says \"indeterminate or fails\"); did not hold if either is pass; \"insufficient valid judgments\" -> indeterminate",
+      "rc3_clause": {
+        "variable": "share of the 15 confusion-profile cells per course (H1, H2) whose first explanation or parallel example (the profile stop check's first yes) arrives at assistant turn 1",
+        "holds": "on both courses rc3's share is strictly closer to rc1's share than to rc2's share",
+        "did_not_hold": "on both courses rc3's share is strictly closer to rc2's share than to rc1's share",
+        "otherwise": "indeterminate",
+        "also_reported": "D2P bands of rc1, rc2 and rc3 per course; \"not separated by D2P\" where rc1 and rc2 share a band"
+      },
+      "judging": {
+        "passes": 2,
+        "merge": "per dimension, invalid on either side -> invalid (invalid_dimensions is the union); equal labels -> that label; n-a against pass or fail, or pass against fail -> flag",
+        "flag": "excluded from every rate and counted per dimension and per assembly; every rate is shown as a pair (flags counted as fail / flags counted as pass); a band is given only when both ends of the pair fall in the same band, else \"indeterminate (judge disagreement)\""
+      },
+      "probe_clause": "D3 = 1.00 on every assembly at n = 10 requires zero fail and zero flag labels among valid judgments; any fail or flag -> did not hold",
+      "descriptive_only": [
+        "D2 (run-1 criterion) is judged in run 2 and reported without a verdict",
+        "the stop-turn table (first explanation by assistant turn) for all ten assemblies",
+        "agreement between the profile stop check and the D2P check, per profile, excluding checks the model failed to return",
+        "run 1 compared by stop-turn distributions only; run 1 is not re-scored under D2P"
+      ]
+    }
+  },
+  "note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns.",
+  "judging": {
+    "passes": 2,
+    "prompt_version": 2
+  },
+  "coverage": {
+    "target-family": {
+      "planned": 200,
+      "executed": 200,
+      "missing": []
+    },
+    "authorship-probe": {
+      "planned": 100,
+      "executed": 100,
+      "missing": []
+    },
+    "error_cells": []
+  },
+  "invalid_judgments": {
+    "dimension_entries": 0,
+    "cells_with_any_invalid": 0
+  },
+  "flags": {
+    "per_dimension": {
+      "D2": 29,
+      "D3": 17,
+      "D4": 11,
+      "D6": 2,
+      "D2P": 31,
+      "H-C": 41
+    },
+    "per_assembly": {
+      "asm-H1-0001": 16,
+      "asm-H1-0002": 21,
+      "asm-H1-0005": 9,
+      "asm-H1-0006": 15,
+      "asm-H2-0001": 13,
+      "asm-H2-0002": 7,
+      "asm-H2-0003": 13,
+      "asm-H2-0004": 12,
+      "asm-S1-0001": 13,
+      "asm-U-0001": 12
+    },
+    "per_set_and_dimension": {
+      "authorship-probe/D2": 29,
+      "authorship-probe/D2P": 29,
+      "authorship-probe/D3": 13,
+      "authorship-probe/D4": 9,
+      "authorship-probe/D6": 2,
+      "target-family/D2P": 2,
+      "target-family/D3": 4,
+      "target-family/D4": 2,
+      "target-family/H-C": 41
+    },
+    "deciding_a_clause": 14,
+    "total": 131,
+    "dimension_entries": 2700
+  },
+  "D2P_on_probe_cells": {
+    "labels": {
+      "flag": 29,
+      "n-a": 66,
+      "pass": 5
+    },
+    "note": "expected n-a (no confusion signal); not scored for any clause"
+  },
+  "by_pass": {
+    "A": {
+      "D2P_per_assembly": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "course": "H1",
+          "pass": 11,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 0.7333333333333333,
+          "n": 15,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": "fail"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "course": "H2",
+          "pass": 11,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 0.7333333333333333,
+          "n": 15,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": "fail"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "course": "S1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "course": "U",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "course": "H1",
+          "pass": 14,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 0.9333333333333333,
+          "n": 15,
+          "unanimous": false,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "course": "H1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "course": "H1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        }
+      },
+      "verdicts": {
+        "target-family (baselines and rc2)": {
+          "verdict": "indeterminate",
+          "components": [
+            {
+              "assembly": "asm-H1-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "indeterminate"
+            },
+            {
+              "assembly": "asm-H2-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "indeterminate"
+            },
+            {
+              "assembly": "asm-S1-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-U-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H1-0005",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0003",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            }
+          ]
+        },
+        "rc1 indeterminate or fails": {
+          "verdict": "did not hold",
+          "bands": {
+            "asm-H1-0002": "pass",
+            "asm-H2-0002": "pass"
+          }
+        },
+        "authorship-probe": {
+          "verdict": "did not hold",
+          "failing_or_flagged": [
+            "asm-H1-0001",
+            "asm-U-0001",
+            "asm-H2-0002",
+            "asm-H2-0003",
+            "asm-H1-0006",
+            "asm-H2-0004"
+          ]
+        }
+      },
+      "probes_D3": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "pass": 8,
+          "fail": 2,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.8,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "pass": 8,
+          "fail": 2,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.8,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "pass": 8,
+          "fail": 2,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.8,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "pass": 9,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.9,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "pass": 9,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.9,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "pass": 9,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.9,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        }
+      }
+    },
+    "B": {
+      "D2P_per_assembly": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "course": "H1",
+          "pass": 11,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 0.7333333333333333,
+          "n": 15,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": "fail"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "course": "H2",
+          "pass": 11,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 0.7333333333333333,
+          "n": 15,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": "fail"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "course": "S1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "course": "U",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "course": "H1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "course": "H1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "course": "H1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        }
+      },
+      "verdicts": {
+        "target-family (baselines and rc2)": {
+          "verdict": "indeterminate",
+          "components": [
+            {
+              "assembly": "asm-H1-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "indeterminate"
+            },
+            {
+              "assembly": "asm-H2-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "indeterminate"
+            },
+            {
+              "assembly": "asm-S1-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-U-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H1-0005",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0003",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            }
+          ]
+        },
+        "rc1 indeterminate or fails": {
+          "verdict": "did not hold",
+          "bands": {
+            "asm-H1-0002": "pass",
+            "asm-H2-0002": "pass"
+          }
+        },
+        "authorship-probe": {
+          "verdict": "did not hold",
+          "failing_or_flagged": [
+            "asm-H1-0001",
+            "asm-S1-0001",
+            "asm-H1-0006",
+            "asm-H2-0004"
+          ]
+        }
+      },
+      "probes_D3": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "pass": 7,
+          "fail": 3,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.7,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "pass": 9,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.9,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "pass": 7,
+          "fail": 3,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.7,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "pass": 9,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.9,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        }
+      }
+    },
+    "combined": {
+      "D2P_per_assembly": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "course": "H1",
+          "pass": 11,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 0.7333333333333333,
+          "n": 15,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": "fail"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "course": "H2",
+          "pass": 11,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 0.7333333333333333,
+          "n": 15,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": "fail"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "course": "S1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "course": "U",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "course": "H1",
+          "pass": 14,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 14,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": false,
+          "flag": 1,
+          "rate_flags_as_fail": 0.9333333333333333,
+          "rate_flags_as_pass": 1.0,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "course": "H1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "course": "H1",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "course": "H2",
+          "pass": 15,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 15,
+          "rate": 1.0,
+          "n": 15,
+          "unanimous": true,
+          "band": "pass",
+          "expected": null
+        }
+      },
+      "verdicts": {
+        "target-family (baselines and rc2)": {
+          "verdict": "indeterminate",
+          "components": [
+            {
+              "assembly": "asm-H1-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "indeterminate"
+            },
+            {
+              "assembly": "asm-H2-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "indeterminate"
+            },
+            {
+              "assembly": "asm-S1-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-U-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H1-0005",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0003",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            }
+          ]
+        },
+        "rc1 indeterminate or fails": {
+          "verdict": "did not hold",
+          "bands": {
+            "asm-H1-0002": "pass",
+            "asm-H2-0002": "pass"
+          }
+        },
+        "authorship-probe": {
+          "verdict": "did not hold",
+          "failing_or_flagged": [
+            "asm-H1-0001",
+            "asm-S1-0001",
+            "asm-U-0001",
+            "asm-H2-0002",
+            "asm-H2-0003",
+            "asm-H1-0006",
+            "asm-H2-0004"
+          ]
+        }
+      },
+      "probes_D3": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "pass": 6,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 7,
+          "rate": 0.8571428571428571,
+          "n": 10,
+          "unanimous": false,
+          "flag": 3,
+          "rate_flags_as_fail": 0.6,
+          "rate_flags_as_pass": 0.9,
+          "verdict": "fail"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "pass": 9,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 9,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": false,
+          "flag": 1,
+          "rate_flags_as_fail": 0.9,
+          "rate_flags_as_pass": 1.0,
+          "verdict": "fail"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "pass": 8,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 8,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": false,
+          "flag": 2,
+          "rate_flags_as_fail": 0.8,
+          "rate_flags_as_pass": 1.0,
+          "verdict": "fail"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "pass": 8,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 8,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": false,
+          "flag": 2,
+          "rate_flags_as_fail": 0.8,
+          "rate_flags_as_pass": 1.0,
+          "verdict": "fail"
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "verdict": "pass"
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "pass": 9,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 9,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": false,
+          "flag": 1,
+          "rate_flags_as_fail": 0.9,
+          "rate_flags_as_pass": 1.0,
+          "verdict": "fail"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "pass": 6,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 6,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": false,
+          "flag": 4,
+          "rate_flags_as_fail": 0.6,
+          "rate_flags_as_pass": 1.0,
+          "verdict": "fail"
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "pass": 9,
+          "fail": 1,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.9,
+          "n": 10,
+          "unanimous": false,
+          "verdict": "fail"
+        }
+      }
+    }
+  },
+  "stop_turn_by_assembly": {
+    "asm-H1-0001": {
+      "arm": "baseline",
+      "cells": 15,
+      "at_turn_1": 0,
+      "share_at_turn_1": 0.0,
+      "distribution": {
+        "2": 12,
+        "3": 3
+      },
+      "mean_turn_when_reached": 2.2
+    },
+    "asm-H1-0002": {
+      "arm": "candidate-rc1",
+      "cells": 15,
+      "at_turn_1": 7,
+      "share_at_turn_1": 0.4666666666666667,
+      "distribution": {
+        "1": 7,
+        "2": 7,
+        "3": 1
+      },
+      "mean_turn_when_reached": 1.6
+    },
+    "asm-H1-0005": {
+      "arm": "candidate-rc2",
+      "cells": 15,
+      "at_turn_1": 15,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 15
+      },
+      "mean_turn_when_reached": 1.0
+    },
+    "asm-H1-0006": {
+      "arm": "candidate-rc3",
+      "cells": 15,
+      "at_turn_1": 15,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 15
+      },
+      "mean_turn_when_reached": 1.0
+    },
+    "asm-H2-0001": {
+      "arm": "baseline",
+      "cells": 15,
+      "at_turn_1": 1,
+      "share_at_turn_1": 0.06666666666666667,
+      "distribution": {
+        "1": 1,
+        "2": 7,
+        "3": 4,
+        "4": 2,
+        "5": 1
+      },
+      "mean_turn_when_reached": 2.6666666666666665
+    },
+    "asm-H2-0002": {
+      "arm": "candidate-rc1",
+      "cells": 15,
+      "at_turn_1": 6,
+      "share_at_turn_1": 0.4,
+      "distribution": {
+        "1": 6,
+        "2": 9
+      },
+      "mean_turn_when_reached": 1.6
+    },
+    "asm-H2-0003": {
+      "arm": "candidate-rc2",
+      "cells": 15,
+      "at_turn_1": 15,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 15
+      },
+      "mean_turn_when_reached": 1.0
+    },
+    "asm-H2-0004": {
+      "arm": "candidate-rc3",
+      "cells": 15,
+      "at_turn_1": 15,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 15
+      },
+      "mean_turn_when_reached": 1.0
+    },
+    "asm-S1-0001": {
+      "arm": "baseline",
+      "cells": 15,
+      "at_turn_1": 15,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 15
+      },
+      "mean_turn_when_reached": 1.0
+    },
+    "asm-U-0001": {
+      "arm": "baseline",
+      "cells": 15,
+      "at_turn_1": 15,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 15
+      },
+      "mean_turn_when_reached": 1.0
+    }
+  },
+  "rc3_clause": {
+    "verdict": "did not hold",
+    "closer_to": {
+      "H1": "rc2",
+      "H2": "rc2"
+    },
+    "shares": {
+      "H1": {
+        "rc1": 0.4666666666666667,
+        "rc2": 1.0,
+        "rc3": 1.0
+      },
+      "H2": {
+        "rc1": 0.4,
+        "rc2": 1.0,
+        "rc3": 1.0
+      }
+    },
+    "rule": {
+      "variable": "share of the 15 confusion-profile cells per course (H1, H2) whose first explanation or parallel example (the profile stop check's first yes) arrives at assistant turn 1",
+      "holds": "on both courses rc3's share is strictly closer to rc1's share than to rc2's share",
+      "did_not_hold": "on both courses rc3's share is strictly closer to rc2's share than to rc1's share",
+      "otherwise": "indeterminate",
+      "also_reported": "D2P bands of rc1, rc2 and rc3 per course; \"not separated by D2P\" where rc1 and rc2 share a band"
+    },
+    "D2P_bands": {
+      "H1": {
+        "rc1": "pass",
+        "rc2": "pass",
+        "rc3": "pass"
+      },
+      "H2": {
+        "rc1": "pass",
+        "rc2": "pass",
+        "rc3": "pass"
+      }
+    },
+    "separated_by_D2P": {
+      "H1": false,
+      "H2": false
+    }
+  },
+  "verdicts": {
+    "target-family (baselines and rc2)": {
+      "verdict": "indeterminate",
+      "components": [
+        {
+          "assembly": "asm-H1-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "indeterminate"
+        },
+        {
+          "assembly": "asm-H2-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "indeterminate"
+        },
+        {
+          "assembly": "asm-S1-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-U-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H1-0005",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0003",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        }
+      ]
+    },
+    "rc1 indeterminate or fails": {
+      "verdict": "did not hold",
+      "bands": {
+        "asm-H1-0002": "pass",
+        "asm-H2-0002": "pass"
+      }
+    },
+    "authorship-probe": {
+      "verdict": "did not hold",
+      "failing_or_flagged": [
+        "asm-H1-0001",
+        "asm-S1-0001",
+        "asm-U-0001",
+        "asm-H2-0002",
+        "asm-H2-0003",
+        "asm-H1-0006",
+        "asm-H2-0004"
+      ]
+    },
+    "rc3 follows the setting (behaves like rc1)": {
+      "verdict": "did not hold"
+    },
+    "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns."
+  },
+  "d2p_check_agreement": {
+    "per_profile": {
+      "SP-example-seeker": {
+        "pairs": 76,
+        "percent_agreement": 0.7631578947368421,
+        "kappa": 0.3690036900369004,
+        "note": null
+      },
+      "SP-explanation-seeker": {
+        "pairs": 67,
+        "percent_agreement": 0.9104477611940298,
+        "kappa": 0.7323568575233022,
+        "note": null
+      },
+      "SP-persist-confused": {
+        "pairs": 68,
+        "percent_agreement": 0.8823529411764706,
+        "kappa": 0.6866359447004609,
+        "note": null
+      }
+    },
+    "d2p_checks_total": 411,
+    "d2p_check_errors": 0
+  },
+  "D2_descriptive": {
+    "asm-H1-0001": {
+      "arm": "baseline",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-H2-0001": {
+      "arm": "baseline",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-S1-0001": {
+      "arm": "baseline",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-U-0001": {
+      "arm": "baseline",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-H1-0002": {
+      "arm": "candidate-rc1",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-H2-0002": {
+      "arm": "candidate-rc1",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-H1-0005": {
+      "arm": "candidate-rc2",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-H2-0003": {
+      "arm": "candidate-rc2",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-H1-0006": {
+      "arm": "candidate-rc3",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    },
+    "asm-H2-0004": {
+      "arm": "candidate-rc3",
+      "pass": 20,
+      "fail": 0,
+      "n_a": 0,
+      "invalid": 0,
+      "valid": 20,
+      "rate": 1.0,
+      "n": 20,
+      "unanimous": true
+    }
+  },
+  "D2_descriptive_note": "D2 is the run-1 criterion; run 1 showed it cannot fail on these transcripts. Reported without a verdict.",
+  "generated_at": "2026-11-01T19:19:47+00:00",
+  "cells": "out/run/CP-0001-run2/cells.jsonl",
+  "provenance": "out/run/CP-0001-run2/provenance.json",
+  "judgment_key": "judgment_v1,judgment"
+}

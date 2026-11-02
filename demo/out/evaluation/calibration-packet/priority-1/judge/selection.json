@@ -1,0 +1,73 @@
+{
+ "seed": 20261031,
+ "d2p_baseline_allocation": {
+  "asm-H1-0001|CP-0001-run3": 4,
+  "asm-H1-0001|CP-0001-run4": 4,
+  "asm-H2-0001|CP-0001-run3": 4,
+  "asm-H2-0001|CP-0001-run4": 3
+ },
+ "d2p_other_strata_drawn": [
+  "asm-H1-0002|CP-0001-run3",
+  "asm-H1-0002|CP-0001-run4",
+  "asm-H1-0005|CP-0001-run3",
+  "asm-H1-0005|CP-0001-run4",
+  "asm-H1-0006|CP-0001-run3",
+  "asm-H1-0006|CP-0001-run4",
+  "asm-H2-0002|CP-0001-run3",
+  "asm-H2-0002|CP-0001-run4",
+  "asm-H2-0003|CP-0001-run4",
+  "asm-H2-0004|CP-0001-run3",
+  "asm-H2-0004|CP-0001-run4",
+  "asm-S1-0001|CP-0001-run3",
+  "asm-S1-0001|CP-0001-run4",
+  "asm-U-0001|CP-0001-run3",
+  "asm-U-0001|CP-0001-run4"
+ ],
+ "d2p_other_strata_left_out": [
+  "asm-H2-0003|CP-0001-run3"
+ ],
+ "stop_strata": [
+  "asm-H1-0001|CP-0001-run2",
+  "asm-H1-0001|CP-0001-run3",
+  "asm-H1-0001|CP-0001-run4",
+  "asm-H1-0002|CP-0001-run2",
+  "asm-H1-0002|CP-0001-run3",
+  "asm-H1-0002|CP-0001-run4",
+  "asm-H1-0005|CP-0001-run2",
+  "asm-H1-0005|CP-0001-run3",
+  "asm-H1-0005|CP-0001-run4",
+  "asm-H1-0006|CP-0001-run2",
+  "asm-H1-0006|CP-0001-run3",
+  "asm-H1-0006|CP-0001-run4",
+  "asm-H2-0001|CP-0001-run2",
+  "asm-H2-0001|CP-0001-run3",
+  "asm-H2-0001|CP-0001-run4",
+  "asm-H2-0002|CP-0001-run2",
+  "asm-H2-0002|CP-0001-run3",
+  "asm-H2-0002|CP-0001-run4",
+  "asm-H2-0003|CP-0001-run2",
+  "asm-H2-0003|CP-0001-run3",
+  "asm-H2-0003|CP-0001-run4",
+  "asm-H2-0004|CP-0001-run2",
+  "asm-H2-0004|CP-0001-run3",
+  "asm-H2-0004|CP-0001-run4",
+  "asm-S1-0001|CP-0001-run2",
+  "asm-S1-0001|CP-0001-run3",
+  "asm-S1-0001|CP-0001-run4",
+  "asm-U-0001|CP-0001-run2",
+  "asm-U-0001|CP-0001-run3",
+  "asm-U-0001|CP-0001-run4"
+ ],
+ "dropped_from_pool": [
+  {
+   "run": "CP-0001-run4",
+   "cell_id": "CP-0001-run4-c0045",
+   "why": "merged D2P1 label is 'flag', not pass or fail"
+  },
+  {
+   "run": "CP-0001-run4",
+   "cell_id": "CP-0001-run4-c0059",
+   "why": "merged D2P1 label is 'flag', not pass or fail"
+  }
+ ]
+}

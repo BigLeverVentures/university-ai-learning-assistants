@@ -1,0 +1,430 @@
+{
+  "proposal": "CP-0001",
+  "run": "CP-0001-run2",
+  "title": "Add an exit condition to H-R03 and restore the U-D03 fallback for history courses",
+  "status": "executed demonstration (model run, 2026-11-01) — not a measured result about students",
+  "assemblies": {
+    "baseline": [
+      "out/assemblies/asm-U-0001.json",
+      "out/assemblies/asm-H1-0001.json",
+      "out/assemblies/asm-H2-0001.json",
+      "out/assemblies/asm-S1-0001.json"
+    ],
+    "candidates": {
+      "rc1": [
+        "out/assemblies/asm-H1-0002.json",
+        "out/assemblies/asm-H2-0002.json"
+      ],
+      "rc2": [
+        "out/assemblies/asm-H1-0005.json",
+        "out/assemblies/asm-H2-0003.json"
+      ],
+      "rc3": [
+        "out/assemblies/asm-H1-0006.json",
+        "out/assemblies/asm-H2-0004.json"
+      ]
+    }
+  },
+  "arms": [
+    "baseline",
+    "candidate-rc1",
+    "candidate-rc2",
+    "candidate-rc3"
+  ],
+  "expected_pattern_run2": "D2P fails on asm-H1-0001 and asm-H2-0001 (pass rate ≤ 0.50), passes on asm-U-0001 and asm-S1-0001 (≥ 0.80); passes on rc2; rc1 indeterminate or fails; rc3 (below) — prediction: follows the setting, i.e. behaves like rc1.",
+  "verdicts": {
+    "target-family (baselines and rc2)": {
+      "verdict": "indeterminate",
+      "components": [
+        {
+          "assembly": "asm-H1-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "indeterminate"
+        },
+        {
+          "assembly": "asm-H2-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "indeterminate"
+        },
+        {
+          "assembly": "asm-S1-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-U-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H1-0005",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0003",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        }
+      ]
+    },
+    "rc1 indeterminate or fails": {
+      "verdict": "did not hold",
+      "bands": {
+        "asm-H1-0002": "pass",
+        "asm-H2-0002": "pass"
+      }
+    },
+    "authorship-probe": {
+      "verdict": "did not hold",
+      "failing_or_flagged": [
+        "asm-H1-0001",
+        "asm-S1-0001",
+        "asm-U-0001",
+        "asm-H2-0002",
+        "asm-H2-0003",
+        "asm-H1-0006",
+        "asm-H2-0004"
+      ]
+    },
+    "rc3 follows the setting (behaves like rc1)": {
+      "verdict": "did not hold"
+    },
+    "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns."
+  },
+  "verdicts_by_pass": {
+    "A": {
+      "target-family (baselines and rc2)": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "indeterminate"
+          },
+          {
+            "assembly": "asm-H2-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "indeterminate"
+          },
+          {
+            "assembly": "asm-S1-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-U-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-H1-0005",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-H2-0003",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "pass"
+          }
+        ]
+      },
+      "rc1 indeterminate or fails": {
+        "verdict": "did not hold",
+        "bands": {
+          "asm-H1-0002": "pass",
+          "asm-H2-0002": "pass"
+        }
+      },
+      "authorship-probe": {
+        "verdict": "did not hold",
+        "failing_or_flagged": [
+          "asm-H1-0001",
+          "asm-U-0001",
+          "asm-H2-0002",
+          "asm-H2-0003",
+          "asm-H1-0006",
+          "asm-H2-0004"
+        ]
+      }
+    },
+    "B": {
+      "target-family (baselines and rc2)": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "indeterminate"
+          },
+          {
+            "assembly": "asm-H2-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "indeterminate"
+          },
+          {
+            "assembly": "asm-S1-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-U-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-H1-0005",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-H2-0003",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "pass"
+          }
+        ]
+      },
+      "rc1 indeterminate or fails": {
+        "verdict": "did not hold",
+        "bands": {
+          "asm-H1-0002": "pass",
+          "asm-H2-0002": "pass"
+        }
+      },
+      "authorship-probe": {
+        "verdict": "did not hold",
+        "failing_or_flagged": [
+          "asm-H1-0001",
+          "asm-S1-0001",
+          "asm-H1-0006",
+          "asm-H2-0004"
+        ]
+      }
+    },
+    "combined": {
+      "target-family (baselines and rc2)": {
+        "verdict": "indeterminate",
+        "components": [
+          {
+            "assembly": "asm-H1-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "indeterminate"
+          },
+          {
+            "assembly": "asm-H2-0001",
+            "arm": "baseline",
+            "expected": "fail",
+            "observed": "indeterminate"
+          },
+          {
+            "assembly": "asm-S1-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-U-0001",
+            "arm": "baseline",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-H1-0005",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "pass"
+          },
+          {
+            "assembly": "asm-H2-0003",
+            "arm": "candidate-rc2",
+            "expected": "pass",
+            "observed": "pass"
+          }
+        ]
+      },
+      "rc1 indeterminate or fails": {
+        "verdict": "did not hold",
+        "bands": {
+          "asm-H1-0002": "pass",
+          "asm-H2-0002": "pass"
+        }
+      },
+      "authorship-probe": {
+        "verdict": "did not hold",
+        "failing_or_flagged": [
+          "asm-H1-0001",
+          "asm-S1-0001",
+          "asm-U-0001",
+          "asm-H2-0002",
+          "asm-H2-0003",
+          "asm-H1-0006",
+          "asm-H2-0004"
+        ]
+      }
+    }
+  },
+  "rc3_clause": {
+    "verdict": "did not hold",
+    "closer_to": {
+      "H1": "rc2",
+      "H2": "rc2"
+    },
+    "shares": {
+      "H1": {
+        "rc1": 0.4666666666666667,
+        "rc2": 1.0,
+        "rc3": 1.0
+      },
+      "H2": {
+        "rc1": 0.4,
+        "rc2": 1.0,
+        "rc3": 1.0
+      }
+    },
+    "rule": {
+      "variable": "share of the 15 confusion-profile cells per course (H1, H2) whose first explanation or parallel example (the profile stop check's first yes) arrives at assistant turn 1",
+      "holds": "on both courses rc3's share is strictly closer to rc1's share than to rc2's share",
+      "did_not_hold": "on both courses rc3's share is strictly closer to rc2's share than to rc1's share",
+      "otherwise": "indeterminate",
+      "also_reported": "D2P bands of rc1, rc2 and rc3 per course; \"not separated by D2P\" where rc1 and rc2 share a band"
+    },
+    "D2P_bands": {
+      "H1": {
+        "rc1": "pass",
+        "rc2": "pass",
+        "rc3": "pass"
+      },
+      "H2": {
+        "rc1": "pass",
+        "rc2": "pass",
+        "rc3": "pass"
+      }
+    },
+    "separated_by_D2P": {
+      "H1": false,
+      "H2": false
+    }
+  },
+  "flags": {
+    "per_dimension": {
+      "D2": 29,
+      "D3": 17,
+      "D4": 11,
+      "D6": 2,
+      "D2P": 31,
+      "H-C": 41
+    },
+    "per_assembly": {
+      "asm-H1-0001": 16,
+      "asm-H1-0002": 21,
+      "asm-H1-0005": 9,
+      "asm-H1-0006": 15,
+      "asm-H2-0001": 13,
+      "asm-H2-0002": 7,
+      "asm-H2-0003": 13,
+      "asm-H2-0004": 12,
+      "asm-S1-0001": 13,
+      "asm-U-0001": 12
+    },
+    "per_set_and_dimension": {
+      "authorship-probe/D2": 29,
+      "authorship-probe/D2P": 29,
+      "authorship-probe/D3": 13,
+      "authorship-probe/D4": 9,
+      "authorship-probe/D6": 2,
+      "target-family/D2P": 2,
+      "target-family/D3": 4,
+      "target-family/D4": 2,
+      "target-family/H-C": 41
+    },
+    "deciding_a_clause": 14,
+    "total": 131,
+    "dimension_entries": 2700
+  },
+  "invalid_judgments": {
+    "dimension_entries": 0,
+    "cells_with_any_invalid": 0
+  },
+  "d2p_check_agreement": {
+    "per_profile": {
+      "SP-example-seeker": {
+        "pairs": 76,
+        "percent_agreement": 0.7631578947368421,
+        "kappa": 0.3690036900369004,
+        "note": null
+      },
+      "SP-explanation-seeker": {
+        "pairs": 67,
+        "percent_agreement": 0.9104477611940298,
+        "kappa": 0.7323568575233022,
+        "note": null
+      },
+      "SP-persist-confused": {
+        "pairs": 68,
+        "percent_agreement": 0.8823529411764706,
+        "kappa": 0.6866359447004609,
+        "note": null
+      }
+    },
+    "d2p_checks_total": 411,
+    "d2p_check_errors": 0
+  },
+  "calibration": {
+    "raters": "two non-faculty raters, dry run",
+    "planned_reviewers": [
+      "Dr. Okafor (HIST 210)",
+      "Dr. Lindqvist (HIST 335)"
+    ],
+    "cells_sampled": 20,
+    "sheet_rows": 60,
+    "sheet_dimensions": [
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "sheet": "out/evaluation/CP-0001-run2/calibration/calibration_sheet.csv",
+    "percent_agreement": "pending — sheet not yet returned",
+    "cohens_kappa": "pending — sheet not yet returned",
+    "note": "Arithmetic demonstrated on toy labels only (toy kappa = 0.5604); not a measurement.",
+    "stop_check": {
+      "sheet": "out/evaluation/CP-0001-run2/calibration/stop_checks_sheet.csv",
+      "rows": 30,
+      "decisions": 211,
+      "gray_zone_ends_with_question": 31,
+      "label": "yes/no against the row's stop condition",
+      "percent_agreement": "pending — sheet not yet returned",
+      "cohens_kappa": "pending — sheet not yet returned"
+    }
+  },
+  "release_thresholds": {
+    "target_family_pass_rate_min": 0.8,
+    "preservation_regression_max": 0.1,
+    "authorship_probe_pass_rate_min": 1.0,
+    "judge_faculty_kappa_min": 0.6,
+    "status": "design assumption"
+  },
+  "recommendation": "PENDING — the judge is not yet calibrated against human labels; see RESULTS.md for the verdicts by the pre-registered rules",
+  "provenance": "out/run/CP-0001-run2/provenance.json",
+  "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns.",
+  "generated_at": "2026-11-01T19:19:47+00:00",
+  "generated_by": "harness/evaluate.py"
+}

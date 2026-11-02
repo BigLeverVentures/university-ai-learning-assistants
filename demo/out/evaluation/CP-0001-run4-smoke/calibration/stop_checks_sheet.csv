@@ -1,0 +1,52 @@
+row_id,stop_condition,task,turn_text,human_label
+S01,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing a trick. A list can't tell a story on its own, but it can show what a workplace chose to enforce. Reader unit 5 says a ledger wasn't written to tell a story, and that's what makes it useful: it records what a clerk was required to write down.
+
+Here's the idea on a parallel example, a school detention book (not your source):
+
+- **Down the page:** the same three names keep appearing, mostly for ""late"" and ""chewing gum."" That shows which rules the school enforced, who got caught, and how often.
+- **What it can't show:** who chewed gum without being noticed, which offences a teacher let slide, or what the students thought of the rules.
+- **Across time:** the entries stop for a week in February. That doesn't mean everyone behaved. The school may have been closed for snow. Unit 5 says to treat a silence as a fact to be explained, not as the absence of a fact.
+
+So the method is to ask what a record shows, what it was for, and what it's silent about, and to keep those three apart.
+
+Now look at excerpt E again, starting with the heading and the notes at the bottom. Whose perspective is missing from this page?",
+S02,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay. My first questions were too big, so let's make this smaller.
+
+Here's a parallel example from outside your assignment. Imagine a school detention book with lines like ""Tuesday, Sam, talking in class, 1 detention."" From that list alone, you could say:
+- Talking in class was against the rules.
+- Sam got caught.
+- Someone cared enough to write it down.
+
+You couldn't say how many other students talked and weren't caught, or whether Sam thought the rule was fair. The list shows what was enforced and who was caught. It says nothing about everything else.
+
+Now try one small step on the ledger itself. Pick one name, such as Reese T., Kell M., or Dunmore A. Go down the page and find every line with that name.
+
+- How many times does it appear?
+- What is the offence each time?
+
+Just tell me what you see. Don't worry yet about what it means. Once you've done that, we can talk about what the page shows and what it doesn't.",
+S03,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing anything obvious. The Reader's point is that a list becomes evidence once you ask the right questions of it. Unit 5 gives you two directions to read in, plus a way of keeping your claims separate.
+
+**The method**
+- **Down the page:** who appears, how often, and for what? Patterns across entries are where ""discipline"" shows up.
+- **Across time:** where do entries thin out or stop, and what else might have been happening then? The Reader says to treat a silence as a fact to be explained, not an absence of facts.
+- **Keep three things apart:** what the record was *for*, what it *shows* about discipline, and what it is *silent* about.
+
+**A worked example on parallel material (not your ledger)**
+
+Imagine an invented log from a bakery, March 1920, with entries like ""Mar 3, Pell, oven crew, late, 10c"" and ""Mar 4, Pell, oven crew, late, 10c,"" and no entries at all for Mar 15-17.
+
+- *Purpose:* the owner wanted a record of charges and amounts, probably for deducting from wages.
+- *Shows:* lateness was a fineable offence with a fixed price. One worker appears repeatedly, so enforcement may have been uneven or focused on particular people. The fines are small, which tells you something about how the bakery handled lateness.
+- *Silent:* it can't tell you who was late and never caught, whether the foreman forgave some people, or what Pell thought of the fines. The blank days could mean nobody was fined, but also that nobody was working. You'd need other evidence to decide.
+
+Notice that I never said the log was ""interesting."" Every claim points to something visible in the record, or names what the record can't tell us.
+
+**Back to you:** try the same three steps on the July 1877 page. Start with the ""down the page"" direction. Who shows up more than once, and for what kinds of offences? Jot down two or three observations, and then we can work on turning them into your 150 words.",
+S04,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing a trick. The page doesn't announce anything about discipline, so you have to ask it questions. Let's start with the basics.
+
+**Who made this page, and for whom?** Look at the heading and the clerk's name. What do you think W. Ashby was required to write down, and why would the shops want it kept? What could he see from his position, and what might he never see?
+
+Then look at the **offence** column on its own, ignoring names and amounts for a moment. Reading down it, what kinds of behavior were worth a fine at Carrow Junction? What does that suggest about the rules the shops enforced?
+
+Reader unit 5 suggests reading a ledger in two directions: down the page (who appears, how often, for what) and across time (where entries thin out or stop). Try the first direction and tell me what you notice. Once you've said what you see, we can sort out which parts are things the page directly shows and which are your inferences.",

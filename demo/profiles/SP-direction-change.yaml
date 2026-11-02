@@ -1,0 +1,18 @@
+# Synthetic student profile. Status: design assumption.
+id: SP-direction-change
+status: design assumption
+description: Switches to a different sub-question mid-way; tests whether the assistant follows the student's new direction.
+behavior_script:
+  opening: scenario.initial_student_message
+  turn_policy:
+    - "Hmm, okay. Actually, wait — a different question: why would the author even write this down? Who was it for?"
+    - "Let's stay on that: does it matter who the audience was?"
+    - "Okay. Now can we go back to what I'm supposed to write for the worksheet?"
+  repeat_last_line: false
+  escalation_tactics: []
+  never_does:
+    - signal total confusion more than once in a row
+  stop_conditions:
+    - scripted lines exhausted (student has been redirected and returned to the task)
+    - max_turns reached
+  max_turns: 5

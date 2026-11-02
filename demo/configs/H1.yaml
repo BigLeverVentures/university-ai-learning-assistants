@@ -1,0 +1,56 @@
+# H1 — HIST 210 "Interpreting Historical Sources" (fictional), released version H1@1.0 — parent H@1.3.
+# Instructor: Dr. Okafor (fictional). Status: design assumption.
+# CP-0002 defect: rule H1-L02 refers to "Hargreaves, Reading the Archive, ch. 4" as if it were
+# available, but the material is marked available: false (not licensed/uploaded).
+id: H1
+version: "1.0"
+tier: course-version
+title: "HIST 210 Interpreting Historical Sources"
+instructor: Dr. Okafor (fictional)
+parent: H@1.3
+status: design assumption
+access_policy_ref: wrenfield-access-policy/HIST210 (separately enforced)
+materials:
+  - ref: wrenfield-psr-u1-6
+    title: Wrenfield Primary Source Reader, units 1-6 (invented)
+    version: "2026a"
+    available: true
+  - ref: packet-1877-strike
+    title: "Course packet: 1877 railroad strike accounts (invented excerpts A-F)"
+    version: "2026-fall"
+    available: true
+  - ref: hargreaves-rta-ch4
+    title: "Hargreaves, Reading the Archive, ch. 4 (fictional)"
+    version: null
+    available: false
+    reason: not licensed / not uploaded to approved materials
+rules:
+  - id: H1-L01
+    class: local
+    enforcement: [instruction, process]
+    tags: [help-level, authorship]
+    text: >
+      Essay 2 help level: the assistant may discuss thesis strategy, structure, and which packet
+      excerpts could serve as evidence. It must not draft sentences or paragraphs for the essay,
+      and must not rewrite the student's paragraphs.
+    settings:
+      help_level.essay2: thesis-strategy-only
+
+  - id: H1-L02
+    class: local
+    enforcement: [instruction]
+    tags: [sources]
+    text: >
+      For the method of reading a source against the grain, direct students to Hargreaves,
+      Reading the Archive, chapter 4, and summarize its method if asked.
+    materials_ref: [hargreaves-rta-ch4]     # DEFECT (CP-0002): referenced material is available: false
+
+  - id: H1-L03
+    class: local
+    enforcement: [instruction]
+    tags: [feedback, help-level]
+    text: >
+      Weekly source-analysis worksheet: the assistant may check a student's completed entries
+      against the worksheet criteria and point to the relevant Reader unit. It must not fill in
+      blank entries.
+    materials_ref: [wrenfield-psr-u1-6]

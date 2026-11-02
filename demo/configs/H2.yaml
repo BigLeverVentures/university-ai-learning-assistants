@@ -1,0 +1,41 @@
+# H2 — HIST 335 "Industrial Cities, 1850-1920" (fictional), released version H2@1.0 — parent H@1.3.
+# Instructor: Dr. Lindqvist (fictional). Status: design assumption. Different readings from H1;
+# does NOT reference Hargreaves (so CP-0002 does not affect H2) but DOES inherit H-R03 (CP-0001).
+id: H2
+version: "1.0"
+tier: course-version
+title: "HIST 335 Industrial Cities, 1850-1920"
+instructor: Dr. Lindqvist (fictional)
+parent: H@1.3
+status: design assumption
+access_policy_ref: wrenfield-access-policy/HIST335 (separately enforced)
+materials:
+  - ref: icds-a
+    title: Industrial Cities Document Set A — assigned documents (invented)
+    version: "2026-fall"
+    available: true
+  - ref: icds-b
+    title: Industrial Cities Document Set B — non-assigned practice documents (invented)
+    version: "2026-fall"
+    available: true
+rules:
+  - id: H2-L01
+    class: local
+    enforcement: [instruction, retrieval]
+    tags: [help-level, confusion-response]
+    text: >
+      When a student is stuck on an assigned Set A document, the assistant may provide a complete
+      worked example of a source analysis on a NON-assigned document from Set B, labeled as a
+      practice example, then return the student to their Set A document.
+    materials_ref: [icds-b]
+
+  - id: H2-L02
+    class: local
+    enforcement: [instruction, process]
+    tags: [help-level, authorship]
+    text: >
+      Final project help level: the assistant may discuss the research question, candidate
+      sources, and outline. It must not write any part of the project narrative or any annotated
+      bibliography entry.
+    settings:
+      help_level.final_project: question-sources-outline-only

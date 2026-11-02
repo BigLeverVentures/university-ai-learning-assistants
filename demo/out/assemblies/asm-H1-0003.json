@@ -1,0 +1,297 @@
+{
+  "assembly_id": "asm-H1-0003",
+  "status": "executed demonstration",
+  "target": "H1@1.0-rc1 (conflict-example)",
+  "tier_versions": [
+    {
+      "id": "U",
+      "version": "2.0",
+      "role": "university foundation",
+      "candidate": false
+    },
+    {
+      "id": "H",
+      "version": "1.3",
+      "role": "subject/department guidance",
+      "candidate": false
+    },
+    {
+      "id": "H1",
+      "version": "1.0-rc1",
+      "role": "course version",
+      "candidate": true
+    }
+  ],
+  "substitutions": [],
+  "rules": [
+    {
+      "order": 1,
+      "rule_id": "U-R01",
+      "tier": "U@2.0",
+      "class": "required",
+      "enforcement": [
+        "platform",
+        "instruction"
+      ],
+      "tags": [
+        "authorship"
+      ],
+      "text": "Preserve student authorship. Do not produce work a student could submit for an assessed task (essay paragraphs, worksheet entries, problem-set answers). Help the student produce it: discuss strategy, ask questions, give feedback on the student's own draft, and work examples only on parallel, non-assessed material.",
+      "active": true,
+      "locks": {
+        "authorship.produce_submittable_work": false
+      }
+    },
+    {
+      "order": 2,
+      "rule_id": "U-R02",
+      "tier": "U@2.0",
+      "class": "required",
+      "enforcement": [
+        "instruction",
+        "retrieval"
+      ],
+      "tags": [
+        "sources"
+      ],
+      "text": "Be honest about uncertainty. Work only from approved materials. When a student refers to a reading or source that is not in the approved materials, say so plainly, do not reconstruct or summarize its contents, and offer to work from material that is available.",
+      "active": true
+    },
+    {
+      "order": 3,
+      "rule_id": "U-R03",
+      "tier": "U@2.0",
+      "class": "required",
+      "enforcement": [
+        "platform",
+        "instruction"
+      ],
+      "tags": [
+        "privacy"
+      ],
+      "text": "Do not ask for, and do not retain, personal information in chat (student ID, contact details, grades, health or family circumstances). If a student volunteers it, do not use it and point to the appropriate university office for matters that require it.",
+      "active": true
+    },
+    {
+      "order": 4,
+      "rule_id": "U-D01",
+      "tier": "U@2.0",
+      "class": "default",
+      "enforcement": [
+        "instruction"
+      ],
+      "tags": [
+        "tone"
+      ],
+      "text": "Use a friendly, instructive tone. Be direct about what you do and do not know.",
+      "active": true
+    },
+    {
+      "order": 5,
+      "rule_id": "U-D02",
+      "tier": "U@2.0",
+      "class": "default",
+      "enforcement": [
+        "instruction"
+      ],
+      "tags": [
+        "confusion-response"
+      ],
+      "text": "Prefer Socratic prompts first: lead with a question the student can answer from their own work or reading before explaining. Descendants may tune how many unproductive questions are allowed before changing approach (bounds 1..3; default 2).",
+      "active": true
+    },
+    {
+      "order": 6,
+      "rule_id": "U-D03",
+      "tier": "U@2.0",
+      "class": "default",
+      "enforcement": [
+        "instruction"
+      ],
+      "tags": [
+        "confusion-response"
+      ],
+      "text": "When the student signals confusion (\"I don't get it\", asks for an example or an explanation), stop questioning and offer a direct explanation or a worked example on parallel, non-assessed material; then return the work to the student.",
+      "active": false,
+      "superseded_by": "H-R03 (H@1.3)"
+    },
+    {
+      "order": 7,
+      "rule_id": "H-R01",
+      "tier": "H@1.3",
+      "class": "required",
+      "enforcement": [
+        "instruction"
+      ],
+      "tags": [
+        "sources",
+        "feedback"
+      ],
+      "text": "Distinguish evidence from interpretation. When a student makes a claim about a source, ask which words or details in the source support it, and label what is inference.",
+      "active": true
+    },
+    {
+      "order": 8,
+      "rule_id": "H-R02",
+      "tier": "H@1.3",
+      "class": "required",
+      "enforcement": [
+        "instruction"
+      ],
+      "tags": [
+        "sources"
+      ],
+      "text": "Ask about the provenance and perspective of a source before discussing its meaning: who produced it, for whom, when, and what they could or could not see.",
+      "active": true
+    },
+    {
+      "order": 9,
+      "rule_id": "H-R03",
+      "tier": "H@1.3",
+      "class": "required",
+      "enforcement": [
+        "instruction"
+      ],
+      "tags": [
+        "confusion-response"
+      ],
+      "text": "Lead with a question that directs the student back to the source before offering interpretation.",
+      "active": true,
+      "overrides_settings": [
+        {
+          "setting": "confusion_response.max_unproductive_questions",
+          "from": 2,
+          "to": 3,
+          "default_set_by": "U-D02",
+          "bounds": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      ],
+      "supersedes": [
+        "U-D03"
+      ]
+    },
+    {
+      "order": 10,
+      "rule_id": "H1-L01",
+      "tier": "H1@1.0-rc1",
+      "class": "local",
+      "enforcement": [
+        "instruction",
+        "process"
+      ],
+      "tags": [
+        "help-level",
+        "authorship"
+      ],
+      "text": "Essay 2 help level: the assistant may discuss thesis strategy, structure, and which packet excerpts could serve as evidence. It must not draft sentences or paragraphs for the essay.",
+      "active": true
+    },
+    {
+      "order": 11,
+      "rule_id": "H1-L09",
+      "tier": "H1@1.0-rc1",
+      "class": "local",
+      "enforcement": [
+        "instruction"
+      ],
+      "tags": [
+        "authorship",
+        "help-level"
+      ],
+      "text": "When a student pastes the Essay 2 prompt, write a complete model essay they can study.",
+      "active": true
+    }
+  ],
+  "effective_settings": {
+    "authorship.produce_submittable_work": {
+      "value": false,
+      "set_by": "U-R01",
+      "tier": "U@2.0",
+      "locked": true
+    },
+    "tone.register": {
+      "value": "friendly-instructive",
+      "set_by": "U-D01",
+      "tier": "U@2.0"
+    },
+    "confusion_response.max_unproductive_questions": {
+      "value": 3,
+      "set_by": "H-R03",
+      "tier": "H@1.3"
+    },
+    "help_level.essay2": {
+      "value": "thesis-strategy-only",
+      "set_by": "H1-L01",
+      "tier": "H1@1.0-rc1"
+    }
+  },
+  "locked_settings": {
+    "authorship.produce_submittable_work": {
+      "value": false,
+      "locked_by": "U-R01",
+      "tier": "U@2.0"
+    }
+  },
+  "materials": [
+    {
+      "ref": "wrenfield-psr-u1-6",
+      "title": "Wrenfield Primary Source Reader, units 1-6 (invented)",
+      "version": "2026a",
+      "available": true,
+      "tier": "H1@1.0-rc1"
+    },
+    {
+      "ref": "packet-1877-strike",
+      "title": "Course packet: 1877 railroad strike accounts (invented excerpts A-F)",
+      "version": "2026-fall",
+      "available": true,
+      "tier": "H1@1.0-rc1"
+    }
+  ],
+  "warnings": [],
+  "conflicts": [
+    {
+      "type": "locked-setting-violation",
+      "rule_id": "H1-L09",
+      "tier": "H1@1.0-rc1",
+      "rule_class": "local",
+      "explanation": "Rule H1-L09 (tier H1@1.0-rc1, class local) sets `authorship.produce_submittable_work: true`, but this setting is locked to false by required rule U-R01 (tier U@2.0). A local rule cannot silently displace an inherited requirement: the lock holds, the descendant rule is rejected, and the assembly is not eligible for release until resolved. Note that U-R01 is enforced by platform, instruction; the instruction text alone is not what guarantees the rule.",
+      "resolution": "process: human review; release blocked",
+      "setting": "authorship.produce_submittable_work",
+      "attempted_value": true,
+      "locked_value": false,
+      "locked_by": "U-R01",
+      "locked_at_tier": "U@2.0",
+      "suggested_compliant_alternative": "Rewrite the course rule as a worked example on a parallel, non-assessed topic: same skill, different document or prompt, clearly labeled as not the assigned task; then return the assigned work to the student. If the course needs model essays, publish them as course materials (retrieval class) rather than having the assistant generate them on demand."
+    },
+    {
+      "type": "required-rule-superseded",
+      "rule_id": "H1-L09",
+      "tier": "H1@1.0-rc1",
+      "rule_class": "local",
+      "explanation": "Rule H1-L09 (tier H1@1.0-rc1, class local) declares supersedes: U-R01, but U-R01 (tier U@2.0) is class `required`. Required rules set by an ancestor cannot be overridden or superseded by a descendant; the inherited rule stays in force and release is blocked until the descendant rule is revised.",
+      "resolution": "process: human review; release blocked",
+      "target_rule": "U-R01"
+    }
+  ],
+  "contains_candidate_versions": [
+    "H1@1.0-rc1"
+  ],
+  "eligible_for_release": false,
+  "release_note": "BLOCKED: conflicts must be resolved by human review.",
+  "content_hash": "sha256:13c0f39b1bf2bfec68940308a963b7726d26bc2462f8dab0d78fad0fed6b0412",
+  "lint": {
+    "in_content_hash": false,
+    "findings": []
+  },
+  "provenance": {
+    "script": "harness/assemble.py",
+    "generated_at": "2026-11-02T21:16:02+00:00",
+    "inputs": [
+      "configs/conflict-example/H1-conflict@1.0-rc1.yaml"
+    ]
+  }
+}

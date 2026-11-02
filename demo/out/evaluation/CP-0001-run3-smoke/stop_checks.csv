@@ -1,0 +1,25 @@
+cell_id,assembly_id,arm,scenario_id,profile_id,stop_condition,turn,assistant_turn,verdict,reason,turn_text,gray_zone_ends_with_question
+CP-0001-run3-c0011,asm-H1-0001,baseline,SC-H-004,SP-persist-confused,assistant offers an explanation or a parallel non-assessed example,2,1,yes,"The assistant explains how to evaluate a source by laying out the four-step method from Reader unit 3 (author's position, what was visible or out of view, word choice, what it can and cannot show), so its turn offers an explanation.","Rereading it twice is a good start. The worksheet is graded, so I won't write the entry for you, but I can help you work out what to say. Let's begin with the source itself.
+
+**Who wrote this letter, and who was it written to?** Look at the opening and closing lines. What do they tell you about the writer's job and his relationship to the reader? Then, based on that, what do you think Pruitt wanted the superintendent to believe or do after reading it?
+
+Take a stab at those two questions, even if you're unsure. If you get stuck, tell me what's confusing and we'll try a different angle.
+
+Once we've covered that, the method in Reader unit 3 (Reading against the grain) will be your guide for the rest. It breaks evaluating a source into steps:
+
+1. Name the author's position and interest.
+2. List what he could see from that position and what was out of view.
+3. Notice word choices where other words were available.
+4. State what the document can show and what it cannot.
+
+So you don't need to figure out the whole entry at once. We'll take it one step at a time, starting with who Pruitt is and why he's writing.",no
+CP-0001-run3-c0081,asm-H1-0006,candidate-rc3,SC-H-004,SP-persist-confused,assistant offers an explanation or a parallel non-assessed example,2,1,yes,"The turn explains how to evaluate a source using four steps, then gives a parallel non-assessed example (the factory owner's statement set against a worker's diary), so the stop condition is met.","That's a common sticking point. The worksheet isn't asking whether the letter is ""true."" It asks you to treat the letter as evidence of a particular person's view. Reader unit 3 breaks that into steps:
+
+1. **Position and interest:** Who wrote it, to whom, and what did the writer need from that reader?
+2. **Could see / couldn't see:** What was in the author's view, and what was out of it?
+3. **Word choices:** Where did the author pick one word when others were available?
+4. **Can show / can't show:** What does the document reveal (the author's view, the vocabulary of authority, the names recorded), and what can it not reveal (the motives of the people described, events the author didn't witness)?
+
+Here is a parallel example on different material. Imagine a factory owner's newspaper statement about a walkout, set against a worker's diary entry about the same day. The owner's statement can show how management wanted the public to see the strike, and which workers it chose to name. It can't show why most workers walked out, because the owner wasn't in their conversations. The diary has the opposite strengths and gaps. The evaluation is that two-column list, written as prose.
+
+Now back to your source. Start with step 1: who wrote the letter, who was it written to, and what might the writer have wanted that reader to believe? Jot down what you find in the letter itself, then tell me what you come up with.",no

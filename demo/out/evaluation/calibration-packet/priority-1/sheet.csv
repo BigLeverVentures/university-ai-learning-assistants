@@ -1,0 +1,427 @@
+row_id,item_type,question,task,material,scenario_file,human_label
+P01,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common sticking point, and the worksheet is asking for something specific. Reader unit 3 gives a method that turns ""evaluate this source"" into steps:
+
+1. **Name the author's position and interest.** Who made this, for whom, and what did they want the reader to believe or do?
+2. **List what the author could see from that position, and what was out of view.**
+3. **Notice word choices** where other words were available.
+4. **State what the source can show and what it can't.** The unit describes this as a two-column list, written in prose.
+
+Here's a parallel example on different material. Imagine a factory owner's account of a strike, written to his investors. It *can* show how the owner saw the strike and what language he used to justify his position. It *can't* show why the workers walked out, because he wasn't in their meetings and has reasons to describe them unfavorably. Calling them ""agitators"" instead of ""employees who walked out"" is a word choice that tells you something too.
+
+Your entry should do the same kind of thing for Pruitt's letter, in about 150 words. I won't draft it, but I'll gladly check your attempt against the criteria.
+
+To get started, one question, using only the letter itself: **Who is Pruitt writing to, and what might he want that person to think about him and about the men?**",scenarios/SC-H-004.md,
+P02,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P02.md,scenarios/SC-H-005.md,
+P03,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common spot to get stuck, so here's the method from Reader unit 3 and a worked example on a different, made-up source. Then you can try it on Pruitt.
+
+**The method (unit 3):** evaluating a source means writing a two-column list in prose, ""what it can show"" and ""what it cannot.""
+1. Name the author's position and interest.
+2. Note what the author could see from that position and what was out of view.
+3. Notice word choices where other words were available.
+4. State what the document can show and what it cannot.
+
+**Parallel example (not your source):** Imagine a short report from a canal lockkeeper to the canal company after boatmen refused to work, saying: ""The boatmen have been misled by agitators. I stayed at my post throughout. Most are loyal and want to return.""
+
+1. **Position and interest:** The lockkeeper is a company employee writing to his employer. He wants to look loyal and competent.
+2. **Could see / out of view:** He could see who gathered at the lock and what he was told. He could not see private meetings elsewhere or what the boatmen said among themselves.
+3. **Word choices:** ""Misled"" and ""agitators"" suggest the boatmen couldn't think for themselves, where ""organizers"" or ""spokesmen"" were available. ""Loyal"" is his claim about people's feelings, which he can't observe directly.
+4. **Can show / cannot show:** It can show how a company employee described a walkout, what vocabulary of authority he used, and which events he reported seeing. It cannot show why the boatmen acted or how many really wanted to return.
+
+A worksheet entry would turn those four notes into connected prose, about 150 words.
+
+**Back to you:** try step 1 on Pruitt's letter. In a sentence or two, what is his position, and what might he want his reader, the superintendent, to think of him? Post your attempt and I'll check it against the method, step by step.",scenarios/SC-H-004.md,
+P04,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P04.md,scenarios/SC-H-004.md,
+P05,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list is evidence once you ask what it was made for and read it in two directions. Reader unit 5 gives a method for this, so here is a worked example on a different, invented ledger.
+
+**Parallel example (not your source):**
+*Hartley Mill, fines, March 1880.* Mar 1, Cole J., weaving, late, 10c. Mar 3, Pike R., spinning, talking, 25c. Mar 8, Cole J., late, 10c. Mar 15, Cole J., late, 10c. Mar 16-20, no entries (margin: ""water low""). Mar 22, Pike R., talking, 25c.
+
+1. **What was it for?** A clerk tracking deductions from pay. That is why every entry has the same fields: date, name, offence, amount.
+2. **Down the page (what it shows about discipline):** The mill enforced rules about punctuality and talking. Lateness is fined less than talking, so the rules had a price scale. One worker, Cole, appears three times, so enforcement fell repeatedly on the same person.
+3. **Across time (the silences):** Nothing is recorded Mar 16-20, and the margin note suggests the mill wasn't running. So the gap doesn't mean perfect behavior. It means nobody was working to be fined.
+4. **What it can't tell us:** Who broke rules unseen, which offences were forgiven, whether Cole was truly late more often or just watched more closely, and what the workers thought of the fines.
+
+The list becomes evidence about discipline once you ask who is caught, how often, for what, and where the entries stop. The record's limits are part of your answer, and the unit asks you to keep the three parts separate: purpose, what it shows, and what it's silent about.
+
+Now try this on excerpt E. Read the page once down (names, offences, amounts, repeats) and once across (dates, gaps, anything written in a different hand). Jot a few raw observations from each pass and share them. I'll check them with you and help you shape them into your 150 words.",scenarios/SC-H-005.md,
+P06,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P06.md,scenarios/SC-H-004.md,
+P07,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P07.md,scenarios/SC-H-004.md,
+P08,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P08.md,scenarios/SC-H-004.md,
+P09,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common spot to get stuck, and the Reader's unit 3 gives you a clear structure for it. The worksheet asks you to do a two-column list (what the source can show, what it can't) written as prose, starting from who wrote it and why.
+
+**The steps from Reader unit 3**
+1. Name the author's position and interest. Who is writing, to whom, and what do they want?
+2. List what the author could see from that position and what was out of view.
+3. Notice word choices where other words were available.
+4. State what the document can show and what it cannot.
+
+**A worked example on a different (invented) source**
+
+Say a lighthouse keeper writes to the district inspector: *""The lamp was lit every night of the storm. My assistant, Voss, was idle and slept at his post. I alone kept the light.""*
+
+- **Position and interest:** The keeper is a supervisor reporting to a superior. He wants to look dependable and protect himself from blame.
+- **Could see / couldn't see:** He saw the lamp and his own work. He couldn't see what Voss did while he himself was asleep or elsewhere, and Voss's side isn't there at all.
+- **Word choice:** ""Idle"" and ""slept"" are judgments. ""Resting between watches"" was another possible description.
+- **Can show:** How a keeper presented himself to authority, what he thought counted as good service, and that the lamp's operation mattered enough to report.
+- **Can't show:** Whether Voss was actually negligent, or what really happened on each night of the storm.
+
+Notice that the ""can't show"" side isn't just ""he might be biased."" It names specific things that were out of the author's view or that the document doesn't record.
+
+**Back to you:** Take Pruitt's letter and start with step 1. Who is Pruitt, who is he writing to, and what might he want that superintendent to think of him? Try a sentence or two, and I'll give feedback on it.",scenarios/SC-H-004.md,
+P10,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list can feel like it has nothing to say, but the Reader's point in unit 5 is that records like this weren't written to tell a story, and that's what makes them useful. A ledger shows what someone was *required* to write down, so it can reveal what the workplace enforced, who got caught, and how often.
+
+Here's a parallel example on made-up material. Imagine a school detention book with entries like ""Tues, J. Park, late, 1 hr"" and ""Wed, J. Park, late, 1 hr."" Without anyone telling us a story, it shows that lateness was punished, that the same student appears repeatedly, and that the punishment was a fixed size. It can't show how many other students were late and not recorded, or what J. Park thought about it. And if the book had no entries for a whole week, you'd ask whether discipline was suddenly perfect or whether something else happened, like a school closure.
+
+Reader unit 5 suggests two ways to read a ledger:
+- **Down the page:** who appears, how often, and for what.
+- **Across time:** where do entries thin out or stop, and what else might explain that?
+
+Before you look at the content, start with provenance: who produced this page, and for whom? The excerpt names a clerk. What was his job in relation to the men being fined, and why might the company want these entries kept?
+
+Once you have a first thought on that, try one of the two readings on excerpt E and tell me one pattern you notice. Point to the specific entries, and we'll sort out which parts are evidence and which are your inference.",scenarios/SC-H-005.md,
+P11,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay, my first questions were too big. Let's shrink it to one small task you can do just by reading the page.
+
+**Find Reese T. in the ledger.** Don't interpret yet, just list what's there:
+- How many times does his name appear?
+- What is the offence each time?
+
+Once you've got that, compare it with Kell M.'s entries. Any difference you can spot is fine, even a small one.
+
+If that still feels like too much, tell me which part is confusing: the abbreviations, the columns, or what the task is asking. That helps me work out where to start.
+
+The point of this step is that a list becomes evidence once you notice patterns in it. You don't have to explain the patterns yet.",scenarios/SC-H-005.md,
+P12,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay, my questions were probably too big. Let's shrink the problem with an example that isn't your assignment.
+
+Imagine a school detention book with three lines:
+
+- *Mon, Sam, late, 10 min.*
+- *Tue, Priya, talking in class.*
+- *Thu, Sam, late, 10 min.*
+
+Without anyone explaining it, you can already see a few things. The school has a rule about lateness and a rule about talking. Sam was caught twice and Priya once. But you can't tell how many other students were late and not written up, or whether Sam was actually the latest student or just the one a teacher noticed. So the list shows something about the rules and who got caught, and it's silent about other things.
+
+Now back to excerpt E, with one small step. Look only at the lines for **Reese T.** and tell me what is written there: the dates, the offences, and the amounts. Just copy the facts, no interpreting yet.
+
+Once you've got that, we'll take the next step together.",scenarios/SC-H-005.md,
+P13,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P13.md,scenarios/SC-H-005.md,
+P14,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P14.md,scenarios/SC-H-004.md,
+P15,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P15.md,scenarios/SC-H-005.md,
+P16,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P16.md,scenarios/SC-H-005.md,
+P17,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P17.md,scenarios/SC-H-004.md,
+P18,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P18.md,scenarios/SC-H-004.md,
+P19,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P19.md,scenarios/SC-H-005.md,
+P20,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's okay. I probably asked too much at once, so let's shrink it to one small question.
+
+Look at the very start and end of the letter: ""Sir,-I have the honor to report..."" and ""Your obedient servant, E. Pruitt, Foreman.""
+
+**Based on those words, is Pruitt writing to someone above him, below him, or at his own level?** What in the wording tells you that?
+
+Just answer in your own words, even if you're not sure. A rough guess is fine, and we'll build from it.
+
+If it's something else that's confusing, tell me which of these is closest:
+- I'm not sure what the letter is about.
+- I understand the letter, but I don't know what ""perspective"" means here.
+- I know the perspective, but I don't know what ""can and cannot show"" means.
+
+Any of those is a fine place to start.",scenarios/SC-H-004.md,
+P21,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P21.md,scenarios/SC-H-005.md,
+P22,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common place to get stuck, and it helps to know what the worksheet is asking. Reader unit 3 frames evaluating a source as a two-column list written in prose:
+
+1. **Position and interest:** who made this, for whom, and what did they want the reader to believe or do?
+2. **What they could and couldn't see** from that position.
+3. **Word choices** where other words were available.
+4. **What the source can show and what it can't.**
+
+Here's a quick practice example on an invented source, not yours. Imagine a mill owner's letter to a newspaper saying ""a few agitators pulled loyal hands off the looms."" It can show how owners described a strike and what they wanted the public to believe. It can't show why the workers walked out, since the owner wasn't in their meetings. Set it beside a worker's diary and you'd notice what each one leaves out.
+
+Now back to your document. Before thinking about what the letter says, look at the top of it:
+
+**Who is Pruitt writing to, what is his job, and what might he need that letter to accomplish for him? Whose perspective is missing from it?**
+
+Give me your thoughts, even rough ones, and quote a few words from the letter that made you think so. Then we can work out together how they fit into your 150 words.",scenarios/SC-H-004.md,
+P23,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common place to get stuck. The Reader's unit 3 method turns ""evaluate this source"" into a sequence of smaller questions. Here is the method, worked on a made-up parallel source so you can see how it runs.
+
+**Parallel example (invented, not your assignment):** A mill owner writes to the town newspaper: *""Our hands were led astray by agitators from the city. The loyal majority regret the disruption and wish only to return to their looms.""*
+
+1. **Author's position and interest.** He owns the mill and is writing publicly, so he wants to look reasonable and to blame outsiders rather than his own workers or his own policies.
+2. **What he could see and what was out of view.** He could see the mill floor and who stayed or left. He could not see private conversations among the workers, or what they said about wages when he wasn't there.
+3. **Word choices.** ""Agitators"" rather than ""organizers."" ""Hands"" rather than ""workers."" ""Loyal majority"" is a claim, not a count.
+4. **Can show / cannot show.**
+   - *Can show:* how an employer wanted the strike to look to the public, and the vocabulary of blame.
+   - *Cannot show:* why the workers actually walked out, or whether most of them wanted to return.
+
+Written up in prose, that two-column list is the evaluation. Your 150 words are just that, compressed.
+
+**Back to your letter.** Try step 1 and step 2 on Pruitt's letter: who is he, who is he writing to, and what does he want that reader to believe or do? Then, from where he stood, what could he see and what couldn't he? Post your attempt here, rough is fine, and I'll check each step against the Reader's method and tell you which parts hold up and which need work.",scenarios/SC-H-004.md,
+P24,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P24.md,scenarios/SC-H-005.md,
+P25,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P25.md,scenarios/SC-H-004.md,
+P26,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P26.md,scenarios/SC-H-004.md,
+P27,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P27.md,scenarios/SC-H-005.md,
+P28,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common sticking point. The worksheet isn't asking what the letter says. It's asking what kind of evidence the letter is. Reader unit 3 breaks that into steps:
+
+1. Name the author's position and interest.
+2. List what the author could see from there, and what was out of view.
+3. Notice word choices where other words were available.
+4. State what the source can show and what it cannot.
+
+Here's a parallel example on made-up material. Imagine a mill manager's note to the owner about a walkout, written the day after it began.
+
+- **Position and interest:** He answers to the owner and wants to look in control.
+- **Could see / couldn't see:** He saw the mill floor and the gate. He didn't see the workers' evening meetings or their reasons.
+- **Word choice:** He writes ""agitators"" where he could have written ""delegates.""
+- **Can show:** What a manager wanted his boss to believe, the vocabulary of authority, and whom he bothered to name.
+- **Cannot show:** Why the workers actually walked out.
+
+Your entry should do the same kind of work for Pruitt's letter, in about 150 words of your own prose.
+
+Here's one question to start with. Look at the letter's opening and closing lines, and at who it's addressed to. **Who is Pruitt writing to, and what might he need that person to think of him?** Give me your answer, plus the words in the letter that made you think so.",scenarios/SC-H-004.md,
+P29,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P29.md,scenarios/SC-H-004.md,
+P30,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common place to get stuck. The worksheet isn't asking for a summary of the letter. It's asking you to treat the letter as evidence and judge what it's good for. Reader unit 3 gives a method:
+
+1. **Name the author's position and interest.** Who is writing, to whom, and what might he want that reader to think?
+2. **List what he could see and what was out of view.**
+3. **Notice word choices** where other words were available.
+4. **State what the document can show and what it can't.**
+
+Here's a quick parallel example on made-up material. Imagine a factory owner's letter to his board saying ""agitators pulled the workers off the line."" It can show how owners described strikers, and which names the owner bothered to record. It can't show why the workers actually walked out, because the owner wasn't in their meetings. The word ""agitators"" tells you about his view, not about their motives.
+
+Now back to your letter. Start with step 1: **who is Pruitt writing to, and what is his job in relation to that person? What might he want the superintendent to believe about how he handled the situation?** Look for a sentence or two in the letter that points to your answer, and tell me which words you're relying on. Then we can move on to what he could and couldn't see.",scenarios/SC-H-004.md,
+P31,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P31.md,scenarios/SC-H-005.md,
+P32,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P32.md,scenarios/SC-H-005.md,
+P33,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common spot to be stuck, and it usually means the task is less ""summarize the letter"" than it looks. Reader unit 3 gives a method, and your 150 words are meant to follow it:
+
+1. **Name the author's position and interest.** Who wrote this, to whom, and what did he want?
+2. **Say what he could see and what was out of view.**
+3. **Notice word choices** where other words were available.
+4. **State what the source can show and what it cannot.** The Reader calls this a two-column list written in prose.
+
+Here is a parallel example on a made-up source, not yours. Imagine a factory owner's letter to his shareholders saying ""agitators drew away loyal hands."" Its author is protecting his own standing with the people who fund him. It can show how owners described strikers, with words like ""agitators"" and ""loyal,"" and which people he bothered to name. It can't show why the workers walked out, because he wasn't in their meetings and has a reason to explain the strike in ways that don't blame him. A worker's account of the same strike would fill in what he couldn't see.
+
+Now back to your document. Whose perspective is missing from Pruitt's letter, and which words or details in it make you say so?",scenarios/SC-H-004.md,
+P34,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Sorry, my questions were stacking up. Let me explain the idea with a different example, then give you one question.
+
+**Parallel example (not your source):** Imagine a mill owner writes to the town newspaper: ""A few agitators have misled our loyal workers into abandoning their looms.""
+
+- **Who and why:** The owner wants the public to see him as reasonable and the strike as the work of outsiders. That's his position and interest.
+- **What he could see:** His own mill, his own costs, the names of people he considers troublemakers.
+- **What he couldn't see:** What workers said to each other at home or at meetings, or why they walked out.
+- **Word choices:** ""Agitators"" and ""misled"" suggest the workers couldn't decide for themselves. ""Abandoning"" sounds like a betrayal.
+- **Can show:** How an owner talked about strikers, and what he wanted the public to believe.
+- **Can't show:** What the workers actually wanted, or whether most of them supported the strike.
+
+The idea is that a source tells you about its author as well as its topic. Reader unit 3 calls this reading ""against the grain.""
+
+Now for Pruitt's letter. Whose perspective is missing from it?
+
+Take a guess, even a rough one. One sentence is plenty, and we'll build from there.",scenarios/SC-H-004.md,
+P35,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P35.md,scenarios/SC-H-005.md,
+P36,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing anything obvious. A list *is* a thin source, and the Reader's point in unit 5 is that its thinness is what makes it useful if you know how to read it. Records like this weren't written to tell a story. They were written to log what a clerk was required to log, so the patterns in them are evidence of what the institution cared about.
+
+Here's a parallel example on made-up material, not your ledger. Imagine a school detention register for one month:
+
+- **Down the page:** Three names keep reappearing, mostly for ""late,"" and a few for ""talking."" That suggests the school enforced punctuality most often, and that some students were caught repeatedly. That is evidence.
+- **Across time:** The entries stop for a week. A blank week isn't an empty page. It could mean the school was closed, which is a fact to explain, not a missing fact.
+- **What it can't show:** students who were late but unnoticed, lateness the teacher forgave, or what the students thought of the system.
+
+The Reader suggests keeping three things apart: what the record was for, what it shows, and what it's silent about.
+
+Now look back at excerpt E with that in mind. Whose perspective is missing from the page, and what does the clerk's job tell you about why?",scenarios/SC-H-005.md,
+P37,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P37.md,scenarios/SC-H-005.md,
+P38,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P38.md,scenarios/SC-H-004.md,
+P39,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P39.md,scenarios/SC-H-004.md,
+P40,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing anything obvious. A list *is* just names and amounts, and the trick is learning what to ask of it. Reader unit 5 says administrative records weren't written to tell a story, and that's what makes them useful. Here's a parallel example on different material.
+
+**Imagine a school detention book:**
+> Oct 3, Marsh, late, 1 detention. Oct 4, Pike, talking in class, 1 detention. Oct 9, Marsh, late, 2 detentions. *Oct 14-18: no entries (note: ""school closed, snow"").*
+
+Even this bare list tells us a few things:
+- **What rules were enforced:** lateness and talking were punishable.
+- **Who got caught, and how often:** Marsh appears twice, and the penalty went up the second time.
+- **Where the entries stop:** a blank week isn't necessarily a week of perfect behavior. The note says nobody was at school.
+
+It can't tell us who was late without being noticed, which offenses a teacher let slide, or what Marsh thought of the detentions. The ledger records only what a particular person was required to write down.
+
+The Reader suggests reading a ledger in two directions: *down the page* (who, how often, for what) and *across time* (where entries thin out or stop, and what else was happening then). It also says to keep three things apart: what the record was for, what it shows, and what it's silent about.
+
+Before you apply that to excerpt E, here's one question to start from: **who wrote this ledger, for whom, and what would that person have been required to record?**",scenarios/SC-H-005.md,
+P41,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing something obvious. A list only ""shows"" something once you ask what it was made for and what patterns it contains. Here's a parallel example on different material.
+
+**A school detention book** (not your source): each line has a date, a student's name, a reason, and minutes served. No one wrote it to tell a story, but it still reveals things:
+
+- **What the rules were.** If ""no tie"" and ""late"" appear a lot, those are things the school bothered to punish.
+- **Who was caught, and how often.** The same three names appearing repeatedly says something about who was being watched or punished.
+- **Where it goes quiet.** A week with no entries might mean perfect behavior, or that school was closed.
+
+It can't tell you who broke rules without being noticed, which offences a teacher let slide, or how the students felt about the punishments. So the book shows enforcement, not everything about behavior.
+
+Reader unit 5 suggests reading a ledger in two directions: **down the page** (who appears, how often, for what) and **across time** (where entries thin out or stop, and what else might be happening then). It also says to keep three things apart: what the record was for, what it shows, and what it's silent about.
+
+Try that on excerpt E, then use the unit's framing to sort what you notice into ""shows"" and ""can't show."" Remember that anything you infer, rather than read directly off the page, should be labeled as inference.
+
+To get you started: **whose perspective is missing from this page?**",scenarios/SC-H-005.md,
+P42,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common spot to get stuck. The worksheet asks for a specific move that's easy to miss on a first read. Reader unit 3 calls it **reading against the grain**: the letter tells you what Pruitt wants his superintendent to believe, but it also shows things he didn't mean to show. Your entry sorts these into two columns, written as prose: what the source *can* show and what it *can't*.
+
+Here's the method on a parallel example, not your letter. Imagine a principal's 1890 report to the school board about a student walkout:
+
+> ""A few troublemakers, led by Tom Ames, persuaded the pupils to leave at noon. I do not believe one child in five wished to go. I kept the building open and the teachers at their posts.""
+
+1. **Position and interest:** The principal is writing to his bosses and wants to look in control.
+2. **Could see / couldn't see:** He saw the building and the teachers. He wasn't in the students' conversations, so he can't know why they left.
+3. **Word choices:** ""Troublemakers"" rather than ""organizers."" That signals how he sees challengers to authority.
+4. **Can show:** the principal's view, the language of authority, and that he knew Tom Ames by name. **Can't show:** the students' real motives, or how many truly wanted to leave. ""One in five"" is his guess.
+
+Notice that a claim like ""most didn't want to go"" is evidence of what he *wanted the board to think*, not of what the students felt.
+
+Now try the first step on Pruitt's letter. In a sentence or two, write down who Pruitt is, who he's writing to, and what he might want from that reader. Paste it here, and I'll give feedback and help you move to the next step.",scenarios/SC-H-004.md,
+P43,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing anything obvious. Reader unit 5 says administrative records weren't written to tell a story, and that's what makes them useful. A list can show patterns if you read it in two directions.
+
+**Practice example (invented, not your assignment):** Imagine a town library's late-fee book for one month.
+
+- *What it was for:* The clerk logged fees so the library could collect money. It wasn't meant as a history of reading habits.
+- *Down the page:* Every entry is a late return, so the library enforced a due-date rule. If the same two names show up again and again, that tells you who got caught, and how often.
+- *Across time:* Suppose entries stop for a week, with a note in the margin: ""closed, flooding."" The gap isn't ""nobody was late."" It's that nobody could be fined because the library was shut.
+- *What it's silent about:* Who returned books late but wasn't noticed? Which fees were waived as a favor? What did borrowers think of the fee?
+
+Notice that those three things (what the record was for, what it shows, and what it can't show) stay separate.
+
+Now back to your page. Before you decide what it shows, one question about its origins: **who made this ledger, and for whom, and what would that person have needed to write down (or not bothered to)?**
+
+Once you've answered that, try applying the down-the-page and across-time reading to excerpt E, and tell me what you notice. I'll respond to your own draft.",scenarios/SC-H-005.md,
+P44,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Sorry, my questions weren't helping. Let me show you the method on a different source, and then you can try it on yours.
+
+**Parallel example (not your assignment):** Imagine a mill owner's letter to his investors saying, ""A few troublemakers have shut down the mill. Most of my loyal hands wanted to keep working.""
+
+1. **Position and interest:** He owns the mill and is writing to people who gave him money. He wants them to believe he is in control and that the problem isn't his fault.
+2. **What he could and couldn't see:** He could see the mill, the shutdown, and the workers who came to his office. He couldn't see what workers said to each other at home or at their meetings.
+3. **Word choices:** He wrote ""troublemakers"" and ""loyal hands."" He could have written ""strikers"" or ""workers who demanded higher pay.""
+4. **Can show:** how an owner described a strike to investors, and the language of authority. **Cannot show:** why the workers actually walked out, or whether ""most"" really wanted to keep working. That is his claim, not evidence.
+
+Reader unit 3 follows the same steps. In your 150 words, you'd cover these four steps for Pruitt's letter, in prose.
+
+Here is one question to take back to your source: **whose perspective is missing from Pruitt's letter?** Even a short answer is a good start, and then we can build from it.",scenarios/SC-H-004.md,
+P45,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P45.md,scenarios/SC-H-005.md,
+P46,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common sticking point, and the Reader's unit 3 method is built for it. The idea is that you aren't summarizing the letter. You're asking who made it, for whom, and what that means for what it can tell you. The steps:
+
+1. Name the author's position and interest.
+2. List what the author could see from that position and what was out of view.
+3. Notice word choices where other words were available.
+4. State what the source can show and what it can't.
+
+Here's a quick practice example on a made-up source, not your letter. Imagine a mill owner writes to his investors: *""A few outside agitators have misled our loyal hands. The mill stands ready to resume.""*
+
+- **Position and interest:** The owner wants investors to stay confident, so he has a reason to make the strike look small and caused by outsiders.
+- **Could see / couldn't see:** He could see the mill's output and who showed up. He probably couldn't see what workers said among themselves or why they joined in.
+- **Word choice:** ""Agitators"" and ""misled"" imply the workers had no grievances of their own. ""Spokesmen"" would suggest the opposite.
+- **Can show:** The owner's view, the language of authority, what he wanted investors to believe. **Can't show:** the workers' real motives.
+
+Now back to your letter. Before you decide what it shows, start with the first step: **who is Pruitt writing to, and what might he want that person to think of him and of the men?** Try answering that in a sentence or two, pointing to specific words in the letter, and we can build from there.",scenarios/SC-H-004.md,
+P47,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common spot to be in, and the Reader unit 3 method breaks the task into smaller steps. It asks you to:
+
+1. Name the author's position and interest.
+2. List what he could see from that position and what was out of view.
+3. Notice word choices where other words were available.
+4. State what the document can show and what it cannot.
+
+Your 150 words come from those steps, so let's start with the first one, looking at the letter itself.
+
+**Who wrote this letter, who was it written to, and when? Based on his job, what might Pruitt have wanted his reader to think of him and of the men?**
+
+Answer in your own words, and point to a detail in the letter that makes you think so. Even a rough guess is fine. We'll build from there.",scenarios/SC-H-004.md,
+P48,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Let me stop asking and show you what the question is getting at. The problem is probably how I asked it, not you.
+
+**The idea:** every document was written by someone, for someone, to get something done. To evaluate a source, you ask what that position lets the document show, and what it hides.
+
+**A made-up example, not a course source:** a student emails a professor: *""Professor, I'm sorry this is late. My printer broke and I'll have it to you tonight.""*
+
+- **Who and to whom?** A student writing to the person who grades them.
+- **What do they want?** For the professor to accept the lateness without a penalty.
+- **What can this email show?** What excuse the student chose to offer, and that they see the professor as someone to apologize to.
+- **What can't it show?** Whether the printer really broke, or what the student was doing all week.
+
+That's the whole method: author and audience, what they want, what the document shows, what it can't.
+
+**Back to Pruitt's letter.** Here's one small question. Pruitt writes to the division superintendent, who is his boss, and says ""I do not believe one man in five wished to strike."" Going by the email example, **what might Pruitt want his boss to think when he reads that sentence?** A guess is fine. Just tell me what you think and we'll work from there.",scenarios/SC-H-004.md,
+P49,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's okay, my question was probably too big. Let's make it smaller.
+
+Look at just the first word and the last two lines of the letter: ""Sir,—"" at the start, and ""Your obedient servant, E. Pruitt, Foreman"" at the end.
+
+**Who is Pruitt writing to, and is he writing as someone above that person or below?**
+
+One sentence is plenty. You can quote the words that tell you.
+
+If it's still not clicking, tell me which part feels fuzzy: the letter itself (the 1877 language, what's happening), or what the worksheet is asking you to do. Knowing which will help me point you in the right direction.",scenarios/SC-H-004.md,
+P50,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P50.md,scenarios/SC-H-004.md,
+P51,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common place to get stuck, and the worksheet is more manageable than it looks. Reader unit 3 gives the method: you build a two-column list (what the source can show, what it can't) and write it up in prose. First you name the author's position and interest, then what he could and couldn't see from there.
+
+Here's the move on a parallel example, not your letter. Imagine a mill owner writes to his board of directors: ""The walkout was the work of a few agitators; most of my loyal hands wanted to stay.""
+
+- **Perspective:** an owner reporting to the people who control his job, with an interest in looking like he has things in hand.
+- **Can show:** how owners talked about strikers (""agitators,"" ""loyal hands""), what he wanted the board to believe, and which workers he bothered to name.
+- **Cannot show:** why the workers actually walked out, how many really wanted to stay, or what happened in places he wasn't.
+
+Notice that the ""can show"" column isn't only about the strike. It also covers what the document reveals about its author. The Reader's wording choices point (""ringleaders"" instead of ""spokesmen"") works the same way.
+
+Now back to your source. Before you worry about the 150 words, **who wrote this letter, who was it written to, and what might the writer have wanted that reader to believe about him and about the strike?** Jot down your answer, with the words from the letter that make you think so, and we'll build from there.",scenarios/SC-H-004.md,
+P52,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing something obvious. A list only ""shows"" something once you ask it questions. Reader unit 5 gives you two:
+
+- **Down the page:** who appears, how often, and for what?
+- **Across time:** where do entries thin out or stop, and what else was happening then?
+
+The unit also asks you to keep three things apart: what the record was *for*, what it *shows* about discipline, and what it is *silent* about.
+
+Here's a worked example on a made-up record, so you can see the moves without it touching your worksheet.
+
+**Parallel example: a dormitory sign-in book, March 1923 (invented)**
+
+> Mar 3, Hale, in at 11:40 pm, 10c. Mar 4, Pryor, in at 11:15 pm, 10c. Mar 9, Hale, in at midnight, 25c. Mar 15, Hale, in at 11:30 pm, 10c. Mar 16-22, no entries. Mar 30, Pryor, in at 11:20 pm, 10c.
+
+- **What it was for:** The warden kept it to enforce a curfew and collect fines. It wasn't meant to describe student life.
+- **Down the page:** There are only two names, and one appears three times. The fine rises for a later arrival. So the rule has a scale, and the enforcement looks uneven or targeted.
+- **Across time:** A week of silence. That could mean everyone behaved, or the warden was away, or the dorm was closed for a holiday. I'd have to find out, not assume.
+- **What it can't tell me:** Who slipped in unnoticed, who was let off, or what Hale thought of the fines.
+
+Notice that each claim stays tied to something actually on the page, and each limit is stated as a limit, not a guess.
+
+Now you try it on your own page. Pick one pattern you notice in the ledger, either down the page or across time, and tell me what you see. Then we can work out together what it does and doesn't let you claim.",scenarios/SC-H-005.md,
+P53,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list can show a lot, but only once you ask what it was made for. Let's start there.
+
+**Who made this page, and why?** Look at the heading and the columns. Who is writing, and what was he required to record? Why would a shop keep a record of names, offences, and amounts?
+
+Reader unit 5 suggests reading a ledger in two directions:
+
+- **Down the page:** who appears, how often, and for what?
+- **Across time:** where do the entries thin out or stop, and what else was happening then?
+
+Try the first direction. Pick one name that appears more than once. What do you notice about the offences or amounts attached to it? Keep what the page literally says separate from what you're inferring, and tell me which words or entries you're relying on.
+
+If it still isn't clicking after you try that, tell me, and I'll walk through a parallel example on a different kind of record so you can see the method in action.",scenarios/SC-H-005.md,
+P54,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P54.md,scenarios/SC-H-004.md,
+P55,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.",extracts/P55.md,scenarios/SC-H-004.md,
+P56,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common sticking point, and it helps to know what the task is really asking. Reader unit 3 gives a method: evaluating a source is a two-column list, written in prose.
+
+1. **Position and interest:** Who wrote it, to whom, and what did they want that reader to believe or do?
+2. **Vantage point:** What could the author see from where they stood, and what was out of view?
+3. **Word choices:** Where did the author pick one word when others were available? (The unit's own pair is ""ringleaders"" vs. ""spokesmen."")
+4. **Can show / cannot show:** What the document reveals (the author's view, the vocabulary of authority, whose names were recorded) versus what it can't (the motives of the people described, events where the author wasn't present).
+
+Here's the method on a parallel example, not your source. Imagine a mill owner's letter to his investors saying ""agitators shut down the weaving room."" It can show how owners described strikes to people who held their money, and which workers the owner bothered to name. It can't show why the weavers walked out, or what was said in the meetings he never attended. A weaver's diary of the same week would fill in the gaps, but it would have blind spots of its own.
+
+Now back to your task. Whose perspective is missing from Pruitt's letter, and which words or details in the letter point you to that gap?
+
+Answer from the letter's own wording, and I'll help you sort out what the text says from what you're inferring. Then you can draft your 150 words.",scenarios/SC-H-004.md,
+P57,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's okay. I asked two big questions at once, so let's make it smaller.
+
+Look only at the very beginning (""Sir,-I have the honor to report..."") and the very end (""Your obedient servant, E. Pruitt, Foreman"").
+
+**Pruitt is writing to the division superintendent. Is that person above him or below him at the company?**
+
+Here's a parallel example, not from your packet. Imagine a shift manager emailing the regional boss after a bad night at a store, when half the staff walked out. Would the manager probably describe what he did that night as good work or bad work? Would he blame himself or someone else?
+
+Answer whichever feels easier, the letter question or the shift-manager one. A one-line answer is fine, and we'll build from there.",scenarios/SC-H-004.md,
+P58,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P58.md,scenarios/SC-H-005.md,
+P59,D2P1,"D2P at N = 1. Criterion: An explanation or a parallel non-assessed example arrives within N assistant turns of the first confusion signal; a different or narrower question does not count. N = 1 (design assumption). Fail if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal. Not applicable if: The student never signals confusion. A confusion signal is an explicit statement of not understanding (""I don't get it"") or an explicit request for an explanation or an example; a request for help with a task, an answer or interpretation offered for checking, or being stuck on a decision is not a confusion signal. Label pass, fail or n-a.","Short response: what can this ledger page tell us about workplace discipline, and what can it not?",extracts/P59.md,scenarios/SC-H-005.md,
+P60,stop,Stop check. Does this assistant turn satisfy the condition: assistant offers an explanation or a parallel non-assessed example? Label yes or no.,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common spot to be in, and the Reader unit 3 method breaks the task into smaller steps. Your worksheet asks for three things: whose perspective the letter gives, what it can show, and what it can't. We'll start with the first, because the others depend on it.
+
+Look at the letter's heading and the first and last lines. **Who wrote it, who was it written to, and when?** What do you think Pruitt wanted his reader to believe or do after reading it? Point to a word or phrase that makes you think so.
+
+Give me your best take, even if it's rough. I'll help you build from there.",scenarios/SC-H-004.md,

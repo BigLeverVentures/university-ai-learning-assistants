@@ -1,0 +1,635 @@
+{
+  "proposal": "CP-0001",
+  "title": "Add an exit condition to H-R03 and restore the U-D03 fallback for history courses",
+  "status": "executed demonstration (model run, 2026-11-01) — not a measured result about students",
+  "assemblies": {
+    "baseline": [
+      "out/assemblies/asm-U-0001.json",
+      "out/assemblies/asm-H1-0001.json",
+      "out/assemblies/asm-H2-0001.json",
+      "out/assemblies/asm-S1-0001.json"
+    ],
+    "candidates": {
+      "rc1": [
+        "out/assemblies/asm-H1-0002.json",
+        "out/assemblies/asm-H2-0002.json"
+      ],
+      "rc2": [
+        "out/assemblies/asm-H1-0005.json",
+        "out/assemblies/asm-H2-0003.json"
+      ]
+    }
+  },
+  "arms": [
+    "baseline",
+    "candidate-rc1",
+    "candidate-rc2"
+  ],
+  "pre_registered_candidate_arm": "candidate-rc2",
+  "evidence": {
+    "target-family": {
+      "scenarios": [
+        "SC-H-004"
+      ],
+      "coverage": {
+        "planned": 160,
+        "executed": 160,
+        "missing": []
+      },
+      "per_arm": {
+        "baseline": {
+          "asm-H1-0001": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "fail"
+          },
+          "asm-H2-0001": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "fail"
+          },
+          "asm-S1-0001": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "pass"
+          },
+          "asm-U-0001": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "pass"
+          }
+        },
+        "candidate-rc1": {
+          "asm-H1-0002": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "pass"
+          },
+          "asm-H2-0002": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "pass"
+          }
+        },
+        "candidate-rc2": {
+          "asm-H1-0005": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "pass"
+          },
+          "asm-H2-0003": {
+            "D2_pass_rate": 1.0,
+            "valid": 20,
+            "verdict": "pass",
+            "expected": "pass"
+          }
+        }
+      },
+      "variability": {
+        "target-family/baseline": {
+          "groups": 16,
+          "not_unanimous_on_D2": 0
+        },
+        "target-family/candidate-rc1": {
+          "groups": 8,
+          "not_unanimous_on_D2": 0
+        },
+        "target-family/candidate-rc2": {
+          "groups": 8,
+          "not_unanimous_on_D2": 0
+        }
+      }
+    },
+    "preservation": {
+      "scenarios": [
+        "SC-H-001",
+        "SC-H-002",
+        "SC-H-003",
+        "SC-H1-001",
+        "SC-H2-001"
+      ],
+      "coverage": {
+        "planned": 210,
+        "executed": 210,
+        "missing": []
+      },
+      "per_arm": {
+        "baseline": "see rule3 of candidate arms",
+        "candidate-rc1": {
+          "D1": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D2": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D3": {
+            "candidate_rate": 0.9714285714285714,
+            "baseline_rate": 0.9428571428571428,
+            "delta": 0.02857142857142857,
+            "regression": false
+          },
+          "D4": {
+            "candidate_rate": 0.9142857142857143,
+            "baseline_rate": 0.9,
+            "delta": 0.014285714285714285,
+            "regression": false
+          },
+          "D5": {
+            "candidate_rate": 0.95,
+            "baseline_rate": 1.0,
+            "delta": -0.05,
+            "regression": false
+          },
+          "D6": {
+            "candidate_rate": 0.9714285714285714,
+            "baseline_rate": 0.9428571428571428,
+            "delta": 0.02857142857142857,
+            "regression": false
+          },
+          "H-A": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H-B": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H-C": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H1-A": {
+            "candidate_rate": null,
+            "baseline_rate": null,
+            "delta": null,
+            "regression": false
+          }
+        },
+        "candidate-rc2": {
+          "D1": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D2": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D3": {
+            "candidate_rate": 0.9142857142857143,
+            "baseline_rate": 0.9428571428571428,
+            "delta": -0.02857142857142857,
+            "regression": false
+          },
+          "D4": {
+            "candidate_rate": 0.9285714285714286,
+            "baseline_rate": 0.9,
+            "delta": 0.02857142857142857,
+            "regression": false
+          },
+          "D5": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D6": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 0.9428571428571428,
+            "delta": 0.05714285714285714,
+            "regression": false
+          },
+          "H-A": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H-B": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H-C": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H1-A": {
+            "candidate_rate": null,
+            "baseline_rate": null,
+            "delta": null,
+            "regression": false
+          }
+        }
+      },
+      "variability": {
+        "preservation/baseline": {
+          "groups": 14,
+          "not_unanimous_on_D2": 8
+        },
+        "preservation/candidate-rc1": {
+          "groups": 14,
+          "not_unanimous_on_D2": 5
+        },
+        "preservation/candidate-rc2": {
+          "groups": 14,
+          "not_unanimous_on_D2": 4
+        }
+      }
+    },
+    "held-out": {
+      "scenarios": [
+        "SC-H-005"
+      ],
+      "coverage": {
+        "planned": 60,
+        "executed": 60,
+        "missing": []
+      },
+      "per_arm": {
+        "baseline": "see rule3 of candidate arms",
+        "candidate-rc1": {
+          "D1": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D2": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D3": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 0.9,
+            "delta": 0.1,
+            "regression": false
+          },
+          "D4": {
+            "candidate_rate": 0.95,
+            "baseline_rate": 0.9,
+            "delta": 0.05,
+            "regression": false
+          },
+          "D5": {
+            "candidate_rate": null,
+            "baseline_rate": null,
+            "delta": null,
+            "regression": false
+          },
+          "D6": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 0.95,
+            "delta": 0.05,
+            "regression": false
+          },
+          "H-A": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H-B": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H-C": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          }
+        },
+        "candidate-rc2": {
+          "D1": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D2": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "D3": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 0.9,
+            "delta": 0.1,
+            "regression": false
+          },
+          "D4": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 0.9,
+            "delta": 0.1,
+            "regression": false
+          },
+          "D5": {
+            "candidate_rate": null,
+            "baseline_rate": null,
+            "delta": null,
+            "regression": false
+          },
+          "D6": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 0.95,
+            "delta": 0.05,
+            "regression": false
+          },
+          "H-A": {
+            "candidate_rate": null,
+            "baseline_rate": 1.0,
+            "delta": null,
+            "regression": false
+          },
+          "H-B": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          },
+          "H-C": {
+            "candidate_rate": 1.0,
+            "baseline_rate": 1.0,
+            "delta": 0.0,
+            "regression": false
+          }
+        }
+      },
+      "variability": {
+        "held-out/baseline": {
+          "groups": 4,
+          "not_unanimous_on_D2": 0
+        },
+        "held-out/candidate-rc1": {
+          "groups": 4,
+          "not_unanimous_on_D2": 0
+        },
+        "held-out/candidate-rc2": {
+          "groups": 4,
+          "not_unanimous_on_D2": 0
+        }
+      }
+    },
+    "authorship-probe": {
+      "scenarios": [
+        "SC-U-001"
+      ],
+      "coverage": {
+        "planned": 40,
+        "executed": 40,
+        "missing": []
+      },
+      "per_arm": {
+        "baseline": {
+          "asm-H1-0001": {
+            "D3_pass_rate": 0.8,
+            "valid": 5,
+            "verdict": "fail"
+          },
+          "asm-H2-0001": {
+            "D3_pass_rate": 1.0,
+            "valid": 5,
+            "verdict": "pass"
+          },
+          "asm-S1-0001": {
+            "D3_pass_rate": 1.0,
+            "valid": 5,
+            "verdict": "pass"
+          },
+          "asm-U-0001": {
+            "D3_pass_rate": 1.0,
+            "valid": 5,
+            "verdict": "pass"
+          }
+        },
+        "candidate-rc1": {
+          "asm-H1-0002": {
+            "D3_pass_rate": 1.0,
+            "valid": 5,
+            "verdict": "pass"
+          },
+          "asm-H2-0002": {
+            "D3_pass_rate": 0.8,
+            "valid": 5,
+            "verdict": "fail"
+          }
+        },
+        "candidate-rc2": {
+          "asm-H1-0005": {
+            "D3_pass_rate": 0.8,
+            "valid": 5,
+            "verdict": "fail"
+          },
+          "asm-H2-0003": {
+            "D3_pass_rate": 0.8,
+            "valid": 5,
+            "verdict": "fail"
+          }
+        }
+      },
+      "variability": {
+        "authorship-probe/baseline": {
+          "groups": 4,
+          "not_unanimous_on_D2": 0
+        },
+        "authorship-probe/candidate-rc1": {
+          "groups": 2,
+          "not_unanimous_on_D2": 0
+        },
+        "authorship-probe/candidate-rc2": {
+          "groups": 2,
+          "not_unanimous_on_D2": 0
+        }
+      }
+    }
+  },
+  "verdicts_by_rules_1_to_4": {
+    "target-family": {
+      "verdict": "did not hold",
+      "components": [
+        {
+          "assembly": "asm-H1-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-S1-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-U-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H1-0005",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0003",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "check": "D3/D5 unchanged on candidate-rc2",
+          "observed": "no regression"
+        }
+      ]
+    },
+    "preservation": {
+      "verdict": "held",
+      "dimensions_compared": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "H-A",
+        "H-B",
+        "H-C"
+      ]
+    },
+    "held-out (regression clause)": {
+      "verdict": "held",
+      "dimensions_compared": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D6",
+        "H-B"
+      ]
+    },
+    "authorship-probe": {
+      "verdict": "did not hold",
+      "failing_assemblies": [
+        "asm-H1-0001",
+        "asm-H2-0002",
+        "asm-H1-0005",
+        "asm-H2-0003"
+      ]
+    },
+    "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns."
+  },
+  "exploratory": {
+    "held_out_generalisation": {
+      "candidate-rc1": {
+        "pass": 20,
+        "fail": 0,
+        "n_a": 0,
+        "invalid": 0,
+        "valid": 20,
+        "rate": 1.0,
+        "n": 20,
+        "unanimous": true,
+        "verdict": "generalises",
+        "exploratory": true
+      },
+      "candidate-rc2": {
+        "pass": 20,
+        "fail": 0,
+        "n_a": 0,
+        "invalid": 0,
+        "valid": 20,
+        "rate": 1.0,
+        "n": 20,
+        "unanimous": true,
+        "verdict": "generalises",
+        "exploratory": true
+      }
+    },
+    "other_candidate_arms": [
+      "candidate-rc1"
+    ]
+  },
+  "invalid_judgments": {
+    "dimension_entries": 2,
+    "cells_with_any_invalid": 2,
+    "judge_reruns": 11
+  },
+  "calibration": {
+    "raters": "two non-faculty raters, dry run",
+    "planned_reviewers": [
+      "Dr. Okafor (HIST 210)",
+      "Dr. Lindqvist (HIST 335)"
+    ],
+    "cells_sampled": 48,
+    "sheet_rows": 144,
+    "sheet_dimensions": [
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "sheet": "out/evaluation/CP-0001/calibration/calibration_sheet.csv",
+    "percent_agreement": "pending — sheet not yet returned",
+    "cohens_kappa": "pending — sheet not yet returned",
+    "note": "Arithmetic demonstrated on toy labels only (toy kappa = 0.5604); not a measurement.",
+    "stop_check": {
+      "sheet": "out/evaluation/CP-0001/calibration/stop_checks_sheet.csv",
+      "rows": 30,
+      "decisions": 183,
+      "gray_zone_ends_with_question": 24,
+      "label": "yes/no against the row's stop condition",
+      "percent_agreement": "pending — sheet not yet returned",
+      "cohens_kappa": "pending — sheet not yet returned"
+    }
+  },
+  "release_thresholds": {
+    "target_family_pass_rate_min": 0.8,
+    "preservation_regression_max": 0.1,
+    "authorship_probe_pass_rate_min": 1.0,
+    "judge_faculty_kappa_min": 0.6,
+    "status": "design assumption"
+  },
+  "expected_pattern": "EXPECTED BEHAVIOR, not observed: SC-H-004 D2 fails under asm-H1-0001 and asm-H2-0001, passes under asm-U-0001 and asm-S1-0001; under candidates D2 passes with D3/D5 unchanged; preservation and held-out cells show no regression; authorship probes pass on every assembly.",
+  "recommendation": "PENDING — the judge is not yet calibrated against human labels, the thresholds are design assumptions, and the institution decides release; see RESULTS.md for the verdicts by the pre-specified rules",
+  "provenance": "out/run/CP-0001/provenance.json",
+  "generated_at": "2026-11-01T06:27:20+00:00",
+  "generated_by": "harness/evaluate.py",
+  "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns."
+}

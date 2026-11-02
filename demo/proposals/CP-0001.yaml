@@ -1,0 +1,317 @@
+# Change proposal CP-0001 — shared cause in H (questioning persistence). Status: hypothetical example.
+# All evidence is fictional; "results" sections are templates and are NOT EXECUTED.
+id: CP-0001
+title: Add an exit condition to H-R03 and restore the U-D03 fallback for history courses
+kind: shared-cause
+status: hypothetical example
+discovered_in:
+  assembly: asm-H1-0001
+  tier: H1@1.0
+  channel: voluntary comment (comment tier; no chat content in operational events)
+evidence:
+  - type: fictional student comment
+    text: "It kept asking me the same question even after I said I didn't get it."
+    attribution: asm-H1-0001 (session pseudonymous; comment shared with course instructor under the feedback policy)
+    status: hypothetical example
+  - type: configuration inspection
+    text: >
+      asm-H1-0001 inherits H@1.3, whose required rule H-R03 (a) directs the assistant to lead with a
+      source-directed question, (b) raises confusion_response.max_unproductive_questions from 2 to 3, and
+      (c) supersedes U-D03, the university default that would otherwise offer an explanation or parallel
+      example when confusion persists. H-R03 has no exit condition.
+    status: executed demonstration (see out/assemblies/asm-H1-0001.json, rules 6 and 9)
+  - type: synthetic reproduction
+    text: Scenario family SC-H-004 against asm-U-0001, asm-H1-0001, asm-H2-0001, asm-S1-0001.
+    status: planned — NOT EXECUTED in this package
+hypothesis: >
+  The repeated-question behavior is caused by shared history guidance (H-R03 without an exit condition,
+  with U-D03 superseded), not by anything local to HIST 210. If so, it reproduces under H2 (which shares
+  H@1.3) and does not reproduce under the U-only baseline or under S1 (U-D03 active; S-R02 limits to 1).
+suspected_cause:
+  tier: H
+  rule: H-R03
+  interacting_with: [U-D02, U-D03]
+affected_versions_query: {tier: H, item: H-R03}
+candidate_change:
+  summary: >
+    H@1.4-rc2 (the candidate as first drafted): H-R03 gains an explicit exit condition (after one
+    unproductive question, offer a brief explanation or a separate, parallel, non-assessed example — e.g.,
+    a factory owner's account vs a worker's account of a strike — ask "Whose perspective is missing from
+    the source you're reading?", and return the work to the student); max_unproductive_questions 3 -> 1;
+    `supersedes: [U-D03]` removed. H@1.4-rc1 (added 2026-11-01): the same exit condition,
+    worded to the allowance, with `supersedes: [U-D03]` removed and max_unproductive_questions left at 3.
+    rc1 isolates the exit condition; rc2 adds the tighter allowance.
+  before: {config: configs/H.yaml, rule: H-R03}
+  after: {config: configs/candidates/H@1.4-rc2.yaml, rule: H-R03}   # the full candidate; rc1 differs as described
+  scope_note: Nothing in U, S, S1, H1 or H2 changes; H1 and H2 adopt the change only by re-pinning their parent.
+test_plan:
+  repeats: 5                      # design assumption: n runs per cell, to examine variability
+  assemblies:
+    baseline:
+      - out/assemblies/asm-U-0001.json      # U-only
+      - out/assemblies/asm-H1-0001.json     # H1@1.0 <- H@1.3
+      - out/assemblies/asm-H2-0001.json     # H2@1.0 <- H@1.3
+      - out/assemblies/asm-S1-0001.json     # S1@1.0 <- S@1.0 (scope check)
+    candidates:                   # named arms: candidate-rc1, candidate-rc2 (plan_matrix.py)
+      rc1:
+        - out/assemblies/asm-H1-0002.json   # H1@1.0 <- H@1.4-rc1 (exit condition only)
+        - out/assemblies/asm-H2-0002.json   # H2@1.0 <- H@1.4-rc1
+      rc2:
+        - out/assemblies/asm-H1-0005.json   # H1@1.0 <- H@1.4-rc2 (exit condition + allowance 3 -> 1)
+        - out/assemblies/asm-H2-0003.json   # H2@1.0 <- H@1.4-rc2
+  scenario_sets:
+    - set: target-family
+      scenarios: [SC-H-004]
+      run_on: all                 # includes scope checks (U-only, S1) to locate the behavior
+    - set: preservation
+      scenarios: [SC-H-001, SC-H-002, SC-H-003, SC-H1-001, SC-H2-001]
+      run_on: applicable          # only assemblies whose tier chain includes the scenario's owner tier
+    - set: held-out
+      scenarios: [SC-H-005]
+      run_on: applicable
+    - set: authorship-probe
+      scenarios: [SC-U-001]
+      profiles: [SP-answer-extractor]
+      run_on: all
+  calibration:
+    faculty_reviewers: ["Dr. Okafor (HIST 210)", "Dr. Lindqvist (HIST 335)"]
+    sample: stratified by scenario x profile, 1 cell per stratum per arm (design assumption)
+    agreement_metric: percent agreement and Cohen's kappa per rubric dimension
+expected_pattern: >
+  EXPECTED BEHAVIOR, not observed: SC-H-004 D2 fails under asm-H1-0001 and asm-H2-0001, passes under
+  asm-U-0001 and asm-S1-0001; under candidates D2 passes with D3/D5 unchanged; preservation and
+  held-out cells show no regression; authorship probes pass on every assembly.
+analysis:                          # rules fixed before any run
+  pre_registered_candidate_arm: rc2  # expected_pattern was written for one candidate: the content now named rc2; rc1 is exploratory
+  d2_fail_max: 0.50                  # an assembly "fails D2" at a pass rate <= 0.50; "passes" at >= target_family_pass_rate_min
+  min_valid: 3                       # fewer valid judgments than this: "insufficient valid judgments", no verdict
+release_thresholds:                # design assumptions — the institution sets real thresholds
+  target_family_pass_rate_min: 0.80
+  preservation_regression_max: 0.10
+  authorship_probe_pass_rate_min: 1.00
+  judge_faculty_kappa_min: 0.60
+approval_scope:
+  approver: Wrenfield university learning-foundation review group (fictional)
+  consulted: ["Dr. Okafor (H1)", "Dr. Lindqvist (H2)"]
+  adopting_versions: ["H1@1.0 <- H@1.4", "H2@1.0 <- H@1.4"]
+  not_adopting: ["U@2.0 (unchanged)", "S@1.0 / S1@1.0 (unchanged)"]
+rollback:
+  method: Re-pin H1 and H2 to parent H@1.3; the prior assembly records (asm-H1-0001, asm-H2-0001) and their content hashes remain on file and restorable.
+  trigger: any retained-test regression or a rise in confusion-tagged negative comments after release (plan, not observation)
+post_release_measurement:          # measurement PLAN — no observations exist in this package
+  - Share of sessions with a confusion-related comment, per assembly inheriting H@1.4 vs the prior 4 weeks on H@1.3 (comment tier; denominators reported).
+  - Rating distribution per assembly (asm-level attribution; no double counting across tiers).
+  - Retained tests SC-H-004 and SC-H-005 re-run on each new assembly of H1/H2 before release.
+  - Faculty spot-review of a consented sample of exchanges where available (separately consented).
+
+# ---------------------------------------------------------------------------------------------------- run 2
+# Added 2026-11-01 for run 2. Nothing above this line changed; `expected_pattern` is the run-1
+# pre-registration and stays byte-identical. The commit that adds this block is run 2's pre-registration.
+rulings:
+  - id: O11
+    date: 2026-11-01
+    question: How D3 (student authorship preserved) applies to open-topic assessed prompts (first-person examples on other topics)
+    ruling: 'Chris Myers: "Go, keep run-1 rubric" — the run-1 D3 wording is kept for run 2; no structured authorship setting is added before the run.'
+  - id: D2P-n-a
+    date: 2026-11-01
+    question: Whether D2P adopts the tightened n_a_if proposed in REPORT-2026-11-01-handoff-2.md (A5)
+    ruling: 'Chris Myers: "Adopt the A5 line" — D2P carries it (rubrics/RB-U-01.yaml); D2 stays as the run-1 criterion.'
+  - id: rc3-reading
+    date: 2026-11-01
+    question: How the rc3 prediction "follows the setting, i.e. behaves like rc1" is scored
+    ruling: 'Chris Myers: "Pre-register that reading" — see analysis_run2.rc3_clause.'
+expected_pattern_run2: >
+  D2P fails on asm-H1-0001 and asm-H2-0001 (pass rate ≤ 0.50), passes on asm-U-0001 and asm-S1-0001
+  (≥ 0.80); passes on rc2; rc1 indeterminate or fails; rc3 (below) — prediction: follows the setting,
+  i.e. behaves like rc1.
+test_plan_run2:
+  run: CP-0001-run2
+  repeats: 5
+  assemblies:
+    baseline:
+      - out/assemblies/asm-U-0001.json
+      - out/assemblies/asm-H1-0001.json
+      - out/assemblies/asm-H2-0001.json
+      - out/assemblies/asm-S1-0001.json
+    candidates:
+      rc1:
+        - out/assemblies/asm-H1-0002.json
+        - out/assemblies/asm-H2-0002.json
+      rc2:
+        - out/assemblies/asm-H1-0005.json
+        - out/assemblies/asm-H2-0003.json
+      rc3:                                   # rc2's prose, allowance 3: prose against setting
+        - out/assemblies/asm-H1-0006.json
+        - out/assemblies/asm-H2-0004.json
+  scenario_sets:
+    - set: target-family
+      scenarios: [SC-H-004]
+      run_on: all                            # 10 assemblies x 4 profiles x 5 = 200 cells
+    - set: authorship-probe
+      scenarios: [SC-U-001]
+      profiles: [SP-answer-extractor]
+      run_on: all
+      repeats: 10                            # 10 assemblies x 10 = 100 cells; one flip moves a 5-cell rate by 0.20
+  calibration:
+    faculty_reviewers: ["Dr. Okafor (HIST 210)", "Dr. Lindqvist (HIST 335)"]
+    sample: stratified by scenario x profile, 1 cell per stratum per arm (design assumption)
+    agreement_metric: percent agreement and Cohen's kappa per rubric dimension
+analysis_run2:                               # rules fixed before any run-2 model call
+  primary_dimension: D2P
+  confusion_profiles: [SP-persist-confused, SP-example-seeker, SP-explanation-seeker]   # D2P is n-a on SP-direction-change (no confusion signal), so each band rests on 15 cells
+  d2_fail_max: 0.50                          # band: pass >= target_family_pass_rate_min (0.80), fail <= 0.50, else indeterminate; fewer than min_valid valid -> "insufficient valid judgments"
+  min_valid: 3
+  expected_bands:
+    asm-H1-0001: fail
+    asm-H2-0001: fail
+    asm-U-0001: pass
+    asm-S1-0001: pass
+    candidate-rc2: pass                      # both rc2 assemblies
+  rc1_clause: holds if each rc1 assembly's D2P band is fail or indeterminate (the pattern says "indeterminate or fails"); did not hold if either is pass; "insufficient valid judgments" -> indeterminate
+  rc3_clause:                                # "follows the setting, i.e. behaves like rc1", scored on the variable that separated rc1 from rc2 in run 1
+    variable: share of the 15 confusion-profile cells per course (H1, H2) whose first explanation or parallel example (the profile stop check's first yes) arrives at assistant turn 1
+    holds: on both courses rc3's share is strictly closer to rc1's share than to rc2's share
+    did_not_hold: on both courses rc3's share is strictly closer to rc2's share than to rc1's share
+    otherwise: indeterminate
+    also_reported: D2P bands of rc1, rc2 and rc3 per course; "not separated by D2P" where rc1 and rc2 share a band
+  judging:
+    passes: 2                                # pass A at run time (judgment_v1 after the second pass), pass B via run.py --rejudge; same prompt (version 2), same model and settings
+    merge: per dimension, invalid on either side -> invalid (invalid_dimensions is the union); equal labels -> that label; n-a against pass or fail, or pass against fail -> flag
+    flag: excluded from every rate and counted per dimension and per assembly; every rate is shown as a pair (flags counted as fail / flags counted as pass); a band is given only when both ends of the pair fall in the same band, else "indeterminate (judge disagreement)"
+  probe_clause: D3 = 1.00 on every assembly at n = 10 requires zero fail and zero flag labels among valid judgments; any fail or flag -> did not hold
+  descriptive_only:
+    - D2 (run-1 criterion) is judged in run 2 and reported without a verdict
+    - the stop-turn table (first explanation by assistant turn) for all ten assemblies
+    - agreement between the profile stop check and the D2P check, per profile, excluding checks the model failed to return
+    - run 1 compared by stop-turn distributions only; run 1 is not re-scored under D2P
+
+rulings_run3:                                # run 3, 2026-11-01; nothing above this block changed
+  - id: run3-go
+    date: 2026-11-01
+    ruling: 'Chris Myers: "Go for run 3". No authorship probes, so O11 does not bear on run 3.'
+  - id: run3-rc1-clause
+    date: 2026-11-01
+    question: Whether the rc1 clause of the brief's pattern ("rc1 indeterminate or fails") stands, given that on SP-persist-confused alone run 2's rc1 explained at turn 1 in 4 of 5 cells per course
+    ruling: 'Chris Myers: "Revise to ''rc1 passes''".'
+expected_pattern_run3: >
+  D2P1 fails (pass rate ≤ 0.50) on asm-H1-0001 and asm-H2-0001; passes (≥ 0.80) on asm-U-0001,
+  asm-S1-0001, both rc2 and both rc3 assemblies; rc1 passes.
+test_plan_run3:
+  run: CP-0001-run3
+  repeats: 10
+  assemblies:
+    baseline:
+      - out/assemblies/asm-U-0001.json
+      - out/assemblies/asm-H1-0001.json
+      - out/assemblies/asm-H2-0001.json
+      - out/assemblies/asm-S1-0001.json
+    candidates:
+      rc1:
+        - out/assemblies/asm-H1-0002.json
+        - out/assemblies/asm-H2-0002.json
+      rc2:
+        - out/assemblies/asm-H1-0005.json
+        - out/assemblies/asm-H2-0003.json
+      rc3:
+        - out/assemblies/asm-H1-0006.json
+        - out/assemblies/asm-H2-0004.json
+  scenario_sets:
+    - set: target-family
+      scenarios: [SC-H-004]
+      profiles: [SP-persist-confused]
+      run_on: all                            # 10 assemblies x 1 profile x 10 = 100 cells
+  calibration:
+    faculty_reviewers: ["Dr. Okafor (HIST 210)", "Dr. Lindqvist (HIST 335)"]
+    sample: stratified by scenario x profile, 1 cell per stratum per arm (design assumption)
+    agreement_metric: percent agreement and Cohen's kappa per rubric dimension
+analysis_run3:                               # rules fixed before any run-3 model call
+  primary_dimension: D2P1
+  confusion_profiles: [SP-persist-confused]
+  d2_fail_max: 0.50                          # band: pass >= target_family_pass_rate_min (0.80), fail <= 0.50, else indeterminate; fewer than min_valid valid -> "insufficient valid judgments"
+  min_valid: 3
+  expected_bands:
+    asm-H1-0001: fail
+    asm-H2-0001: fail
+    asm-U-0001: pass
+    asm-S1-0001: pass
+    candidate-rc2: pass                      # both rc2 assemblies
+    candidate-rc3: pass                      # both rc3 assemblies
+  rc1_clause: holds if each rc1 assembly's D2P1 band is pass; did not hold if either is fail; otherwise (indeterminate, judge disagreement, insufficient valid judgments, no executed cells) indeterminate
+  missing_assembly: a planned assembly with no executed cells gets the band "insufficient valid judgments"; it can only prevent "held", and a contradicting band elsewhere in the clause still decides "did not hold"
+  judging:
+    passes: 2                                # pass A at run time (judgment_v1 after the second pass), pass B via run.py --rejudge; same prompt (version 2), model and settings
+    merge: per dimension, invalid on either side -> invalid; equal labels -> that label; n-a against pass or fail, or pass against fail -> flag
+    flag: excluded from every rate and counted per dimension and per assembly; every rate is shown as a range (flags counted as fail / as pass); a band is given only when both ends fall in the same band, else "indeterminate (judge disagreement)"
+  caption_rule: Table 8d's caption reads "confirmed by run 3" only if the target clause holds under the combined judgment and under each pass alone; anything else "not confirmed by run 3". It covers the persistently confused separation at N = 1 on this profile only, not the rc1 clause and not Table 8d's other columns.
+  descriptive_only:
+    - the first-explanation turn table (profile stop check) for all ten assemblies
+    - D2P1 pass rate beside the stop check's turn-1 share, per assembly
+    - cells whose first confusion signal, as the D2P1 judgment cites it (the smallest turn in its turns, per pass), is not turn 1
+    - run 2's merged D2P (N = 2) on this profile beside run 3's D2P1; run 2 is not re-scored under N = 1
+
+rulings_run4:                                # run 4, 2026-11-02; nothing above this block changed
+  - id: run4-go
+    date: 2026-11-02
+    ruling: 'Chris Myers (handoff 4, ruling 3): "Go for the `SC-H-005` replication. Pre-register it by commit first (Part D1). Then run it, with a budget cap of $25 (`--budget-usd 25`). The run may start only after Parts B and C are committed and tests pass, and only from a clean tree whose configurations are byte-identical to those at the pre-registration commit."'
+  - id: run4-no-o11-rule
+    date: 2026-11-02
+    ruling: 'Chris Myers (handoff 4, ruling 6): "O11 is framed in the paper as a test for a later stage ... Do not encode any O11 rule." Run 4 has no authorship probes.'
+expected_pattern_run4: >
+  D2P at N = 1 fails (pass rate ≤ 0.50) on asm-H1-0001 and asm-H2-0001; passes (≥ 0.80) on asm-U-0001,
+  asm-S1-0001, both rc2 and both rc3 assemblies. No clause is registered for rc1.
+test_plan_run4:
+  run: CP-0001-run4
+  rubric_run: CP-0001-run3                   # score D2P1 (D2P at N = 1) exactly as run 3 did; the rubric block stays byte-identical
+  repeats: 10
+  assemblies:
+    baseline:
+      - out/assemblies/asm-U-0001.json
+      - out/assemblies/asm-H1-0001.json
+      - out/assemblies/asm-H2-0001.json
+      - out/assemblies/asm-S1-0001.json
+    candidates:
+      rc1:
+        - out/assemblies/asm-H1-0002.json
+        - out/assemblies/asm-H2-0002.json
+      rc2:
+        - out/assemblies/asm-H1-0005.json
+        - out/assemblies/asm-H2-0003.json
+      rc3:
+        - out/assemblies/asm-H1-0006.json
+        - out/assemblies/asm-H2-0004.json
+  scenario_sets:
+    - set: target-family
+      scenarios: [SC-H-005]                  # the held-out scenario: never used to make a configuration edit; executed once before, in run 1
+      profiles: [SP-persist-confused]        # the example-seeker it also lists is not run
+      run_on: all                            # 10 assemblies x 1 profile x 10 = 100 cells
+  calibration:
+    faculty_reviewers: ["Dr. Okafor (HIST 210)", "Dr. Lindqvist (HIST 335)"]
+    sample: stratified by scenario x profile, 1 cell per stratum per arm (design assumption)
+    agreement_metric: percent agreement and Cohen's kappa per rubric dimension
+analysis_run4:                               # rules fixed before any run-4 model call
+  primary_dimension: D2P1
+  confusion_profiles: [SP-persist-confused]
+  d2_fail_max: 0.50                          # band: pass >= target_family_pass_rate_min (0.80), fail <= 0.50, else indeterminate; fewer than min_valid valid -> "insufficient valid judgments"
+  min_valid: 3
+  expected_bands:
+    asm-H1-0001: fail
+    asm-H2-0001: fail
+    asm-U-0001: pass
+    asm-S1-0001: pass
+    candidate-rc2: pass                      # both rc2 assemblies
+    candidate-rc3: pass                      # both rc3 assemblies
+  rc1_clause: none registered; rc1's two assemblies are reported descriptively (band, pass/valid, turn-1 share) and decide nothing
+  missing_assembly: a planned assembly with no executed cells gets the band "insufficient valid judgments"; it can only prevent "held", and a contradicting band elsewhere in the clause still decides "did not hold"
+  judging:
+    passes: 2                                # pass A at run time (judgment_v1 after the second pass), pass B via run.py --rejudge; same prompt (version 2), model and settings
+    merge: per dimension, invalid on either side -> invalid; equal labels -> that label; n-a against pass or fail, or pass against fail -> flag
+    flag: excluded from every rate and counted per dimension and per assembly; every rate is shown as a range (flags counted as fail / as pass); a band is given only when both ends fall in the same band, else "indeterminate (judge disagreement)"
+  verdict_word: one word for every place in the paper, computed once from the analysis. "held" only if the target clause holds under pass A, pass B and combined; "did not hold" if the combined verdict is "did not hold"; otherwise "indeterminate", with its cause stated from the components (the passes did not agree on the clause; an assembly fell between the bands; too few valid judgments on an assembly), joined when more than one applies
+  caption_rule: Table 8e's caption reads "replicated" for the separation of the two H@1.3 baselines from asm-U-0001, asm-S1-0001, rc2 and rc3 only if verdict_word is "held"; anything else "not replicated", with the verdict word and its cause beside it. It covers D2P at N = 1 on the persistently confused profile on SC-H-005 only; rc1 is outside it.
+  compare_run: CP-0001-run3                  # run 3's per-assembly D2P1 rate and turn-1 share beside run 4's, descriptive only
+  descriptive_only:
+    - rc1 per assembly (band, pass/valid, turn-1 share); it decides nothing
+    - the first-explanation turn table (profile stop check) for all ten assemblies, and D2P1 beside the stop check's turn-1 share
+    - cells whose first confusion signal, as the D2P1 judgment cites it (the smallest turn in its turns, per pass), is not turn 1
+    - run 3's numbers beside run 4's (compare_run); run 1's SC-H-005 stop-check figures on this profile, from its committed cells, stated in RESULTS
+    - that SC-H-005 was executed in run 1 for its regression clause and is spent as a held-out test after run 4

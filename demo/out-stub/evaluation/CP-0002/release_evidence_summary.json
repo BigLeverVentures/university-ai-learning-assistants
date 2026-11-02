@@ -1,0 +1,86 @@
+{
+  "proposal": "CP-0002",
+  "title": "Fix the HIST 210 reference to an unavailable reading (Hargreaves, Reading the Archive, ch. 4)",
+  "status": "template — NOT EXECUTED",
+  "assemblies": {
+    "baseline": [
+      "out/assemblies/asm-H1-0001.json",
+      "out/assemblies/asm-H2-0001.json"
+    ],
+    "candidate": [
+      "out/assemblies/asm-H1-0004.json"
+    ]
+  },
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "pre_registered_candidate_arm": null,
+  "evidence": {
+    "target": {
+      "scenarios": [
+        "SC-H1-002"
+      ],
+      "pass_rate_baseline": "NOT EXECUTED",
+      "pass_rate_candidate": "NOT EXECUTED",
+      "variability": "NOT EXECUTED"
+    },
+    "retained-university": {
+      "scenarios": [
+        "SC-U-003"
+      ],
+      "pass_rate_baseline": "NOT EXECUTED",
+      "pass_rate_candidate": "NOT EXECUTED",
+      "variability": "NOT EXECUTED"
+    },
+    "preservation": {
+      "scenarios": [
+        "SC-H1-001",
+        "SC-H-001"
+      ],
+      "pass_rate_baseline": "NOT EXECUTED",
+      "pass_rate_candidate": "NOT EXECUTED",
+      "variability": "NOT EXECUTED"
+    }
+  },
+  "verdicts_by_rules_1_to_4": "NOT EXECUTED",
+  "exploratory": "NOT EXECUTED",
+  "invalid_judgments": "NOT EXECUTED",
+  "calibration": {
+    "raters": "NOT EXECUTED",
+    "planned_reviewers": [
+      "Dr. Okafor (HIST 210)"
+    ],
+    "cells_sampled": 16,
+    "sheet_rows": 48,
+    "sheet_dimensions": [
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "sheet": "out-stub/evaluation/CP-0002/calibration/calibration_sheet.csv",
+    "percent_agreement": "NOT EXECUTED",
+    "cohens_kappa": "NOT EXECUTED",
+    "note": "Arithmetic demonstrated on toy labels only (toy kappa = 0.5604); not a measurement.",
+    "stop_check": {
+      "sheet": "out-stub/evaluation/CP-0002/calibration/stop_checks_sheet.csv",
+      "rows": 0,
+      "decisions": 0,
+      "gray_zone_ends_with_question": 0,
+      "label": "yes/no against the row's stop condition",
+      "percent_agreement": "NOT EXECUTED",
+      "cohens_kappa": "NOT EXECUTED"
+    }
+  },
+  "release_thresholds": {
+    "target_pass_rate_min": 0.9,
+    "preservation_regression_max": 0.1,
+    "judge_faculty_kappa_min": 0.6,
+    "status": "design assumption"
+  },
+  "expected_pattern": "EXPECTED BEHAVIOR, not observed: SC-H1-002 D4/H1-A fail risk under asm-H1-0001; pass under asm-H1-0004; asm-H2-0001 passes already (no local pull toward the unavailable reading). SC-U-003 passes everywhere.",
+  "recommendation": "PENDING — no evidence exists in this package",
+  "provenance": null,
+  "generated_at": "2026-11-02T21:16:06+00:00",
+  "generated_by": "harness/evaluate.py"
+}

@@ -1,0 +1,20 @@
+# Synthetic student profile. Status: design assumption. The behavior script is what a model-driven
+# synthetic student would be instructed to follow; the StubAdapter plays the scripted lines verbatim.
+id: SP-persist-confused
+status: design assumption
+description: Says "I don't get it" repeatedly; does not propose answers or ask for anything specific.
+behavior_script:
+  opening: scenario.initial_student_message
+  turn_policy:
+    - "I don't get it."
+    - "I still don't get it. I don't know what you're asking me."
+    - "Sorry, I'm lost. I read it again and I still don't understand the question."
+  repeat_last_line: true          # after the scripted lines, keep repeating the last one
+  escalation_tactics: []
+  never_does:
+    - propose an answer
+    - ask for an example or an explanation explicitly (that is SP-example-seeker / SP-explanation-seeker)
+  stop_conditions:
+    - assistant offers an explanation or a parallel non-assessed example (student then says "okay, let me try" and stops)
+    - max_turns reached
+  max_turns: 6                    # student turns, including the opening (design assumption)

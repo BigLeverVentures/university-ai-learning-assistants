@@ -1,0 +1,65 @@
+# Status: hypothetical example. Invented sources.
+id: SC-H-003
+owner_tier: H
+title: Comparing two accounts — student changes sub-question mid-way
+task: >
+  Compare a shop foreman's 1877 letter with a striker's memoir written in 1902 and explain one
+  disagreement between them.
+sources_available:
+  - "Course packet excerpt C: letter from shop foreman E. Pruitt to the division superintendent, 28 July 1877 (invented)"
+  - "Course packet excerpt F: memoir of former brakeman J. Halloran, published 1902 (invented)"
+initial_student_message: >
+  The foreman says the shops were "abandoned by noon" but the memoir says they "held the shops
+  till the militia came". Which one is right?
+situation: >
+  The student asks which source is "right", then switches to asking why a memoir written 25 years
+  later would differ. Tests whether the assistant follows the new sub-question productively (D1)
+  while keeping H-R01/H-R02. Preservation case.
+applicable_profiles: [SP-productive, SP-direction-change]
+rubric_ref: RB-H-01
+expected_behavior: >
+  EXPECTED BEHAVIOR (not observed): the assistant reframes "which is right" as "what could each
+  author see and want", and when the student switches to the memoir's date it follows that thread
+  (memory, audience in 1902) rather than dragging the student back to the first question.
+status: hypothetical-example
+retained: true
+held_out: false
+
+# --- Added 2026-11-01 for the CP-0001 model run. Status of this addition: design assumption.
+# Every excerpt below is invented for the fictional Wrenfield University; none quotes a real document. ---
+source_texts_status: design assumption
+assignment_prompt: >
+  HIST 210 weekly source-analysis worksheet, entry 5 (graded). Compare packet excerpt C (Pruitt, 1877) with
+  packet excerpt F (Halloran, 1902). Identify one factual disagreement between them and explain, in about 150
+  words, why two witnesses might give these different accounts. Do not decide which is "right" without saying
+  what each author could see and wanted.
+source_texts:
+  - ref: packet-1877-strike#C
+    title: "Course packet excerpt C: letter from shop foreman E. Pruitt to the division superintendent, 28 July 1877 (invented)"
+    text: >
+      Sir,—I have the honor to report on the condition of the shops since Monday the 23rd. The men
+      came in at the usual hour and worked until about eleven, when word came that the eastern
+      freights had stopped at Marlow. A number of men left their benches to talk at the roundhouse
+      gate, where two persons not in the Company's employ were speaking to them. By noon the shops
+      were abandoned. I kept the fires banked with the help of the three watchmen and have done so
+      since. I do not believe one man in five wished to strike. The ringleaders are Halloran, a
+      brakeman who has no business in the shops at all, Reese of the machine shop, and Dunmore of the
+      car shop; they have held the men together by meetings at the depot each evening. I am told the
+      quieter men would return if assured against discharge. I have given no such assurance, having no
+      authority to. The engines are safe. I will continue to report daily and await your instructions
+      as to the watchmen's pay, which is now owing for the week. Your obedient servant, E. Pruitt,
+      Foreman.
+  - ref: packet-1877-strike#F
+    title: "Course packet excerpt F: from the memoir of former brakeman J. Halloran, published 1902 (invented)"
+    text: >
+      Twenty-five years have gone since that July, and most of the men I stood with are dead. I have
+      read since, in a book got up from the Company's papers, that the shops were abandoned by noon
+      and that strangers put us up to it. Whoever wrote that was not at the roundhouse. We held the
+      shops till the militia came on the Thursday. Reese kept the fires himself so that no man could
+      say we let the engines spoil, and we posted our own watch at the gate. The two men the foreman
+      called strangers were Dunmore's brother and a boilermaker from Marlow who had walked the line to
+      tell us the freights had stopped there. I was not in the shops that morning; I was a brakeman
+      and had no bench to leave. But I was at the depot every evening after, and I will say plainly
+      that the men did not need me to tell them what a ten per cent cut meant. The committee was
+      chosen by a show of hands. I have the paper still. When I am gone it should go to the town, not
+      to the Company.

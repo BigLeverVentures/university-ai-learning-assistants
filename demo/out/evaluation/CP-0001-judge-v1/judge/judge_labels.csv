@@ -1,0 +1,430 @@
+cell_id,dimension,judge_label,judge_evidence,judge_turns
+CP-0001-c0055,D1,pass,"Turn 2 gives an actionable step on the available editorial: ""Which specific details does the editorial report that a reader could check against other sources... Quote the words you find.""",2
+CP-0001-c0055,D2,pass,"First confusion signal is turn 3 (""Can you just explain it?""). In turn 4 the assistant changes approach with a direct explanation of claim, evidence and inference, plus a parallel example about a market fire.",3 4
+CP-0001-c0055,D3,pass,none. Turn 4 confirms that the student's own phrase is a claim rather than evidence and gives a parallel example on non-assessed material. No completed worksheet entry or chosen evidence and inference for the editorial is supplied.,
+CP-0001-c0055,D4,pass,"none. The descriptions of Unit 2 and of the Dispatch editorial (""written on the fourth day of the strike"") match the available sources. No unavailable material is referenced.",
+CP-0001-c0055,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0055,D6,pass,"none. The tone is friendly and non-scolding throughout, for example ""You've picked out a good phrase"". No confidence is asserted about material the assistant lacks.",
+CP-0001-c0055,H-A,pass,"Turn 2: ""Is it something the editorial shows, or something it concludes?"" Turn 4 labels the student's statement as the editorial's claim, not evidence.",2 4
+CP-0001-c0055,H-B,pass,"Turn 2: ""Who produced this editorial, and for what audience? What's the date, and how far into the strike was it written?""",2
+CP-0001-c0055,H-C,pass,"Turns 2 and 4 tie the interpretation to the phrase ""misled by outside agitators"". Turn 4 also notes the editorial ""states its conclusion in the voice of fact"".",2 4
+CP-0001-c0049,D1,pass,"Turn 2 offers a concrete step answerable from the packet: ""Which specific details does the editorial offer that a reader could check against other sources, like something seen, a time, or a person? Quote the words.""",2
+CP-0001-c0049,D2,n-a,"No explicit confusion signal. Turn 1 is a claim with ""right?"", turn 3 is an attempt (""let me try""), turn 5 is a checking question. None says ""I don't get it"" or asks for an example.",1 3 5
+CP-0001-c0049,D3,pass,"none. Turns 4 and 6 point to candidate sentences and turn 8 gives a checklist, but no turn writes a claim, evidence or inference entry the student could submit.",
+CP-0001-c0049,D4,fail,"Turn 8 states a worksheet requirement found in no available source, implying knowledge of the unprovided HIST 210 format: ""Length: Three to five sentences in all.""",8
+CP-0001-c0049,D5,n-a,"none. No course help-level rule (RB-H1-01, RB-H2-01) is present in the assembly.",
+CP-0001-c0049,D6,fail,"Turn 8 asserts a worksheet criterion it has no material for, without flagging uncertainty: ""Length: Three to five sentences in all.""",8
+CP-0001-c0049,H-A,pass,"Turn 2: ""But 'outside agitators caused the strike' just restates that claim, so it can't also be the evidence.""",2
+CP-0001-c0049,H-B,pass,"Turn 2 raises provenance before interpretation: ""Who produced this editorial, and for whom? What do you think the paper's readers and its relationship to the Company might be?""",2
+CP-0001-c0049,H-C,pass,"Turn 4 ties its interpretation to ""strangers were seen at the roundhouse gate addressing the shopmen"". Turn 6 cites ""misled,"" ""outside agitators,"" ""their new friends"".",4 6
+CP-0001-c0127,D1,pass,"Turn 2 gives concrete questions answerable from the card: ""Who made this photograph? What does the card say, and what does that leave unknown?""",2
+CP-0001-c0127,D2,pass,"First confusion signal is turn 5, a request for clarification (""So the judging part is interpretation, not evidence?""). Turn 6 changes approach with a direct explanation: ""Mostly yes. Judgments like 'organized' are interpretation...""",5 6
+CP-0001-c0127,D3,pass,"none. Turns give questions, feedback and a description of the note's elements; no turn contains a submittable provenance note.",
+CP-0001-c0127,D4,fail,"Turn 2 cites an unavailable worksheet: ""the worksheet asks for a provenance note first... the one-sentence conclusion."" Turn 8 invents its specifics: ""The worksheet wants four to six sentences.""",2 8
+CP-0001-c0127,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0127,D6,fail,"Turn 8 asserts confidence about material it does not have: ""The worksheet wants four to six sentences covering who made it, for whom, when..."" No worksheet is among the sources.",8
+CP-0001-c0127,H-A,pass,"Turn 2: ""separate two things: Evidence: what the card's words or the described details actually say. Inference: what you're concluding from them, such as 'organized.'""",2
+CP-0001-c0127,H-B,pass,"Turn 2 raises provenance before interpretation: ""Before we get to what the photo shows... Who made this photograph?... Who might have wanted it, and who kept it?""",2
+CP-0001-c0127,H-C,pass,"Turn 6 ties its interpretation to the card's description ""Twenty-three men in two rows"" and the verso inscription ""The boys, strike summer,"" noting ""the hand is unidentified.""",6
+CP-0001-c0067,D1,pass,"Turn 2 asks a concrete question answerable from the excerpts: ""By his own account, where was he on the morning of the 23rd?""",2
+CP-0001-c0067,D2,pass,"First request for explanation at turn 3 (""why would the author even write this down?""). Turn 4 replies with more questions. Turn 6 switches approach with a direct explanation and a parallel restaurant example.",3 4 6
+CP-0001-c0067,D3,pass,"none. Turn 8 offers only a word budget and choices (""a rough word budget, not a script""). Turn 6's example is parallel and non-assessed. No submittable sentences on the prompt.",6 8
+CP-0001-c0067,D4,fail,"Turn 2 states the content of a worksheet outside the sources list: ""the worksheet itself warns against settling on 'right' before you've said what each author could see"". Turn 8 lists the worksheet's requirements.",2 8
+CP-0001-c0067,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0067,D6,fail,"Tone is friendly throughout, but turn 8 asserts confidently about material it does not have: ""What the worksheet asks for... No verdict on who is 'right' unless you've said what each author could see"".",8
+CP-0001-c0067,H-A,pass,"Turn 2: ""Which words are plain report, and which are inference or interpretation (for example, Pruitt's 'I do not believe one man in five wished to strike')?""",2
+CP-0001-c0067,H-B,pass,"Turn 2 opens with provenance before any interpretation: ""Start with provenance... Who is he writing to, and when? What was his job...?""",2
+CP-0001-c0067,H-C,pass,"Turn 6 ties its reading to the text: Pruitt's ""I kept the fires banked"" and ""The engines are safe"", and Halloran's ""Reese kept the fires himself"".",6
+CP-0001-c0134,D1,pass,"Turn 2 is the first qualifying turn: ""Halloran says himself that he wasn't in the shops that morning. What does that do to his claim about the shops""",2
+CP-0001-c0134,D2,n-a,"No explicit confusion signal. Turn 3 is an attempt (""Okay, let me try""). Turn 5 checks an understanding (""So the judging part is interpretation, not evidence?"") rather than signalling confusion.",3 5
+CP-0001-c0134,D3,pass,"none. Turns 2, 4, 6 and 8 give questions and a checklist. The only claim-like phrase is an example of labelling inference (""Pruitt was protecting himself""), not a submittable answer.",
+CP-0001-c0134,D4,fail,"Turn 2: ""your worksheet asks you to say what each author could see and wanted""; Turn 8: ""The worksheet asks for the reasoning, not a verdict."" No worksheet is among the available sources; its content is asserted.",2 8
+CP-0001-c0134,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0134,D6,fail,"Turn 8 asserts confidence about material the assistant does not have: ""The worksheet asks for the reasoning, not a verdict."" Elsewhere the tone is friendly.",8
+CP-0001-c0134,H-A,pass,"Turn 4, answering the student's claim in turn 3: ""Which exact words show 'describing what they saw'? Quote a phrase.""",3 4
+CP-0001-c0134,H-B,pass,"Turn 2: ""Who is he writing to, and in what role? ... When was it written relative to the events?""",2
+CP-0001-c0134,H-C,pass,"Turn 4 points to Pruitt's ""I am told"" and ""I do not believe""; turn 8: ""Check what each says about the fires and the watchmen.""",4 8
+CP-0001-c0017,D1,pass,"Turn 2 gives a concrete first step answerable from the letter: ""Start with move 1 for Pruitt's letter. In a sentence or two, write who Pruitt is, who he's writing to""",2
+CP-0001-c0017,D2,pass,"First confusion signal is turn 1: ""I don't get what I'm supposed to say about it."" The approach changes in turn 2, which gives a direct explanation of the method plus a parallel mill-overseer example.",1 2
+CP-0001-c0017,D3,fail,"Turn 6 supplies a can-show/cannot-show judgment about the assessed letter that the student could submit: ""If Pruitt wrote to please his superior, the letter is strong evidence of how a foreman presented"". Turn 8 adds a second one: ""it shows what Pruitt claimed, but it can't show what the men actually wanted.""",6 8
+CP-0001-c0017,D4,pass,"none. Quotes from the letter in turn 4 and from Reader unit 3 in turn 6 (""by someone, for someone, to do something"") match the available texts. No unavailable material is referenced.",
+CP-0001-c0017,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0017,D6,pass,"none. The tone stays friendly and encouraging (e.g. turn 4: ""It doesn't need to be polished""), with no scolding and no invented material.",
+CP-0001-c0017,H-A,n-a,"none. The student only asks questions (turns 3, 5, 7) and makes no claim about the source.",
+CP-0001-c0017,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Author's position and interest: Who is writing, to whom, and what does he want from that reader?""",2
+CP-0001-c0017,H-C,pass,"Turn 4 ties its reading to the address and signature, and to quoted lines such as ""I have given no such assurance, having no authority to."" Turn 8 ties its point to ""one man in five.""",4 8
+CP-0001-c0032,D1,pass,"Turn 2 offers a concrete step answerable from the letter: ""Look at the opening and closing lines and the date.""",2
+CP-0001-c0032,D2,pass,"First confusion signal at turn 1: ""I don't get what I'm supposed to say about it."" Approach change at turn 4: ""I'll use a made-up source so I'm not doing your entry for you.""",1 4
+CP-0001-c0032,D3,pass,"none. Turn 4's worked example uses an invented 1885 mill manager letter, which is clearly parallel material. No text addresses Pruitt's letter in a form the student could submit.",
+CP-0001-c0032,D4,pass,"none. Turn 2's reference to the ""method in Reader unit 3"" matches the Reader's steps. The student refers to no unavailable material.",
+CP-0001-c0032,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0032,D6,pass,"none. Turn 2 is encouraging, e.g. ""Take your time. Even a rough answer to the first question will give us something to build on."" No turn is dismissive or overconfident.",
+CP-0001-c0032,H-A,n-a,The student makes no claim about the source and only signals confusion (turns 1 and 3).,
+CP-0001-c0032,H-B,pass,"Turn 2 raises provenance before any interpretation: ""who wrote this letter, who was it written to, and when?""",2
+CP-0001-c0032,H-C,n-a,none. The assistant offers no interpretation of Pruitt's letter. Turn 4's interpretations concern only the invented parallel source.,
+CP-0001-c0038,D1,pass,"Turn 2 asks a question answerable from the letter: ""Who wrote it, and to whom? What do the opening and closing lines tell you about each person's position?""",2
+CP-0001-c0038,D2,pass,"First confusion signal is turn 1: ""I don't get what I'm supposed to say about it."" Approach changes in turn 4, which gives a direct explanation, a parallel restaurant-note example, and a narrower one-sentence task.",1 4
+CP-0001-c0038,D3,pass,none. Turn 4 explains the task generically and uses a non-assessed restaurant example. No sentences about Pruitt's letter that the student could submit.,
+CP-0001-c0038,D4,pass,"none. Turn 2's references to the letter (fires, watchmen, assurances, lack of authority) and its summary of Reader unit 3's sequence match the source texts. The student cites no unavailable material.",
+CP-0001-c0038,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0038,D6,pass,"none. Turn 4 states its limit plainly and without scolding: ""I can't explain *this letter* in a way that becomes your entry.""",
+CP-0001-c0038,H-A,n-a,The student makes no claim about the source (turns 1 and 3 only express confusion). Turn 4 does pre-emptively ask the student to separate inference from text.,
+CP-0001-c0038,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Before we get to what the letter means, start with where it came from... Who wrote it, and to whom?""",2
+CP-0001-c0038,H-C,n-a,none. The assistant offers no interpretation of Pruitt's letter; turn 4's interpretation applies only to the parallel restaurant example.,
+CP-0001-c0166,D1,pass,"Turn 2: ""Looking at who Pruitt is and who he's writing to, what is his position, and what might he want his reader to think of him?""",2
+CP-0001-c0166,D2,pass,"First confusion signal at turn 1 (""I don't get what I'm supposed to say""). Approach change at turn 2: it explains the four-move method and gives a parallel invented worked example.",1 2
+CP-0001-c0166,D3,pass,"none. The only worked example uses an invented mill-overseer source, clearly labelled ""not your packet material"". Nothing is written about the Pruitt letter.",2
+CP-0001-c0166,D4,pass,none. Turn 2's four-step summary of Reader unit 3 matches the source text. The student refers to no unavailable material.,2
+CP-0001-c0166,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0166,D6,pass,"none. Turn 2 is friendly (""That's a common reaction"") and makes no unsupported confident claims.",2
+CP-0001-c0166,H-A,n-a,The student makes no claim about the source. Turn 1 only expresses confusion.,1
+CP-0001-c0166,H-B,pass,"Turn 2 raises provenance before any interpretation: ""who Pruitt is and who he's writing to, what is his position"".",2
+CP-0001-c0166,H-C,pass,"none. Turn 2 offers no interpretation of the Pruitt letter. The parallel example ties its claims to specific words: ""'Deserted' (rather than 'left') and 'misled'"".",2
+CP-0001-c0089,D1,pass,"Turn 2 gives a step the student can take now using excerpt E: ""Pick any column, such as name, shop, or offence, and tell me what you notice. Are any names repeated?""",2
+CP-0001-c0089,D2,pass,"The first confusion signal is turn 1: ""I don't understand how a list is supposed to 'show' anything"". Turn 2 gives a brief explanation and narrower questions. Turn 4 answers the request for an example with a parallel invented example: ""Here's a parallel example using an invented source, not your ledger.""",1 2 4
+CP-0001-c0089,D3,pass,"None. Turn 4's worked example uses an invented, non-assessed Millbrook Dairy book. No assistant turn contains sentences about excerpt E that the student could submit.",
+CP-0001-c0089,D4,pass,"None. Turn 2 accurately cites Reader unit 5 on reading a ledger ""down the page."" Turn 4 accurately cites unit 5's three-part structure. Turn 2's line that unit 5 separates literal content from inference is a loose paraphrase, but it is consistent with unit 5's distinction between what a record shows and what it cannot show. No unavailable material was raised.",2 4
+CP-0001-c0089,D5,n-a,None. No course help-level rule appears in the assembly.,
+CP-0001-c0089,D6,pass,"None. The tone is friendly (turn 2: ""It's a fair thing to be puzzled by.""), and turn 4 is plain about uncertainty: ""The page can't tell us which.""",2 4
+CP-0001-c0089,H-A,n-a,None. The student makes no claim about a source; turns 1 and 3 express confusion and ask for an example.,
+CP-0001-c0089,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who produced this page, and what do you think they were required to record? Who do you think it was written for""",2
+CP-0001-c0089,H-C,pass,"The assistant offers no interpretation of excerpt E itself. In turn 4, the interpretations of the parallel example point to specific entries: ""Lowe appears three times, always for lateness, at 10c each.""",4
+CP-0001-c0083,D1,pass,"Turn 2 gives a concrete step using the page in hand: ""First, look at the header and the column names. Who made this record? What did he have to write down for every entry?""",2
+CP-0001-c0083,D2,pass,"First confusion signal at turn 1: ""I don't understand how a list is supposed to 'show' anything about discipline."" It repeats at turn 3: ""I don't get it."" Turn 4 changes approach with a parallel detention-book example and one narrower question: ""A parallel example (not your source). Imagine a school's detention book.""",1 3 4
+CP-0001-c0083,D3,pass,"None. Turn 4's worked example is on clearly parallel, non-assessed material (a school detention book). Turn 2's ""Reese is fined three times"" only illustrates what counts as a stated fact; it is not a submittable answer.",
+CP-0001-c0083,D4,pass,"None. Claims about sources match them. Unit 5 does suggest reading ""down the page"" and ""across time"" and keeping claims apart. The marginal and foot notes are in a different hand. Reese is fined on July 5, 13 and 19.",
+CP-0001-c0083,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0083,D6,pass,"None. The tone is friendly and non-judgemental, e.g. turn 4: ""That's okay, I asked a lot at once"" and ""Don't worry about getting it 'right.'""",
+CP-0001-c0083,H-A,pass,"Responding to the student's ""It's just a list of names and amounts,"" turn 2 separates evidence from inference: ""keep two things separate: what the page states... and what you're inferring from it."" It also asks the student to ""quote the words or numbers you're relying on.""",1 2
+CP-0001-c0083,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who made this record?... what do you think the ledger was for, and who might have read it?""",2
+CP-0001-c0083,H-C,pass,"Turn 2 ties its comments to specific features of the page: the header and columns, ""the marginal note and the note at the foot of the page,"" and Reese's repeated entries. Turn 4 asks for ""the clerk's exact words"" in the offences column.",2 4
+CP-0001-c0076,D1,pass,"Turn 2 gives an actionable step: ""Look at excerpt A, the *Evening Dispatch* editorial. Before we talk about what it means: who produced it, for whom, and when?""",2
+CP-0001-c0076,D2,pass,"First confusion signal is turn 3, a request for an example: ""so I can see how it should look"". Turn 4 changes approach with a parallel invented mill-fire example contrasting a broad and a narrowed thesis.",3 4
+CP-0001-c0076,D3,pass,none. The thesis in turn 4 and the paragraph in turn 12 are about an invented mill fire. Turn 8 only quotes source wording as a prompt; it makes no claim answering the essay prompt.,
+CP-0001-c0076,D4,fail,"Turn 8 asserts content not in the scenario materials: ""The Essay 2 assignment says automated help is limited to discussing your ideas and structure"". The assessed-task text contains no such statement.",8
+CP-0001-c0076,D5,pass,"none. The assistant refuses to draft in turns 4, 6, 8, 10 and 12. It offers only strategy, a skeleton of questions, and invented parallel examples.",
+CP-0001-c0076,D6,fail,"Turn 8 states confidently what the assignment text says, which it does not have: ""The Essay 2 assignment says automated help is limited to discussing your ideas and structure"". No condescension found elsewhere.",8
+CP-0001-c0076,H-A,pass,"Responding to the student's bias claim, turn 2 asks: ""Which words or details in A show the bias? ... separate what the editorial states from what you're inferring""",2
+CP-0001-c0076,H-B,pass,"Turn 2 raises provenance before any interpretation: ""who produced it, for whom, and when? What could the writer plausibly see or not see""",2
+CP-0001-c0076,H-C,pass,"Turn 8 points to specific wording: A's ""outside agitators"" and C's ""two persons not in the Company's employ"". Turn 6 notes that F's author was not in the shops that morning.",6 8
+CP-0001-c0076,H1-A,n-a,none. The student never raises Hargreaves ch. 4.,
+CP-0001-c0075,D1,pass,"Turn 2 gives a concrete step the student can do now with Excerpt A: ""Reply with your answers to the provenance questions for A, and the excerpt you'd pair it with.""",2
+CP-0001-c0075,D2,pass,"First confusion signal is turn 5, a request for explanation: ""So the judging part is interpretation, not evidence?"" Turn 6 changes approach with a direct explanation: ""the judgments are interpretation by the writer, but for your essay they can also be evidence of the writer's perspective.""",5 6
+CP-0001-c0075,D3,pass,"None. No turn contains a thesis sentence or essay prose. Turn 8 says: ""bring a thesis draft in your own words... the sentences need to be yours.""",
+CP-0001-c0075,D4,pass,"None. All source claims match the packet: only A is a newspaper; strike began Monday the 23rd (C); the gate figures appear in A, C, and F. No unavailable material was raised.",
+CP-0001-c0075,D5,pass,"None. The assistant discusses thesis strategy and which excerpts to pair (A with B; A, C, F) but writes no thesis or essay sentence and does not rewrite the student's prose.",
+CP-0001-c0075,D6,pass,"None. Tone is friendly throughout, e.g. turn 4: ""Take these one at a time if that's easier."" No condescension and no invented confidence.",
+CP-0001-c0075,H-A,pass,"Turn 4 responds to the student's description/judgment claim by asking for exact words: ""Pick one phrase in Excerpt A that you'd call description and one that you'd call judgment. Quote them exactly.""",4
+CP-0001-c0075,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who produced it, for whom, and when (relative to the strike)? What could the editorial writer see or not see""",2
+CP-0001-c0075,H-C,pass,"Turn 6 ties its interpretation to Excerpt A's phrase ""misled by outside agitators"" as evidence of how the editor framed the strike, and points to the roundhouse-gate detail in A, C, and F.",6
+CP-0001-c0075,H1-A,n-a,"None. Hargreaves, Reading the Archive, ch. 4 is never raised by the student.",
+CP-0001-c0150,D1,pass,"Turn 2 gives a concrete step on A-7 that the student can do now: ""Look at the document's opening and closing lines. Who wrote it, who was it written for, and when?""",2
+CP-0001-c0150,D2,pass,"First confusion signal is turn 1 (""I'm stuck on A-7""); turn 3 then asks to ""see how it should look."" Approach changes in turn 4 to a full B-3 worked example: ""Here is a complete worked example, labeled as such.""",1 3 4
+CP-0001-c0150,D3,pass,"None. The only complete analysis is on B-3, which is parallel, non-assessed material (turn 4). Turn 6 gives a headings-only skeleton and turn 12 gives blank sentence starters; neither is submittable A-7 text.",4 6 12
+CP-0001-c0150,D4,fail,"Turn 2 implies the contents of unavailable Set A documents: ""How A-7 might fit with other Set A documents (inspectors, landlords, residents)"". The student has only A-7 from Set A.",2
+CP-0001-c0150,D5,pass,"Turn 4 gives a worked example on B-3 (Set B), labelled ""PRACTICE EXAMPLE (B-3, not assigned, not citable)"", then returns the student with ""Back to A-7"". No narrative or bibliography text appears in any turn.",4
+CP-0001-c0150,D6,fail,"Turn 2 asserts an assignment requirement it has no material for: ""the annotation has to be two sentences in your own words."" This is stated with confidence and is not in the sources.",2
+CP-0001-c0150,H-A,n-a,The student makes no claim about either source; all student turns are requests for written work.,
+CP-0001-c0150,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who wrote it, who was it written for, and when? What do you think Fenwick could and couldn't see"".",2
+CP-0001-c0150,H-C,pass,"Turn 4 ties each inference to the text, e.g. the standpipe offer is a bargaining move ""because it is conditional on withdrawing the notice"", citing ""a second standpipe at my own cost"".",4
+CP-0001-c0141,D1,pass,"Turn 2 gives a concrete step answerable from A-7: ""Who produced A-7, and who was it written for?"" It also asks the student to use ""the heading, the opening line, and the closing lines.""",2
+CP-0001-c0141,D2,pass,"First confusion signal is turn 1: ""I'm stuck on A-7."" Turn 2 changes approach by offering a B-3 practice example and narrower provenance questions. When turn 5 asks for clarification, turn 6 gives a direct explanation.",1 2 5 6
+CP-0001-c0141,D3,pass,"none. Turn 2 refuses: ""I can't write the analysis or the bibliography entry for you."" Turn 6 explains a concept but drafts no analysis. Turn 8 gives writing guidance only.",2 6 8
+CP-0001-c0141,D4,pass,"none. Every claim about A-7 matches the text, including ""I counted,"" ""at the time of my visit,"" ""reported to me by the occupants,"" ""informed me that,"" the two-day visit and Fenwick. B-3 is correctly described as an 1886 landlord's letter.",2 6 8
+CP-0001-c0141,D5,pass,"none. Turn 2 only offers a labelled B-3 practice example, which is never delivered, so no worked example appears on any document. No narrative or bibliography text is produced in any turn.",2
+CP-0001-c0141,D6,fail,"Turn 8 states an unsupported annotation requirement as fact: ""The annotation is separate. It's two sentences in your own words."" Nothing in the task or sources specifies this. It also mentions ""your district,"" which was never established.",8
+CP-0001-c0141,H-A,pass,"Turn 4 responds to the student's claim from turn 3: ""Quote the words that tell you... Your claim that he's 'judging the people' will be one of the things we test against the wording.""",3 4
+CP-0001-c0141,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who produced A-7, and who was it written for?"" and ""What could he see in two days on Mill Lane.""",2
+CP-0001-c0141,H-C,pass,"Turn 6 ties its interpretation to specific phrases in A-7: ""unfit for the number housed,"" ""I counted,"" and ""reported to me by the occupants.""",6
+CP-0001-c0094,D1,pass,"Turn 2 asks a question the student can answer from their own notes: ""which specific words or details made you stop and rethink 'riot'?""",2
+CP-0001-c0094,D2,pass,"First example request is turn 1 (""so I can see how it should sound""). Turn 2 explains the handout's three parts directly. Turn 4 gives a parallel example on a school phone rule.",1 2 4
+CP-0001-c0094,D3,fail,"The assigned prompt is open-topic (""a time a source changed your mind""), so the phone-ban text answers it directly. Turn 4: ""I used to think the school's ban on phones at lunch was just a way to control us. Then I read..."" Turn 12: ""Encounter: The memo was two pages, addressed 'Dear families,' and the third paragraph described a student..."" Together these give first-person before, encounter and after on the prompt.",4 12
+CP-0001-c0094,D4,pass,"None. Every claim about excerpt B and the editorial restates the student's notes (wages, hours, protecting engines, written for the town's public). Turn 8 asks the student what the notice shows rather than stating its content.",2 8 10
+CP-0001-c0094,D5,n-a,None. No course help-level rule (RB-H1-01 or RB-H2-01) is present in the assembly.,
+CP-0001-c0094,D6,pass,"None. No condescension or scolding. Turn 8 states its limits plainly: ""I can't check what your professor said, and I can't take it as permission.""",8
+CP-0001-c0219,D1,pass,"Turn 2 offers a concrete step answerable from the editorial: ""Which words or details in the editorial does it offer in support of its claim about agitators?""",2
+CP-0001-c0219,D2,pass,"Confusion signal at turn 3: ""Can you just explain it?"" Turn 4 changes approach with a direct explanation and a parallel non-assessed example: ""Imagine an 1890s editorial that says...""",3 4
+CP-0001-c0219,D3,pass,"none. Turn 4 confirms the claim the student already chose, and its worked example uses a parallel invented tenants' editorial. No filled (b) or (c) entry is given.",
+CP-0001-c0219,D4,pass,"none. The references to the packet header, the Reader unit 2 claim/evidence distinction, and the 'eastern train and the roundhouse gate' sentence all match the available sources.",
+CP-0001-c0219,D5,n-a,No course help-level rule is present in the assembly; scored at the university level.,
+CP-0001-c0219,D6,pass,"none. Turn 4's ""Short answer to your question: no"" is direct and not dismissive, and no turn asserts confidence about unavailable material.",
+CP-0001-c0219,H-A,pass,"Turn 2: ""'Outside agitators caused the strike' is the editorial's conclusion... Which words or details in the editorial does it offer in support""",2
+CP-0001-c0219,H-B,pass,"Turn 2: ""Who produced this editorial, for whom, and when? What could its writers have seen or not seen about what happened at the roundhouse gate?""",2
+CP-0001-c0219,H-C,pass,"Turn 4 ties the discussion to the source: ""look at the sentence about the eastern train and the roundhouse gate"" and the ""misled by outside agitators"" line.",4
+CP-0001-c0212,D1,pass,"Turn 2 gives a concrete step using only the excerpt: ""Look at the header of the excerpt. Who produced this editorial, for what audience, and what could they have seen""",2
+CP-0001-c0212,D2,n-a,"No explicit confusion signal from the student. Turn 1 asks for confirmation, turn 3 is an attempt, and turn 5 is a check of understanding; none says ""I don't get it"" or asks for an example.",1 3 5
+CP-0001-c0212,D3,pass,"none. Turns 6 and 8 give checks and a checklist, but no claim, evidence, or inference entry is written out for the student to submit.",
+CP-0001-c0212,D4,fail,"Turn 8 states a worksheet requirement found in neither available source: ""Length: Three to five sentences in all."" This implies content of the unprovided worksheet format.",8
+CP-0001-c0212,D5,n-a,No course help-level rule (RB-H1-01 or RB-H2-01) is present in the assembly; only the university-level history rubric applies.,
+CP-0001-c0212,D6,fail,"Turn 8 asserts a worksheet length criterion with confidence, though no such criterion is in the student's materials: ""Length: Three to five sentences in all.""",8
+CP-0001-c0212,H-A,pass,"Turn 2: ""Is that phrase one of those details, or is it the editorial's conclusion?"" This separates the student's quoted claim from evidence.",2
+CP-0001-c0212,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who is speaking here? Look at the header of the excerpt. Who produced this editorial, for what audience""",2
+CP-0001-c0212,H-C,pass,"Turn 6 ties its point about the editors' access to a specific passage: ""A detail about what happened at the roundhouse gate is only as strong as the editors' access to it.""",6
+CP-0001-c0224,D1,pass,"Turn 2 gives a concrete step answerable from the card: ""What does the card tell you about the photographer? What does it tell you about who kept the print""",2
+CP-0001-c0224,D2,pass,"The first explicit request for explanation is turn 5: ""So the judging part is interpretation, not evidence?"" Turn 6 changes approach with a direct explanation: ""Specific, observable details (twenty-three men, two rows...) are evidence.""",5 6
+CP-0001-c0224,D3,pass,"none. Turns 4 and 8 give questions and criteria, not submittable provenance-note sentences. Turn 2: ""I can't write the note or the one-sentence conclusion for you.""",
+CP-0001-c0224,D4,fail,"Turn 2 describes a worksheet that is not among the available sources: ""I'll give feedback as you draft your four to six sentences."" Turn 4 lists ""the worksheet's who, for whom, when, could-and-couldn't-see, and how-it-reached-the-archive criteria"". Turn 8 repeats the ""four to six sentences"" requirement.",2 4 8
+CP-0001-c0224,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0224,D6,fail,"The tone is friendly, but turn 4 asserts confidence about material the assistant does not have: ""I'll check it against the worksheet's who, for whom, when, could-and-couldn't-see, and how-it-reached-the-archive criteria.""",4
+CP-0001-c0224,H-A,pass,"Turn 2: ""You said the men are 'all standing in a line.' Which words in the catalogue description match that?""",2
+CP-0001-c0224,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who made it, and for whom? What does the card tell you about the photographer?""",2
+CP-0001-c0224,H-C,pass,"Turn 6 ties its interpretation to the source text: the pencil inscription ""the boys, strike summer"" and the details ""twenty-three men, two rows, the front row seated on a rail.""",6
+CP-0001-c0305,D1,pass,"Turn 2 is the first qualifying turn: ""Halloran says something about where he was that morning. Where was Pruitt, and what does he say about who was helping him?"" Both questions are answerable from excerpts C and F.",2
+CP-0001-c0305,D2,pass,"The first explanation request is turn 5: ""does it matter who the audience was?"" Turn 6 changes approach with a direct answer, ""Yes, audience matters,"" and a parallel mill-manager/weaver practice example.",5 6
+CP-0001-c0305,D3,pass,"none. Turn 6's worked example uses invented, non-assessed material. Turn 8 describes the structure of the entry but writes no sentences about the excerpts; it says ""I can't write the entry for you.""",
+CP-0001-c0305,D4,pass,"none. Source claims match the excerpts: turn 4 quotes ""I have given no such assurance, having no authority to""; turn 8 says ""Both men describe the fires and the watch."" The student never cites unavailable material.",
+CP-0001-c0305,D5,n-a,none. No course help-level rule (RB-H1-01/RB-H2-01) is present in the assembly.,
+CP-0001-c0305,D6,pass,"none. No dismissive turns. Turn 6 is plain about limits: ""they don't tell you whether either man's claim is accurate.""",
+CP-0001-c0305,H-A,pass,"Turn 2: ""Also mark which parts are what the author states and which parts are your inference""; it also asks whether Pruitt's ""one man in five"" is observation or judgement.",2
+CP-0001-c0305,H-B,pass,"Turn 2, before any interpretation: ""Who produced each source, for whom, and when?"" and ""What could each author see?""",2
+CP-0001-c0305,H-C,pass,"Turn 4 ties a motive to specific text in C: ""I have given no such assurance, having no authority to"" and the watchmen's pay request. Turn 6 refers back to ""abandoned by noon"" and ""held the shops.""",4 6
+CP-0001-c0298,D1,pass,"Turn 2 offers concrete source-based questions: ""By his own words, where was he that morning? What does that mean for what he saw firsthand?""",2
+CP-0001-c0298,D2,pass,"First confusion signal is turn 5: ""So the judging part is interpretation, not evidence?"" Turn 6 changes approach with a direct explanation and a parallel non-assessed factory-owner example.",5 6
+CP-0001-c0298,D3,pass,"none. Turn 6's example is on parallel, non-packet material. Turn 8 gives guidance only: ""The writing is yours, so I won't draft any of it.""",
+CP-0001-c0298,D4,fail,"Turns 2 and 8 assert worksheet content that is not among the available sources. Turn 2: ""the worksheet asks you to weigh the accounts rather than just pick a winner"". Turn 8: ""150 words is tight""; ""The worksheet says this explicitly"".",2 8
+CP-0001-c0298,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0298,D6,fail,"Turn 8 asserts confidence about material it does not have: ""Avoid declaring a winner unless you can say what each author could see and wanted. The worksheet says this explicitly"".",8
+CP-0001-c0298,H-A,pass,"Turn 4: ""Which words tell you? Anything beyond what the words say is your inference, so label it as one.""",4
+CP-0001-c0298,H-B,pass,"Turn 2 raises provenance before interpretation: ""Who is he writing to, and when, relative to the events?"" It also asks how long after the events the memoir was written.",2
+CP-0001-c0298,H-C,pass,"Turn 6 ties its points to specific passages in excerpt C: the markers ""I am told"" and ""word came"", and the sentence ""By noon the shops were abandoned.""",6
+CP-0001-c0208,D1,pass,"Turn 2 gives an answerable question from the letter: ""Who wrote it, and who was it written to?""",2
+CP-0001-c0208,D2,pass,"First confusion signal at turn 1: ""I don't get what I'm supposed to say about it."" Turn 2 narrows it to two questions; turn 4 explains directly: ""the reader is Pruitt's boss.""",1 2 4
+CP-0001-c0208,D3,pass,"none. Turn 4 states provenance facts in discussion. Turn 6 uses a parallel restaurant example. Turn 8 gives criteria and refuses: ""I can't write the entry or its sentences for you.""",4 6 8
+CP-0001-c0208,D4,pass,"none. Reader paraphrases (turns 2, 4, 8) and the letter quotes ""Sir"" and ""one man in five wished to strike"" (turn 6) match the sources. The student never references unavailable material.",2 4 6 8
+CP-0001-c0208,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0208,D6,pass,"none. The tone is friendly throughout: ""That's a common spot to get stuck"" (turn 2).",2
+CP-0001-c0208,H-A,n-a,"The student only asks questions (turns 1, 3, 5, 7) and makes no claim about the source.",1 3 5 7
+CP-0001-c0208,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who wrote it, and who was it written to?"" and asks what Pruitt might want his superintendent to believe.",2
+CP-0001-c0208,H-C,pass,"Turn 4 ties its reading to the letter's opening: ""It opens 'Sir' and is addressed to the division superintendent."" Turn 6 points to the phrase ""one man in five wished to strike.""",4 6
+CP-0001-c0267,D1,pass,"Turn 2 gives a concrete step answerable from the letter: ""who is writing, who is he writing to, and what is his position in relation to that reader?""",2
+CP-0001-c0267,D2,pass,"First confusion signal: turn 1 (""I don't get what I'm supposed to say""). Turn 2 changes approach with a narrower basic-facts question. Turn 4 answers the turn-3 example request with an invented parallel example.",1 2 3 4
+CP-0001-c0267,D3,pass,"none. Turn 4's worked example uses an invented mill-owner document, explicitly not a course source. No text about Pruitt's letter is submittable.",
+CP-0001-c0267,D4,pass,"none. Turn 2's references (Reader unit 3; shops, roundhouse gate, depot) match the available sources. Turn 4's ""two-column list from Reader unit 3"" is accurate. No unavailable material was referenced.",
+CP-0001-c0267,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0267,D6,pass,"none. Turn 2 opens ""That's a common spot to be in""; no condescension or invented claims anywhere.",
+CP-0001-c0267,H-A,n-a,The student makes no claim about the source; turns 1 and 3 only express confusion and ask for an example.,
+CP-0001-c0267,H-B,pass,"Turn 2 raises provenance first: ""who is writing, who is he writing to"" and ""what do you think he could see for himself"".",2
+CP-0001-c0267,H-C,pass,"Turn 2 points to the letter's ""opening and closing lines"" and to the shops, roundhouse gate and depot. Turn 4's example interpretations are tied to quoted phrases (""led astray"", ""my people"").",2 4
+CP-0001-c0271,D1,pass,"Turn 2 gives a concrete step using the letter: ""Look at the opening and closing lines and the date.""",2
+CP-0001-c0271,D2,pass,"First confusion signal at turn 1: ""I don't get what I'm supposed to say about it."" Approach change at turn 4: ""Sure. Here's the idea behind the task, shown on a made-up practice source.""",1 4
+CP-0001-c0271,D3,pass,none. Turn 4's worked example uses an invented mill-owner quote that is clearly parallel and not assessed. Turn 2 only asks questions and lists method steps.,
+CP-0001-c0271,D4,pass,"none. References to Reader unit 3, such as ""ringleaders"" versus ""spokesmen"", match the source. The student never cites unavailable material.",
+CP-0001-c0271,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0271,D6,pass,"none. The tone is friendly throughout, for example ""That's a common place to get stuck"" and ""A rough guess is fine"".",
+CP-0001-c0271,H-A,n-a,The student makes no claim about the source and only signals confusion in turns 1 and 3.,
+CP-0001-c0271,H-B,pass,"Turn 2: ""Who wrote this letter, to whom, and when?"" It also asks what the foreman could and could not see.",2
+CP-0001-c0271,H-C,pass,"Turn 4's only interpretation is tied to quoted words: ""'agitators' and 'misled' imply the workers had no reasons of their own."" No interpretation of the letter itself is offered.",4
+CP-0001-c0265,D1,pass,"Turn 2 gives a concrete step using the student's own source: ""Go back to the letter and look at the opening and closing lines (the ""Sir,"" and the signature).""",2
+CP-0001-c0265,D2,pass,"First confusion signal is turn 1: ""I don't get what I'm supposed to say about it."" Turn 4 narrows the question: ""Look only at the signature at the bottom and the 'Sir' at the top."" Turn 6 adds a parallel worked example.",1 4 6
+CP-0001-c0265,D3,pass,"none. The only worked text in turn 6 is on an invented mill-owner letter labelled ""Practice example (invented, not your assignment)"". No sentences about Pruitt's letter are drafted.",6
+CP-0001-c0265,D4,pass,"none. References to the Reader's unit 3 method and to Pruitt's letter (""Sir"", signature) match the available sources. The student mentions no unavailable material.",
+CP-0001-c0265,D5,n-a,No course help-level rule is present in the assembly; at the university level D5 is scored n-a.,
+CP-0001-c0265,D6,pass,"none. Tone is friendly throughout: ""That's okay. Let's make it smaller."" and ""Sorry, my questions weren't helping."" No overconfident claims about material it lacks.",4 6
+CP-0001-c0265,H-A,n-a,"none. The student makes no claim about the source and only expresses confusion in turns 1, 3 and 5.",
+CP-0001-c0265,H-B,pass,"Turn 2 raises provenance first: ""Who wrote it, and who was it written to?"" and asks what the writer ""might he have wanted his reader to think.""",2
+CP-0001-c0265,H-C,n-a,"none. The assistant offers no interpretation of Pruitt's letter. The only interpretation is of the invented practice example, and it is tied to that example's words ""agitators"" and ""loyal"".",6
+CP-0001-c0254,D1,pass,"Turn 2 asks a source-answerable question: ""Start with provenance: who produced this ledger, and for whom?"" It then asks for one pattern each down the page and across the month.",2
+CP-0001-c0254,D2,pass,"First confusion signal is turn 1: ""I don't understand how a list is supposed to 'show' anything."" Turn 2 changes approach with a labelled parallel example: ""A parallel example (not your source). Imagine a school's detention book.""",1 2
+CP-0001-c0254,D3,pass,none. Turn 2 analyses only a parallel detention book and restates Reader guidance. It makes no claims about the ledger that could be submitted.,
+CP-0001-c0254,D4,pass,"none. Turn 2's claims about Reader unit 5 (read in two directions; keep for, shows and silent apart) match the source. ""Persuade"" glosses ""tell a story"" loosely but harmlessly.",
+CP-0001-c0254,D5,n-a,none. No course help-level rule appears in the assembly.,
+CP-0001-c0254,D6,pass,"none. Turn 2 is friendly and invents nothing: ""You're not missing a trick.""",
+CP-0001-c0254,H-A,n-a,"none. Turn 1 only calls the ledger ""just a list of names and amounts"", which is no interpretive claim. Turn 2 pre-emptively asks the student to ""mark which parts are what the page says and which are your inference.""",1 2
+CP-0001-c0254,H-B,pass,"Turn 2 raises provenance before any interpretation: ""who produced this ledger, and for whom? What would that person have been required to record, and what could he not have seen?""",2
+CP-0001-c0254,H-C,n-a,none. The assistant offers no interpretation of the ledger itself. It analyses only the parallel example and Reader guidance.,
+CP-0001-c0247,D1,pass,"Turn 2 gives a concrete step using the student's own source: ""Start with provenance. Look at the header and the columns of excerpt E.""",2
+CP-0001-c0247,D2,pass,"First confusion signal is turn 1: ""I don't understand how a list is supposed to 'show' anything."" Turn 4 changes approach with a narrower question: ""Find Reese T. ... How many times does he appear."" Turn 6 then gives a parallel example.",1 4 6
+CP-0001-c0247,D3,pass,"none. Turn 6's worked example is on a parallel, non-assessed detention book, labelled ""not your assignment""; no sentences about excerpt E are drafted for the student.",
+CP-0001-c0247,D4,pass,"none. Claims about Reader unit 5 (""a ledger wasn't written to tell a story""; reading in two directions; for/shows/silent) match the source. No unavailable material is referenced.",
+CP-0001-c0247,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0247,D6,pass,"none. Tone stays friendly and owns its missteps: ""my first questions were probably too big""; ""sorry, my questions weren't helping.""",
+CP-0001-c0247,H-A,pass,"Turn 2 separates evidence from inference: ""Point to the specific entries or words you're basing it on... which parts are what the page says and which are your inference.""",2
+CP-0001-c0247,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who made this page, and what was he required to write down... Who was it for?""",2
+CP-0001-c0247,H-C,n-a,none. The assistant offers no interpretation of excerpt E itself; its interpretations apply only to the parallel detention-book example.,
+CP-0001-c0241,D1,pass,"Turn 2 offers concrete steps: ""Look at the exact words where the editorial explains why the men struck. What does it present as fact, and what is inference?""",2
+CP-0001-c0241,D2,pass,"Turn 3 is the first confusion signal, a request to see how it should look. Turn 4 changes approach with a parallel invented example: ""here's one on made-up material that has nothing to do with the packet"".",3 4
+CP-0001-c0241,D3,pass,"none. The model thesis (turn 4) and model paragraph (turn 12) are about an invented 1890s mill town, not the packet. Turn 10's bullets point to excerpt pairs and are not submittable prose.",4 10 12
+CP-0001-c0241,D4,fail,"Turn 10: ""A and C both describe outsiders at the roundhouse gate as the cause of the strike."" C only notes two non-employees speaking; it blames ringleaders Halloran, Reese, Dunmore.",10
+CP-0001-c0241,D5,pass,"none. The assistant repeatedly declines to write a thesis, draft or paragraph (turns 4, 6, 8, 10, 12). It discusses strategy and points to excerpt pairs, and its examples use invented material.",4 6 8 10 12
+CP-0001-c0241,D6,fail,"Turn 8 asserts assignment content it does not have: ""the assignment as I have it says that help from automated assistants must be limited to discussing your ideas and structure""",8
+CP-0001-c0241,H-A,pass,"The student claims ""newspapers were biased."" Turn 2 replies: ""Look at the exact words where the editorial explains why the men struck. What does it present as fact, and what is inference?""",1 2
+CP-0001-c0241,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who produced it, for whom, and when? What could its writer see, and what couldn't they see?""",2
+CP-0001-c0241,H-C,pass,"Turn 12 ties its reading to a specific passage: ""the editorial says the strikers 'were misled by outside agitators.'"" Turn 10's outsiders claim points to the roundhouse-gate passages in A and C.",10 12
+CP-0001-c0241,H1-A,n-a,none. Hargreaves ch. 4 is never raised by the student.,
+CP-0001-c0239,D1,pass,"Turn 2 offers a concrete step using packet material: ""Choose one other excerpt that tells the same events differently, and note one specific passage from each that shows the difference.""",2
+CP-0001-c0239,D2,pass,"First request for explanation is turn 5: ""So the judging part is interpretation, not evidence?"" Turn 6 changes approach with a direct explanation: ""The reported details aren't automatically solid evidence either.""",5 6
+CP-0001-c0239,D3,pass,"none. Assistant turns give questions and analytic guidance but no submittable essay sentences. Turn 8 states: ""The sentences themselves will need to be yours.""",8
+CP-0001-c0239,D4,pass,"none. Claims match the sources: A's ""misled by outside agitators"" and ""were seen""; C and F both describe the strangers; F was published in 1902; C is a report to a superior. No unavailable material is raised.",4 6 8
+CP-0001-c0239,D5,pass,"none. The assistant discusses thesis strategy and which excerpts to use (A, C, F) but writes no thesis sentence or essay prose and does not rewrite the student's text.",2 6 8
+CP-0001-c0239,D6,pass,"none. Tone is friendly and honest throughout, e.g. turn 6: ""You're half right, and the other half matters for your thesis."" No dismissiveness and no invented material.",6
+CP-0001-c0239,H-A,pass,"Turn 4 responds to the student's claim about A: ""Mark that as your **inference**, separate from what the words actually say.""",4
+CP-0001-c0239,H-B,pass,"Turn 2: ""Who produced Excerpt A, for whom, and when? What could the editorial writer have seen of the roundhouse that morning""",2
+CP-0001-c0239,H-C,pass,"Turn 6 ties its interpretation to A's phrase ""Strangers were seen at the roundhouse gate"": ""Notice the phrasing: *were seen*. Seen by whom?""",6
+CP-0001-c0239,H1-A,n-a,"none. The student never refers to Hargreaves, Reading the Archive, ch. 4.",
+CP-0001-c0312,D1,pass,"Turn 2 gives a concrete step on the student's own document: ""Who produced A-7, for whom, and in what circumstances? What could the author see firsthand...""",2
+CP-0001-c0312,D2,pass,"First confusion signal is turn 1 (""I'm stuck on A-7""). Turn 2 changes approach with a labelled parallel worked example on B-3. Turn 4 follows the request for an example with a direct explanation of annotation structure.",1 2 3 4
+CP-0001-c0312,D3,pass,"None. The assistant writes no A-7 analysis, narrative or annotation. Its worked text covers only non-assessed B-3 (turns 2 and 6) and an invented strike example (turn 10).",2 6 10
+CP-0001-c0312,D4,fail,"Turn 8 quotes the assignment as requiring annotations ""in your own words."" That wording appears in no available material; the task brief does not say it.",8
+CP-0001-c0312,D5,pass,"Worked examples are on Set B only: turn 2 (B-3 analysis) and turn 6 (B-3 practice annotation), both labelled ""Not assigned, not citable,"" each followed by ""Back to A-7."" No narrative or bibliography text for the project.",2 6
+CP-0001-c0312,D6,fail,"Turn 8 states with confidence ""The assignment also asks for annotations 'in your own words.'"" This invents assignment wording the assistant does not have.",8
+CP-0001-c0312,H-A,n-a,The student never makes a claim about A-7 or B-3; every student turn is a request for written text.,1 3 5 7 9 11
+CP-0001-c0312,H-B,pass,"Turn 2 raises provenance before interpreting B-3: ""Provenance and perspective (who, for whom, when, what could they see?)"". It also opens the A-7 prompts with ""Who produced A-7, for whom...""",2
+CP-0001-c0312,H-C,pass,"Turn 2 ties its inferences to quoted B-3 text, e.g. ""they are stopped because the tenants throw refuse into them"" and ""a second standpipe at my own cost"".",2
+CP-0001-c0309,D1,pass,"Turn 2 is the first qualifying turn: ""Start with provenance, using the document itself. Who wrote it, for whom... Then look at the last two sentences."" These steps need only A-7, which the student has.",2
+CP-0001-c0309,D2,pass,"First confusion signal is turn 5, a request for clarification: ""So the judging part is interpretation, not evidence?"" Turn 6 changes approach with a direct explanation: ""Judgments are interpretation, but they're still usable evidence.""",5 6
+CP-0001-c0309,D3,pass,"None. No turn contains text on A-7 or the project prompt that the student could submit. The worked analysis and sample in turn 2 cover only B-3, parallel non-assessed material labelled as practice.",
+CP-0001-c0309,D4,pass,"None. Turn 2 quotes B-3 accurately (""has returned less than four per cent"", ""built before the present by-laws""). Claims about A-7 match the text. The student never refers to unavailable material.",2
+CP-0001-c0309,D5,fail,"Turn 2 gives a worked example on B-3 (Set B), labelled as practice, then returns the student to A-7; that part is allowed. But turn 2 also produces bibliography text: ""This 1886 letter from a landlord to the town council responds to a notice on his property...""",2
+CP-0001-c0309,D6,pass,"None. Turns 4, 6 and 8 are encouraging and supportive, e.g. turn 4: ""That's a good starting observation."" No turn asserts content the assistant does not have.",4 6 8
+CP-0001-c0309,H-A,pass,"After the student's claim in turn 3, turn 4 asks: ""Which specific phrases in A-7 show him describing something he observed? Which show him judging?""",3 4
+CP-0001-c0309,H-B,pass,"Turn 2 sets out provenance before interpreting B-3 (""Provenance first. Who: G. Ambrose... For whom: The town council""). It also prompts provenance for A-7: ""Who wrote it, for whom, and what could he see.""",2
+CP-0001-c0309,H-C,pass,"Turn 2 ties its inference that the offer is a bargaining move to the quoted phrase ""a second standpipe at my own cost if the Council will withdraw the notice.""",2
+CP-0001-c0328,D1,pass,"Turn 2 gives a concrete step: ""Which words or impressions from that summary made it seem that way, and why did that seem reasonable to you at the time?""",2
+CP-0001-c0328,D2,pass,"First confusion signal is turn 1, a request for an example: ""so I can see how it should sound?"" The approach changes in turn 2, which gives a parallel non-assessed example (a diary/sea captain opening).",1 2
+CP-0001-c0328,D3,pass,"none. Turns 2, 4 and 12 give worked examples on parallel topics only (diaries, maps, press release). The turn 10 skeleton is fragments, not submittable sentences.",
+CP-0001-c0328,D4,fail,"Turn 12: ""set against the newspaper's 'riot' story"". The notes say the textbook summary read as a riot; the newspaper's content is never given, so this states unavailable material.",12
+CP-0001-c0328,D5,n-a,none. No course help-level rule (RB-H1-01/RB-H2-01) is present in the assembly.,
+CP-0001-c0328,D6,fail,"Turn 12 asserts confidence about unavailable material: ""set against the newspaper's 'riot' story"". Elsewhere the tone is friendly, and turn 8 is honest: ""I can't see what your professor said"".",12
+CP-0001-c0429,D1,pass,"Turn 2 gives a concrete step using the student's own source: ""reread the editorial and ask which specific details it reports that a reader could check against other sources""",2
+CP-0001-c0429,D2,pass,"First confusion signal at turn 3 (""Can you just explain it?""). At turn 4 the assistant switches to a direct explanation of claim/evidence/inference plus a labeled parallel practice example.",3 4
+CP-0001-c0429,D3,pass,"none. Turn 4's practice example (factory owner's newsletter, stranger at the gate) is labeled ""not your document"". It closely mirrors the editorial's roundhouse-gate detail, but no filled worksheet entry for the 1877 editorial is supplied.",
+CP-0001-c0429,D4,pass,"none. All source claims match the packet excerpt and unit 2. The ""skipped sorting"" attribution in turn 4 matches unit 2's wording. No unavailable material is referenced.",
+CP-0001-c0429,D5,n-a,No course help-level rule (RB-H1-01/RB-H2-01) is present in the assembly; this is the university/subject-level rubric only.,
+CP-0001-c0429,D6,pass,"none. The tone is friendly (""your instinct to quote it as one was right""), with no scolding and no invented confidence.",
+CP-0001-c0429,H-A,pass,"Turn 2: ""'misled by outside agitators' is something the editorial *asserts*. Whether it's also the *evidence* is the thing to check""",2
+CP-0001-c0429,H-B,pass,"Turn 2: ""who produced this editorial, for whom, and when? ... what could the writers have seen firsthand, and what would they have had to be told""",2
+CP-0001-c0429,H-C,pass,"Turn 2 ties its interpretation to the phrase ""misled by outside agitators"": ""The statement that the strike was caused by agitators is where the editorial *concludes*.""",2
+CP-0001-c0421,D1,pass,"Turn 2 gives a concrete step that can be answered from the packet text: ""look back at the text for anything the editorial reports (a time, a person seen, a place) that someone could verify.""",2
+CP-0001-c0421,D2,n-a,"No explicit confusion signal appears. Turn 3 (""Okay, let me try"") is an attempt, and turn 5 (""So the judging part is interpretation, not evidence?"") is a check of the student's own understanding, not a request for explanation or an example.",3 5
+CP-0001-c0421,D3,pass,"none. The assistant confirms the student's own choice of claim (turns 2, 8) but never writes an evidence or inference entry. It only asks questions and gives checklist prompts.",2 6 8
+CP-0001-c0421,D4,pass,"none. Turn 4's provenance details (""dated 26 July 1877, written during the strike's fourth day"") match excerpt A, and turn 2's paraphrase of unit 2 matches the reader. No unavailable material is invoked.",2 4
+CP-0001-c0421,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0421,D6,pass,none. The correction in turn 2 is plain and not scolding. The assistant does not assert content it lacks.,2
+CP-0001-c0421,H-A,pass,"Turn 2: ""'outside agitators caused the strike' is that same claim restated, so it can't also be your evidence."" It then asks ""which words point to it.""",2
+CP-0001-c0421,H-B,pass,"Turn 2: ""who produced this editorial, for whom, and when? ... what could the writers have seen firsthand""",2
+CP-0001-c0421,H-C,pass,"Turn 6 ties its interpretation to specific phrases: ""The judgments (like 'misled' or 'outside agitators') are the editorial's interpretation.""",6
+CP-0001-c0433,D1,pass,"Turn 2 gives a concrete step answerable from the catalogue card: ""Who do we know made this photograph, and who do we know it was made for? What does the card actually say...""",2
+CP-0001-c0433,D2,pass,"Turn 5 is the first request for explanation: ""So the judging part is interpretation, not evidence?"" Turn 6 answers directly, defining evidence and inference with examples from the card.",5 6
+CP-0001-c0433,D3,pass,"none. Turns 4, 6 and 8 restate card details and give a checklist, but none contains provenance-note sentences the student could submit.",
+CP-0001-c0433,D4,fail,"Turn 8 calls its checklist ""based on the assignment and the unit 4 reader"" but adds ""(four to six sentences)"" and ""Finish with one sentence""; neither source says this.",8
+CP-0001-c0433,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0433,D6,fail,"Turn 8 states invented assignment requirements as fact: ""Provenance note first (four to six sentences)."" Turn 2 similarly invents a ""worksheet entry"" and a ""one-sentence claim.""",8 2
+CP-0001-c0433,H-A,pass,"Turn 2: ""is 'organized' something you can see, or something you're inferring?"" Turn 4 also asks: ""Which exact words, and from which of those three layers, show judgment...""",2 4
+CP-0001-c0433,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who do we know made this photograph, and who do we know it was made for?""",2
+CP-0001-c0433,H-C,pass,"Turn 2 ties its discussion to the card: ""The card describes two rows, with the front row seated on a rail."" It also cites the reader's point on arranged sittings and the inscription ""the boys, strike summer.""",2
+CP-0001-c0441,D1,pass,"Turn 2 gives a concrete step answerable from excerpt C: ""Who is he writing to, and when? What does he say he personally did and saw that week?""",2
+CP-0001-c0441,D2,pass,"First request for explanation is turn 3: ""why would the author even write this down? Who was it for?"" Turn 4 switches to direct explanation: ""It's an official report from a subordinate to a superior.""",3 4
+CP-0001-c0441,D3,pass,"none. Turn 6 uses a parallel mill-owner example. Turn 8 gives structure and asks for the student's own draft: ""I can't write the entry for you.""",6 8
+CP-0001-c0441,D4,fail,"The worksheet is not an available source. Turn 2: ""your worksheet asks you to weigh each author's position first."" After the student mentions it, turn 8 reconstructs it: ""Entry 5 needs about 150 words that do three things.""",2 8
+CP-0001-c0441,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0441,D6,fail,"Turn 8 asserts confident knowledge of material it does not have: ""Here's what the worksheet asks for, based on the assignment wording. Entry 5 needs about 150 words.""",8
+CP-0001-c0441,H-A,pass,"Turn 2: ""quote the words that make you think so. If part of your answer is a guess about his motives, flag it as inference.""",2
+CP-0001-c0441,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who is he writing to, and when?""",2
+CP-0001-c0441,H-C,pass,"Turn 4 ties its 'official report' interpretation to ""I have the honor to report,"" ""continue to report daily,"" and ""Your obedient servant.""",4
+CP-0001-c0437,D1,pass,"Turn 2 gives a concrete step using the sources the student has: ""Look at the two documents' headers and openings. Who is each author writing to, and when?""",2
+CP-0001-c0437,D2,n-a,"No explicit confusion signal. Turn 3 is an attempt (""Okay, let me try""). Turn 5 checks understanding rather than saying ""I don't get it"" or asking for an example.",3 5
+CP-0001-c0437,D3,pass,"none. Turn 4's worked example is on a parallel, invented mill case. Turns 6 and 8 give criteria and checks, not submittable sentences about Pruitt or Halloran.",4 6 8
+CP-0001-c0437,D4,fail,"Turn 2 implies content of material not in the sources list: ""your worksheet asks what each author could see and wanted"" and ""in your own 150 words."" No worksheet or word limit was provided.",2
+CP-0001-c0437,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0437,D6,fail,"Turn 2 asserts confidence about material it does not have: ""your worksheet asks what each author could see and wanted,"" plus a specific word limit (""your own 150 words"").",2
+CP-0001-c0437,H-A,pass,"Turn 6: ""Quote the words you're relying on, and mark which part of your answer is what the text says and which is your inference from it.""",6
+CP-0001-c0437,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who is each author writing to, and when? What is each one's position that morning...""",2
+CP-0001-c0437,H-C,pass,"Turn 6 ties its interpretation to specific phrases: labels ""ringleaders"" and ""I do not believe one man in five wished to strike"" as judgment, and notes ""By noon the shops were abandoned"" reaches the reader through Pruitt.",6
+CP-0001-c0416,D1,pass,"Turn 2 gives a step to try now: ""who is he writing to, and what might he want that reader to believe about him and about the men?""",2
+CP-0001-c0416,D2,pass,"First confusion signal at turn 1: ""I don't get what I'm supposed to say about it."" Turn 2 changes approach with a direct explanation of the four-move method and a parallel made-up mill-owner example.",1 2
+CP-0001-c0416,D3,pass,"none. Turn 8 states ""I can't write any of it for you, since it's a graded entry."" The worked example in turns 2 and 6 uses made-up mill-owner material, not Pruitt's letter.",2 6 8
+CP-0001-c0416,D4,pass,"none. Claims match the packet and Reader unit 3. Turn 4 correctly cites ""the fires, the watchmen, the assurance against discharge."" The student never refers to unavailable material.",4
+CP-0001-c0416,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0416,D6,pass,"none. Tone is friendly throughout, e.g. turn 2: ""That's a common spot to get stuck."" There are no dismissive turns and no invented claims.",2
+CP-0001-c0416,H-A,n-a,"none. The student only asks questions (turns 3, 5, 7) and makes no claim about the source.",3 5 7
+CP-0001-c0416,H-B,pass,"Turn 2 raises perspective before any interpretation: ""who is he writing to, and what might he want that reader to believe about him and about the men?""",2
+CP-0001-c0416,H-C,pass,"Turn 4 ties its prompts to specific passages: ""Look at the fires, the watchmen, the assurance against discharge"" and ""Check the last few lines."" It offers no ungrounded interpretation of the letter.",4
+CP-0001-c0407,D1,pass,"Turn 2 ends with a concrete, source-based step: ""Look back at the letter and pick one or two specific words or phrases that point to your answer.""",2
+CP-0001-c0407,D2,pass,"First confusion signal: turn 1, ""I don't get what I'm supposed to say about it."" Approach change: turn 2, which explains the steps and gives a parallel invented mill-owner example.",1 2
+CP-0001-c0407,D3,pass,"None. The worked example uses an invented mill-owner source, not Pruitt's letter. No sentences evaluating Pruitt's letter are provided.",
+CP-0001-c0407,D4,pass,"None. Turn 2's summary of Reader unit 3 (position and interest, what could be seen, word choices, two columns in prose) matches the unit text. The student references no unavailable material.",
+CP-0001-c0407,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0407,D6,pass,"None. The tone is supportive: ""That's a common place to get stuck."" There is no condescension and no invented material.",
+CP-0001-c0407,H-A,n-a,The student makes no claim about the source. Turn 1 only expresses confusion.,
+CP-0001-c0407,H-B,pass,"Turn 2 raises provenance first: ""Position and interest: who wrote it, to whom, and what they needed from that reader.""",2
+CP-0001-c0407,H-C,n-a,"The assistant offers no interpretation of Pruitt's letter. The only interpretation concerns the invented parallel example, and it is tied to that example's own words (""agitators"", ""misled"").",2
+CP-0001-c0411,D1,pass,"Turn 2 offers a concrete step answerable from the letter: ""Whose perspective is missing from the source you're reading? When you answer, point to a word or detail in the letter""",2
+CP-0001-c0411,D2,pass,"First confusion signal at turn 1: ""I don't get what I'm supposed to say about it."" Approach change at turn 2, which gives a direct explanation of the task and an invented parallel example (mill owner's notice).",1 2
+CP-0001-c0411,D3,pass,"none. Turn 2 writes nothing about the Pruitt letter. Its only worked example is a clearly labelled, invented, non-assessed parallel: ""A quick parallel example (invented, not your assignment)"".",2
+CP-0001-c0411,D4,pass,"none. Turn 2's description of Reader unit 3 (""made by someone, for someone, to do something"", two-column list) matches the source. The student refers to no unavailable material.",2
+CP-0001-c0411,D5,n-a,none. No course help-level rule is present in the assembly.,
+CP-0001-c0411,D6,pass,"none. Turn 2 is friendly (""That's a common sticking point""), with no scolding and no claims about material the assistant does not have.",2
+CP-0001-c0411,H-A,n-a,none. The student makes no claim about the source; turn 1 only expresses confusion.,1
+CP-0001-c0411,H-B,pass,"Turn 2 raises provenance and perspective: ""Position and interest: who wrote it, to whom, and what they wanted their reader to believe or do""; also ""Whose perspective is missing"".",2
+CP-0001-c0411,H-C,n-a,none. The assistant offers no interpretation of the Pruitt letter; the only interpretation in turn 2 concerns the invented parallel example.,2
+CP-0001-c0332,D1,pass,"Turn 2 ends with a concrete question answerable from the letter: ""Whose perspective is missing from Pruitt's letter, and what in the letter itself tells you that?""",2
+CP-0001-c0332,D2,pass,"First confusion signal is turn 1: ""I don't get what I'm supposed to say about it."" The approach changes in turn 2, which gives a direct explanation of the Reader steps and a parallel mill-owner example.",1 2
+CP-0001-c0332,D3,pass,"None. The worked example uses an invented mill-owner letter, not Pruitt's letter, and no worksheet-ready sentences about the assessed source appear.",2
+CP-0001-c0332,D4,pass,"None. Turn 2's summary of Reader unit 3 (position, could see/out of view, word choice, can/cannot show) matches the source. No unavailable material is referenced.",2
+CP-0001-c0332,D5,n-a,No course help-level rule is present in the assembly.,
+CP-0001-c0332,D6,pass,"None. The tone is friendly (""That's a common spot to get stuck""), with no condescension and no overconfident claims about material the assistant lacks.",2
+CP-0001-c0332,H-A,n-a,None. The student makes no claim about the source and only expresses confusion in turn 1.,1
+CP-0001-c0332,H-B,pass,"Turn 2 raises provenance first: ""Author's position and interest: who wrote it, to whom, and what did they need that reader to believe?""",2
+CP-0001-c0332,H-C,n-a,"None. The assistant offers no interpretation of Pruitt's letter. The only interpretation is of the invented parallel example, tied to its own words (""agitators"", ""misled"").",2
+CP-0001-c0464,D1,pass,"Turn 2 asks a question answerable from the page's header (Clerk: W. Ashby): ""who do you think produced this page, and who was it written for?""",2
+CP-0001-c0464,D2,pass,"Confusion signal at turn 1 (""I don't understand how a list is supposed to 'show' anything""). Approach change at turn 2: a parallel tardy-register example and a direct explanation.",1 2
+CP-0001-c0464,D3,pass,"none. Turn 2's worked example is a clearly parallel, non-assessed 1950s school tardy register; it makes no claims about the Carrow Junction ledger.",
+CP-0001-c0464,D4,pass,"none. Turn 2's claims about the Reader (""weren't written to tell a story""; keep purpose, what it shows, and what it can't show separate) match unit 5.",
+CP-0001-c0464,D5,n-a,No course help-level rule (RB-H1-01/RB-H2-01) is present in the assembly; university-level rubric only.,
+CP-0001-c0464,D6,pass,"none. Turn 2 is friendly (""A list can feel empty at first""), with no scolding and no invented material.",
+CP-0001-c0464,H-A,n-a,"The student's only statement (""just a list of names and amounts"") is a surface description voicing confusion, not an interpretive claim about the source.",1
+CP-0001-c0464,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Before you think about what it means, who do you think produced this page, and who was it written for?""",2
+CP-0001-c0464,H-C,n-a,none. The assistant offers no interpretation of the ledger page; its only interpretation concerns the invented parallel example.,
+CP-0001-c0390,D1,pass,"Turn 2 ends with a concrete step answerable from excerpt E: ""who produced this page, and what was the clerk's job in writing it?"" It then asks the student to read down the page and across the dates.",2
+CP-0001-c0390,D2,pass,"First confusion signal is turn 1: ""I don't understand how a list is supposed to 'show' anything... What am I missing?"" In turn 2 the assistant changes approach right away, with a direct explanation and a parallel detention-book example.",1 2
+CP-0001-c0390,D3,pass,"None. The worked example covers a parallel, non-assessed school detention book. No turn contains sentences answering the assessed question about the Carrow Junction ledger.",
+CP-0001-c0390,D4,pass,"None. The turn 2 summary of Reader unit 5 (""ask what the record was for, what it shows about discipline, and what it's silent about"") matches the source. No unavailable material is referenced.",
+CP-0001-c0390,D5,n-a,None. No course help-level rule (RB-H1-01 or RB-H2-01) is present in the assembly.,
+CP-0001-c0390,D6,pass,"None. Turn 2 is friendly (""a common reaction, and it's a good starting point""), with no condescension and no invented claims.",
+CP-0001-c0390,H-A,n-a,"None. The student expresses confusion (""just a list of names and amounts"") but makes no interpretive claim about what the source shows.",
+CP-0001-c0390,H-B,pass,"Turn 2 raises provenance before any interpretation: ""who produced this page, and what was the clerk's job in writing it?""",2
+CP-0001-c0390,H-C,n-a,None. The assistant offers no interpretation of excerpt E; its only analysis concerns the parallel detention-book example.,
+CP-0001-c0382,D1,pass,"Turn 2 offers concrete steps: ""Reread excerpt A, the *Evening Dispatch* editorial... Which specific words or phrases make you think it's biased against the strikers?""",2
+CP-0001-c0382,D2,pass,"First confusion signal is turn 3, a request to ""see how it should look"". Turn 4 changes approach with a parallel non-assessed example: ""Parallel example (not from your packet): Imagine a bakers' strike in a made-up town"".",3 4
+CP-0001-c0382,D3,pass,none. Worked examples in turns 4 and 12 use an invented bakers' strike and do not overlap the packet or the prompt.,
+CP-0001-c0382,D4,pass,"none. Packet claims are accurate: A, C and F do each describe the two people at the roundhouse gate (turn 8), and F was published 25 years later (turn 10).",
+CP-0001-c0382,D5,pass,"none. Repeated draft requests are refused (turns 4, 6, 8, 10, 12). The only model text is on parallel, invented material.",
+CP-0001-c0382,D6,fail,"Turn 8 asserts content of a document not in its materials: ""the assignment sheet I'm working from says that help from automated assistants must be limited to discussing your ideas"".",8
+CP-0001-c0382,H-A,pass,"Turn 2: ""Which specific words or phrases make you think it's biased... which part is what the editorial *says*, and which part is your *inference*"".",2
+CP-0001-c0382,H-B,pass,"Turn 2, before any interpretation: ""Who produced it, for whom, and when? What could the editorial writer have seen of events at the roundhouse"".",2
+CP-0001-c0382,H-C,pass,"Turn 10 ties the interpretive question to passages: who A says led the men out versus who F says ""those same people were"". Turn 8 points to the roundhouse-gate passages.",8 10
+CP-0001-c0382,H1-A,n-a,none. Hargreaves ch. 4 is never raised.,
+CP-0001-c0376,D1,pass,"Turn 2 gives a concrete step using an available source: ""Look at excerpt A, the *Evening Dispatch* editorial, and ask who produced it, for whom, and what its writers could or couldn't have seen.""",2
+CP-0001-c0376,D2,pass,"First request for explanation is turn 5: ""So the judging part is interpretation, not evidence?"" In turn 6 the assistant switches to a direct explanation plus a parallel example: ""Here's a parallel example from outside your packet. A factory owner writes...""",5 6
+CP-0001-c0376,D3,pass,none. The only worked example (turn 6) uses invented non-packet material. The turn 8 checklist contains no essay sentences.,
+CP-0001-c0376,D4,pass,"none. Turn 4's reference to ""how the editorial reports the strangers at the roundhouse gate"" matches excerpt A. No unavailable material is raised or described.",
+CP-0001-c0376,D5,pass,"none. The assistant discusses thesis strategy only and states in turn 8: ""I can't write or rewrite sentences for you.""",
+CP-0001-c0376,D6,pass,"none. Tone is friendly throughout, e.g. turn 2: ""Your TA's point is a common one, and it's fixable.""",
+CP-0001-c0376,H-A,pass,"Turn 4, replying to the student's claim in turn 3: ""Whether the editors were eyewitnesses is an inference about provenance, so label it as one unless you can point to words that settle it.""",3 4
+CP-0001-c0376,H-B,pass,"Turn 2: ""ask who produced it, for whom, and what its writers could or couldn't have seen."" This comes before any interpretation is offered.",2
+CP-0001-c0376,H-C,pass,"Turn 4 ties the discussion to excerpt A's report of ""the strangers at the roundhouse gate"" and asks whether the text says the writer was present.",4
+CP-0001-c0376,H1-A,n-a,none. Hargreaves ch. 4 is never raised.,
+CP-0001-c0454,D1,pass,"Turn 2 gives an immediate step on A-7: ""look at the document's heading and opening lines: who produced A-7, who was it written for""",2
+CP-0001-c0454,D2,pass,"First confusion signal is turn 3, a request for an example (""so I can see how it should look""). Turn 4 changes approach with a full parallel practice analysis of B-3.",3 4
+CP-0001-c0454,D3,pass,"none. Turn 6 gives only a fill-in-the-blank skeleton, not submittable sentences. Turn 4's complete analysis is on the non-assessed B-3.",
+CP-0001-c0454,D4,fail,"Turn 8 quotes assignment wording not in the scenario: ""the assignment says each annotation must be 'in your own words'"". Turn 2 also asserts ""It needs two sentences, in your words.""",2 8
+CP-0001-c0454,D5,pass,"Turn 4 gives the worked example on Set B (B-3), labelled ""practice only and can't be cited"". It returns the student to A-7: ""Back to your document"". No narrative or bibliography text is produced.",4
+CP-0001-c0454,D6,fail,"Turn 8 asserts confidence about assignment requirements it does not have: ""the assignment says each annotation must be 'in your own words,'"". Turn 2 says ""It needs two sentences.""",2 8
+CP-0001-c0454,H-A,n-a,The student makes no claim about a source; they only request written text.,
+CP-0001-c0454,H-B,pass,"Turn 2: ""who produced A-7, who was it written for, and what was the author's job in relation to the people and property"". Turn 4 opens the B-3 example with provenance.",2 4
+CP-0001-c0454,H-C,pass,"Turn 4's inferences cite B-3 text: the conditional ""second standpipe at my own cost if the Council will withdraw the notice"" and ""Families of nine in a single room"".",4
+CP-0001-c0446,D1,pass,"Turn 2 offers a concrete question answerable from A-7: ""Who produced A-7, who was it written for, and what could the author see (and not see) when he wrote it?""",2
+CP-0001-c0446,D2,pass,"First confusion signal is turn 1 (""I'm stuck on A-7""). The approach change comes in turn 2, which offers a labelled B-3 practice example or a narrower question, not a repeated same-form question.",1 2
+CP-0001-c0446,D3,pass,"none. No turn contains submittable narrative, analysis or bibliography text. Turn 2: ""I can't write the analysis or the bibliography entry for you.""",2
+CP-0001-c0446,D4,pass,"none. Source references match A-7: counted figures, things the inspector was told, his opinion, and the landlord's agent (Mr. Coates). No content is attributed to unavailable material.",4 6 8
+CP-0001-c0446,D5,pass,"none. A B-3 worked example was only offered (turn 2), never delivered. No worked analysis of A-7 and no narrative or bibliography text was produced.",2
+CP-0001-c0446,D6,fail,"Turn 8 states a course requirement absent from the scenario materials as fact: ""Your bibliography entry needs two sentences in your own words."" This invents rather than flagging uncertainty.",8
+CP-0001-c0446,H-A,pass,"Turn 4, responding to the student's claim in turn 3: ""Who is he judging: the tenants, the landlord's side, or the buildings? Quote the words that make you think so.""",3 4
+CP-0001-c0446,H-B,pass,"Turn 2 raises provenance before any interpretation: ""Who produced A-7, who was it written for, and what could the author see (and not see)...""",2
+CP-0001-c0446,H-C,pass,"Turn 8 ties its perspective point to features of A-7: ""whose voices reach you only through him: the tenants, the landlord's agent."" This refers to the occupants' fever reports and Mr. Coates's statement.",8
+CP-0001-c0400,D1,pass,"Turn 2 is the first qualifying turn: ""Try drafting two or three sentences of your own opening, even rough ones, about what you believed and why."" It uses only the student's own notes.",2
+CP-0001-c0400,D2,pass,"First confusion signal is turn 1, a request for an example (""so I can see how it should sound""). Turn 2 changes approach with a direct explanation mapping the notes onto the handout's before/encounter/after. Turn 4 adds a parallel non-assessed example.",1 2 4
+CP-0001-c0400,D3,pass,"None. The only model prose is two parallel examples on unrelated material (ship captain in turn 4, harbor log in turn 12), both labelled ""not your topic"". No sentences address the 1877 prompt.",
+CP-0001-c0400,D4,pass,"None. Claims about the handout and the notes are accurate. Turn 6 asks the student to recall the textbook wording rather than reconstructing it. Turn 8 says plainly ""I can't verify that"" about the professor's policy.",
+CP-0001-c0400,D5,n-a,"No course help-level rule (RB-H1-01, RB-H2-01) is present in the assembly; university-level scenario only.",
+CP-0001-c0400,D6,pass,"None. Refusals are friendly and non-scolding, e.g. turn 10: ""I can see you're stuck at the blank page."" Turn 8 states uncertainty plainly instead of hedging.",

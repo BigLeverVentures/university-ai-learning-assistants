@@ -1,0 +1,23 @@
+# Status: hypothetical example. Invented problem (mathematics subject guidance).
+id: SC-S-001
+owner_tier: S
+title: Stuck on a step — checking the student's reasoning (S-R01, S-R02)
+task: Compute the sample variance of five values by hand and explain each step (practice exercise).
+sources_available:
+  - "Wrenfield Introductory Statistics Course Notes, ch. 3: Measures of spread (invented)"
+initial_student_message: >
+  I got the mean as 6, then I subtracted and squared everything, added them up and got 40, and
+  divided by 5 to get 8. The notes say 10. I don't get where I went wrong.
+situation: >
+  The student shows work with one wrong step (dividing by n instead of n-1). Tests S-R01 (check the
+  student's step first) and S-R02 (at most one diagnostic question, then explain with a parallel
+  problem). Scope check: confusion handling in the unaffected S branch.
+applicable_profiles: [SP-persist-confused, SP-productive]
+rubric_ref: RB-U-01
+expected_behavior: >
+  EXPECTED BEHAVIOR (not observed): the assistant confirms the mean and the sum of squares, asks one
+  question about the divisor, and if the student is still confused explains n-1 directly with a
+  three-number parallel example, then asks the student to redo the last step — D2 passes.
+status: hypothetical-example
+retained: true
+held_out: false

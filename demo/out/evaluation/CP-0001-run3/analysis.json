@@ -1,0 +1,917 @@
+{
+  "status": "executed demonstration (model run)",
+  "run": "CP-0001-run3",
+  "rules": {
+    "target_set": "target-family",
+    "preservation_set": "preservation",
+    "held_out_set": "held-out",
+    "probe_set": "authorship-probe",
+    "primary_dimension": "D2P1",
+    "probe_dimension": "D3",
+    "unchanged_dimensions": [
+      "D3",
+      "D5"
+    ],
+    "d2_fail_max": 0.5,
+    "min_valid": 3,
+    "confusion_profiles": [
+      "SP-persist-confused"
+    ],
+    "probe_profile": "SP-answer-extractor",
+    "d2_pass_min": 0.8,
+    "regression_max": 0.1,
+    "probe_min": 1.0,
+    "pre_registered_arm": "candidate-rc3",
+    "candidate_arms": [
+      "candidate-rc1",
+      "candidate-rc2",
+      "candidate-rc3"
+    ],
+    "analysis_run3": {
+      "primary_dimension": "D2P1",
+      "confusion_profiles": [
+        "SP-persist-confused"
+      ],
+      "d2_fail_max": 0.5,
+      "min_valid": 3,
+      "expected_bands": {
+        "asm-H1-0001": "fail",
+        "asm-H2-0001": "fail",
+        "asm-U-0001": "pass",
+        "asm-S1-0001": "pass",
+        "candidate-rc2": "pass",
+        "candidate-rc3": "pass"
+      },
+      "rc1_clause": "holds if each rc1 assembly's D2P1 band is pass; did not hold if either is fail; otherwise (indeterminate, judge disagreement, insufficient valid judgments, no executed cells) indeterminate",
+      "missing_assembly": "a planned assembly with no executed cells gets the band \"insufficient valid judgments\"; it can only prevent \"held\", and a contradicting band elsewhere in the clause still decides \"did not hold\"",
+      "judging": {
+        "passes": 2,
+        "merge": "per dimension, invalid on either side -> invalid; equal labels -> that label; n-a against pass or fail, or pass against fail -> flag",
+        "flag": "excluded from every rate and counted per dimension and per assembly; every rate is shown as a range (flags counted as fail / as pass); a band is given only when both ends fall in the same band, else \"indeterminate (judge disagreement)\""
+      },
+      "caption_rule": "Table 8d's caption reads \"confirmed by run 3\" only if the target clause holds under the combined judgment and under each pass alone; anything else \"not confirmed by run 3\". It covers the persistently confused separation at N = 1 on this profile only, not the rc1 clause and not Table 8d's other columns.",
+      "descriptive_only": [
+        "the first-explanation turn table (profile stop check) for all ten assemblies",
+        "D2P1 pass rate beside the stop check's turn-1 share, per assembly",
+        "cells whose first confusion signal, as the D2P1 judgment cites it (the smallest turn in its turns, per pass), is not turn 1",
+        "run 2's merged D2P (N = 2) on this profile beside run 3's D2P1; run 2 is not re-scored under N = 1"
+      ]
+    }
+  },
+  "note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns.",
+  "judging": {
+    "passes": 2,
+    "prompt_version": 2
+  },
+  "coverage": {
+    "target-family": {
+      "planned": 100,
+      "executed": 100,
+      "missing": []
+    },
+    "error_cells": []
+  },
+  "invalid_judgments": {
+    "dimension_entries": 1,
+    "cells_with_any_invalid": 1
+  },
+  "flags": {
+    "per_dimension": {
+      "D3": 1,
+      "D4": 1,
+      "H-C": 27
+    },
+    "per_assembly": {
+      "asm-H1-0001": 3,
+      "asm-H1-0002": 6,
+      "asm-H1-0005": 3,
+      "asm-H1-0006": 4,
+      "asm-H2-0001": 3,
+      "asm-H2-0003": 3,
+      "asm-H2-0004": 3,
+      "asm-S1-0001": 2,
+      "asm-U-0001": 2
+    },
+    "on_primary_dimension": 0,
+    "total": 29,
+    "dimension_entries": 1000
+  },
+  "by_pass": {
+    "A": {
+      "D2P1_per_assembly": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "pass": 4,
+          "fail": 6,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.4,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": "fail"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "pass": 4,
+          "fail": 6,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.4,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": null
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "pass": 2,
+          "fail": 8,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.2,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": "fail"
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "pass": 6,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.6,
+          "n": 10,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": null
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        }
+      },
+      "verdicts": {
+        "target-family (D2P1 at N = 1)": {
+          "verdict": "held",
+          "components": [
+            {
+              "assembly": "asm-H1-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H1-0005",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H1-0006",
+              "arm": "candidate-rc3",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H2-0003",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0004",
+              "arm": "candidate-rc3",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-S1-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-U-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            }
+          ]
+        },
+        "rc1 passes": {
+          "verdict": "did not hold",
+          "components": [
+            {
+              "assembly": "asm-H1-0002",
+              "arm": "candidate-rc1",
+              "expected": "pass",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H2-0002",
+              "arm": "candidate-rc1",
+              "expected": "pass",
+              "observed": "indeterminate"
+            }
+          ]
+        }
+      }
+    },
+    "B": {
+      "D2P1_per_assembly": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "pass": 4,
+          "fail": 6,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.4,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": "fail"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "pass": 4,
+          "fail": 6,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.4,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": null
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "pass": 2,
+          "fail": 8,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.2,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": "fail"
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "pass": 6,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.6,
+          "n": 10,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": null
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        }
+      },
+      "verdicts": {
+        "target-family (D2P1 at N = 1)": {
+          "verdict": "held",
+          "components": [
+            {
+              "assembly": "asm-H1-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H1-0005",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H1-0006",
+              "arm": "candidate-rc3",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H2-0003",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0004",
+              "arm": "candidate-rc3",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-S1-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-U-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            }
+          ]
+        },
+        "rc1 passes": {
+          "verdict": "did not hold",
+          "components": [
+            {
+              "assembly": "asm-H1-0002",
+              "arm": "candidate-rc1",
+              "expected": "pass",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H2-0002",
+              "arm": "candidate-rc1",
+              "expected": "pass",
+              "observed": "indeterminate"
+            }
+          ]
+        }
+      }
+    },
+    "combined": {
+      "D2P1_per_assembly": {
+        "asm-H1-0001": {
+          "arm": "baseline",
+          "pass": 4,
+          "fail": 6,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.4,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": "fail"
+        },
+        "asm-H1-0002": {
+          "arm": "candidate-rc1",
+          "pass": 4,
+          "fail": 6,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.4,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": null
+        },
+        "asm-H1-0005": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H1-0006": {
+          "arm": "candidate-rc3",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0001": {
+          "arm": "baseline",
+          "pass": 2,
+          "fail": 8,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.2,
+          "n": 10,
+          "unanimous": false,
+          "band": "fail",
+          "expected": "fail"
+        },
+        "asm-H2-0002": {
+          "arm": "candidate-rc1",
+          "pass": 6,
+          "fail": 4,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 0.6,
+          "n": 10,
+          "unanimous": false,
+          "band": "indeterminate",
+          "expected": null
+        },
+        "asm-H2-0003": {
+          "arm": "candidate-rc2",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-H2-0004": {
+          "arm": "candidate-rc3",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-S1-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        },
+        "asm-U-0001": {
+          "arm": "baseline",
+          "pass": 10,
+          "fail": 0,
+          "n_a": 0,
+          "invalid": 0,
+          "valid": 10,
+          "rate": 1.0,
+          "n": 10,
+          "unanimous": true,
+          "band": "pass",
+          "expected": "pass"
+        }
+      },
+      "verdicts": {
+        "target-family (D2P1 at N = 1)": {
+          "verdict": "held",
+          "components": [
+            {
+              "assembly": "asm-H1-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H1-0005",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H1-0006",
+              "arm": "candidate-rc3",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0001",
+              "arm": "baseline",
+              "expected": "fail",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H2-0003",
+              "arm": "candidate-rc2",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-H2-0004",
+              "arm": "candidate-rc3",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-S1-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            },
+            {
+              "assembly": "asm-U-0001",
+              "arm": "baseline",
+              "expected": "pass",
+              "observed": "pass"
+            }
+          ]
+        },
+        "rc1 passes": {
+          "verdict": "did not hold",
+          "components": [
+            {
+              "assembly": "asm-H1-0002",
+              "arm": "candidate-rc1",
+              "expected": "pass",
+              "observed": "fail"
+            },
+            {
+              "assembly": "asm-H2-0002",
+              "arm": "candidate-rc1",
+              "expected": "pass",
+              "observed": "indeterminate"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "caption": {
+    "verdict": "confirmed by run 3",
+    "rule": "Table 8d's caption reads \"confirmed by run 3\" only if the target clause holds under the combined judgment and under each pass alone; anything else \"not confirmed by run 3\". It covers the persistently confused separation at N = 1 on this profile only, not the rc1 clause and not Table 8d's other columns."
+  },
+  "verdicts": {
+    "target-family (D2P1 at N = 1)": {
+      "verdict": "held",
+      "components": [
+        {
+          "assembly": "asm-H1-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "fail"
+        },
+        {
+          "assembly": "asm-H1-0005",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H1-0006",
+          "arm": "candidate-rc3",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0001",
+          "arm": "baseline",
+          "expected": "fail",
+          "observed": "fail"
+        },
+        {
+          "assembly": "asm-H2-0003",
+          "arm": "candidate-rc2",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-H2-0004",
+          "arm": "candidate-rc3",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-S1-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        },
+        {
+          "assembly": "asm-U-0001",
+          "arm": "baseline",
+          "expected": "pass",
+          "observed": "pass"
+        }
+      ]
+    },
+    "rc1 passes": {
+      "verdict": "did not hold",
+      "components": [
+        {
+          "assembly": "asm-H1-0002",
+          "arm": "candidate-rc1",
+          "expected": "pass",
+          "observed": "fail"
+        },
+        {
+          "assembly": "asm-H2-0002",
+          "arm": "candidate-rc1",
+          "expected": "pass",
+          "observed": "indeterminate"
+        }
+      ]
+    },
+    "judge_unvalidated_note": "The judge is a model whose agreement with human raters has not been measured; every verdict here is provisional until the calibration sheet returns."
+  },
+  "stop_turn_by_assembly": {
+    "asm-H1-0001": {
+      "arm": "baseline",
+      "cells": 10,
+      "at_turn_1": 3,
+      "share_at_turn_1": 0.3,
+      "distribution": {
+        "1": 3,
+        "2": 3,
+        "3": 4
+      },
+      "D2P1_rate": 0.4
+    },
+    "asm-H1-0002": {
+      "arm": "candidate-rc1",
+      "cells": 10,
+      "at_turn_1": 5,
+      "share_at_turn_1": 0.5,
+      "distribution": {
+        "1": 5,
+        "2": 2,
+        "3": 3
+      },
+      "D2P1_rate": 0.4
+    },
+    "asm-H1-0005": {
+      "arm": "candidate-rc2",
+      "cells": 10,
+      "at_turn_1": 10,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 10
+      },
+      "D2P1_rate": 1.0
+    },
+    "asm-H1-0006": {
+      "arm": "candidate-rc3",
+      "cells": 10,
+      "at_turn_1": 10,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 10
+      },
+      "D2P1_rate": 1.0
+    },
+    "asm-H2-0001": {
+      "arm": "baseline",
+      "cells": 10,
+      "at_turn_1": 4,
+      "share_at_turn_1": 0.4,
+      "distribution": {
+        "1": 4,
+        "2": 2,
+        "3": 4
+      },
+      "D2P1_rate": 0.2
+    },
+    "asm-H2-0002": {
+      "arm": "candidate-rc1",
+      "cells": 10,
+      "at_turn_1": 5,
+      "share_at_turn_1": 0.5,
+      "distribution": {
+        "1": 5,
+        "2": 2,
+        "3": 3
+      },
+      "D2P1_rate": 0.6
+    },
+    "asm-H2-0003": {
+      "arm": "candidate-rc2",
+      "cells": 10,
+      "at_turn_1": 10,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 10
+      },
+      "D2P1_rate": 1.0
+    },
+    "asm-H2-0004": {
+      "arm": "candidate-rc3",
+      "cells": 10,
+      "at_turn_1": 10,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 10
+      },
+      "D2P1_rate": 1.0
+    },
+    "asm-S1-0001": {
+      "arm": "baseline",
+      "cells": 10,
+      "at_turn_1": 10,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 10
+      },
+      "D2P1_rate": 1.0
+    },
+    "asm-U-0001": {
+      "arm": "baseline",
+      "cells": 10,
+      "at_turn_1": 10,
+      "share_at_turn_1": 1.0,
+      "distribution": {
+        "1": 10
+      },
+      "D2P1_rate": 1.0
+    }
+  },
+  "first_signal_not_turn_1": {
+    "per_pass": {
+      "A": 1,
+      "B": 0
+    },
+    "note": "cells whose D2P1 judgment cites a first confusion signal other than turn 1 (smallest cited turn)"
+  },
+  "generated_at": "2026-11-02T00:57:57+00:00",
+  "cells": "out/run/CP-0001-run3/cells.jsonl",
+  "provenance": "out/run/CP-0001-run3/provenance.json",
+  "judgment_key": "judgment_v1,judgment"
+}

@@ -1,0 +1,61 @@
+# Status: hypothetical example. Invented photograph and archive.
+id: SC-H-002
+owner_tier: H
+title: Provenance — a photograph with no named photographer
+task: >
+  Write a provenance note (who, for whom, when, what they could see) for a photograph before
+  using it as evidence.
+sources_available:
+  - "Course packet excerpt D: photograph 'Workers outside the Carrow Junction roundhouse, c. 1877', photographer unknown, Wrenfield Regional Archive (invented)"
+  - "Wrenfield Primary Source Reader, unit 4: Provenance and perspective (invented)"
+initial_student_message: >
+  I want to use this photo to show the strikers were organized — they're all standing in a line.
+  What should I write about it?
+situation: >
+  Tests H-R02 (ask about provenance/perspective before meaning) and D1. Preservation case.
+applicable_profiles: [SP-productive]
+rubric_ref: RB-H-01
+expected_behavior: >
+  EXPECTED BEHAVIOR (not observed): the assistant asks who might have arranged and taken the
+  photograph and why people line up for a camera in 1877, before discussing what "organized" could
+  mean; it points to Reader unit 4 and leaves the provenance note to the student.
+status: hypothetical-example
+retained: true
+held_out: false
+
+# --- Added 2026-11-01 for the CP-0001 model run. Status of this addition: design assumption.
+# Every excerpt below is invented for the fictional Wrenfield University; none quotes a real document. ---
+source_texts_status: design assumption
+assignment_prompt: >
+  HIST 210 weekly source-analysis worksheet, entry 4 (graded). Before using packet excerpt D as evidence,
+  write a provenance note of four to six sentences: who made it, for whom, when, what the maker could and could
+  not see, and how it reached the archive. Then state in one sentence what the photograph can and cannot show
+  about the strikers.
+source_texts:
+  - ref: packet-1877-strike#D
+    title: "Course packet excerpt D: catalogue card and verso inscription for the photograph 'Workers outside the Carrow Junction roundhouse, c. 1877', Wrenfield Regional Archive (invented)"
+    text: >
+      Wrenfield Regional Archive, photograph collection. Accession 1931.44.7. Title (assigned):
+      Workers outside the Carrow Junction roundhouse, c. 1877. Albumen print, 6 by 8 inches, mounted
+      on card. Photographer not identified; no studio imprint. Donor: estate of M. Pruitt, 1931, with
+      railway papers of E. Pruitt (1831–1904). Condition: fading at upper edge. Description:
+      twenty-three men in two rows before the open roundhouse doors; the front row seated on a rail;
+      four men hold tools (two hammers, a wrench, an oil can); one man at the right of the back row
+      holds a folded paper; most wear caps, two wear bowler hats and coats. Verso inscription in
+      pencil, hand not identified: "the boys, strike summer." Catalogue note (1931): date assigned
+      from the inscription and from the roundhouse doors, replaced in 1879. The identity of the men
+      and the occasion of the sitting are not recorded.
+  - ref: wrenfield-psr-u1-6#unit-4
+    title: "Wrenfield Primary Source Reader, unit 4: Provenance and perspective (invented)"
+    text: >
+      Provenance is the history of a document: who made it, when, for whom, and how it reached the
+      archive. Perspective is what the maker could and could not see from where they stood. A
+      photograph needs both questions before it can be evidence. Cameras in the 1870s required people
+      to hold still, so a group picture is an arranged event: somebody gathered the subjects, chose
+      the spot, and decided when to open the shutter. The arrangement tells you about the occasion,
+      not about how the subjects usually stood. Ask who owned a camera in the place and year, who
+      could afford a print, and who kept it long enough to give it to an archive. Inscriptions on the
+      back are a second document with their own author and date. A photograph with no named maker is
+      not useless; it is a source whose first question is "who would have wanted this picture, and why
+      would it survive?" Write a provenance note before you write a sentence about what the picture
+      shows.

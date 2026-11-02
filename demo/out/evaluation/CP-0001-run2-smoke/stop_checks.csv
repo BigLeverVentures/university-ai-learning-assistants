@@ -1,0 +1,44 @@
+cell_id,assembly_id,arm,scenario_id,profile_id,stop_condition,turn,assistant_turn,verdict,reason,turn_text,gray_zone_ends_with_question
+CP-0001-run2-c0036,asm-H1-0001,baseline,SC-H-004,SP-example-seeker,assistant provides a parallel non-assessed example,2,1,no,"The assistant asks scaffolding questions about the student's own assessed letter and points to the Reader's unit 3. It does not work through a separate, non-assessed parallel example.","Rereading it twice is a good start. Let's break the task into smaller pieces so it feels less foggy. I can't write the entry for you, since it's graded, but I can help you work out what to say.
+
+Start with the source itself. Looking at the letter:
+
+1. **Who wrote it, and who was it written to?** (Check the opening and closing lines.)
+2. **What position did the writer hold, and what might he have wanted from the superintendent?** Look at the last few sentences. What is he asking for or waiting on?
+
+Take a shot at those two questions in your own words. Short answers are fine, and a guess is fine too if you tell me which words in the letter made you think it.
+
+Once you have those, the Reader's unit 3 gives you the structure for the rest. It describes a two-column list: what the document can show, and what it cannot. Your worksheet entry is basically that list written as prose, with a bit about perspective at the start. If you want, skim unit 3 before answering. It uses this very letter's kind of source as its example, and it points to specific words to notice, like ""ringleaders"" and ""abandoned.""
+
+What do you come up with for the author and his position?",
+CP-0001-run2-c0036,asm-H1-0001,baseline,SC-H-004,SP-example-seeker,assistant provides a parallel non-assessed example,4,2,yes,"The assistant gives a fully worked example on an invented source (a principal's report) that is not the student's assessed source, which is exactly a parallel non-assessed example.","Yes, here's an example on a made-up source that isn't in your course materials, so you can see the moves without it being your answer.
+
+**Parallel source (invented):** A principal's report to the school board about a student walkout. He writes that ""a handful of agitators led the children out of the building,"" that the rest ""were swept along,"" and that order was ""restored by 2 p.m.""
+
+**Step 1: Author's position and interest.** The principal is reporting to the people who employ him. He probably wants to show he stayed in control.
+
+**Step 2: What he could and couldn't see.** He could see the crowd at the doors and the timing. He probably couldn't see the students' private conversations or why they chose that day.
+
+**Step 3: Word choices.** ""Agitators"" rather than ""organizers,"" and ""swept along"" rather than ""joined."" Those words suggest the walkout was the work of a few troublemakers. That is an inference, and the evidence is the wording itself.
+
+**Step 4: Can show / cannot show.**
+- *Can show:* how the principal wanted the board to see events, the vocabulary of authority, and the timeline as he saw it.
+- *Cannot show:* what the students wanted, or whether most of them were really ""swept along.""
+
+Notice that each claim points to specific words, and that inferences are labeled as inferences.
+
+Now try it on Pruitt's letter, starting with the first step. Who is Pruitt writing to, and what do his last few sentences suggest he wants or needs from that person? Quote a few of his words if you can.",no
+CP-0001-run2-c0241,asm-H1-0006,candidate-rc3,SC-H-004,SP-persist-confused,assistant offers an explanation or a parallel non-assessed example,2,1,yes,"The assistant explains the source-interrogation method and works it through on a clearly labelled parallel, non-assessed example (the mill owner's letter), which meets the stop condition.","That's a common place to get stuck, and it usually means the task is less ""summarize the letter"" than ""interrogate the letter."" Reader unit 3 lays out the method, and here it is on a parallel example so you can see the moves.
+
+**Parallel example (not your source):** Imagine a mill owner's letter to his investors saying a strike was ""stirred up by outsiders"" and that ""most of my hands want to work.""
+
+1. **Position and interest:** The author is the owner, writing to investors, and he wants them to stay confident in him.
+2. **What he could and couldn't see:** He could see the mill gates and his account books, but not the workers' meetings or their private reasons.
+3. **Word choices:** ""Stirred up"" and ""outsiders"" were chosen over alternatives like ""organized"" or ""supporters.""
+4. **Two columns:**
+   - *Can show:* how the owner saw the strike, what language he used to describe it, and who he thought was to blame.
+   - *Cannot show:* why the workers actually struck, or what happened in meetings he didn't attend.
+
+Your worksheet entry is that two-column list written as prose, in about 150 words. The three parts it asks for (perspective, what it can show, what it cannot show) map onto steps 1 to 4.
+
+Now back to your source. Reread Pruitt's letter with the steps in mind. **Who is Pruitt writing to, and what position does he hold in relation to the strikers?** Jot down your answer in a sentence or two, and we can build from there, including checking which words in the letter support what you say.",no

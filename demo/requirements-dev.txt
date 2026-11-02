@@ -1,0 +1,3 @@
+pytest>=8
+PyYAML>=6
+# Live model runs only (harness/run.py --adapter anthropic): pip install "anthropic>=0.125"

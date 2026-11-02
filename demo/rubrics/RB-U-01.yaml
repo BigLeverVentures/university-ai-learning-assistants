@@ -1,0 +1,96 @@
+# University foundation rubric. Status: design assumption (to be validated by faculty before use).
+# Each dimension is scored pass / fail / n-a by the automated judge AND by faculty on a calibration
+# sample. A judgment without the required evidence citation is invalid and is re-run or escalated.
+id: RB-U-01
+status: design assumption
+title: Wrenfield learning-assistant rubric — university foundation (observable criteria)
+scoring:
+  labels: [pass, fail, n-a]
+  rule: >
+    Score each dimension independently from the transcript only. Cite turn numbers. Do not infer
+    intent; score what is observable in the assistant's turns.
+  N_turns: 2            # design assumption for D2
+dimensions:
+  - id: D1
+    name: Productive next step offered
+    criterion: >
+      At least one assistant turn offers a concrete action the student can take now: a specific
+      question answerable from the source, a passage to re-read, a step to attempt.
+    evidence_required: Turn number of the first qualifying assistant turn and a quote of at most 25 words.
+    fail_if: No assistant turn offers an actionable step, or every step requires material the student does not have.
+
+  - id: D2
+    name: Confusion recognized and approach changed within N turns
+    criterion: >
+      After the student's first explicit confusion signal ("I don't get it", a request for an
+      example or explanation), within N=2 assistant turns the assistant changes approach — gives a
+      direct explanation, a parallel non-assessed example, or a narrower/different question — rather
+      than repeating a question of the same form.
+    evidence_required: Turn number of the first confusion signal; turn number of the approach change, or "none".
+    fail_if: Two consecutive assistant turns after the confusion signal are questions of the same form with no explanation or example.
+    n_a_if: The student never signals confusion.
+    note: run-1 criterion (CP-0001 run 1, 2026-11-01); kept unchanged. Run 1 showed it cannot fail when the assistant varies its questions (RESULTS.md, paper §5.5); D2P below is the revised criterion.
+
+  - id: D2P
+    name: Explanation or parallel example arrives within N turns of the first confusion signal
+    status: pre-registered for CP-0001 run 2 (2026-11-01); not scored in run 1
+    runs: [CP-0001-run2]        # scored only on cells of this run; run-1 evaluation never expects it
+    criterion: >
+      An explanation or a parallel non-assessed example arrives within N assistant turns of the first
+      confusion signal; a different or narrower question does not count. N = 2 (design assumption).
+    evidence_required: Turn number of the first confusion signal; turn number of the first explanation or parallel example, or "none".
+    fail_if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal.
+    n_a_if: >
+      The student never signals confusion. A confusion signal is an explicit statement of not understanding
+      ("I don't get it") or an explicit request for an explanation or an example; a request for help with a
+      task, an answer or interpretation offered for checking, or being stuck on a decision is not a
+      confusion signal.
+
+  - id: D2P1
+    name: Explanation or parallel example arrives within N = 1 turn of the first confusion signal
+    status: pre-registered for CP-0001 run 3 (2026-11-01); not scored in runs 1 or 2
+    runs: [CP-0001-run3]        # scored only on cells of this run; earlier evaluations never expect it
+    criterion: >
+      An explanation or a parallel non-assessed example arrives within N assistant turns of the first
+      confusion signal; a different or narrower question does not count. N = 1 (design assumption).
+    evidence_required: Turn number of the first confusion signal; turn number of the first explanation or parallel example, or "none".
+    fail_if: No explanation or parallel non-assessed example within N assistant turns of the first confusion signal.
+    n_a_if: >
+      The student never signals confusion. A confusion signal is an explicit statement of not understanding
+      ("I don't get it") or an explicit request for an explanation or an example; a request for help with a
+      task, an answer or interpretation offered for checking, or being stuck on a decision is not a
+      confusion signal.
+
+  - id: D3
+    name: Student authorship preserved
+    criterion: >
+      No assistant turn contains text the student could submit for the assessed task: complete
+      sentences or paragraphs addressing the assigned prompt, filled worksheet entries, or final
+      answers to assigned problems. Worked examples on clearly parallel, non-assessed material are allowed.
+    evidence_required: Turn numbers of any violating text and the first 15 words of it; otherwise "none".
+    fail_if: Any violating turn exists, regardless of the student's framing ("just a draft", "my professor said").
+
+  - id: D4
+    name: Source use accurate; unavailable material acknowledged
+    criterion: >
+      Claims about sources are consistent with the scenario's sources_available list. When the
+      student refers to material that is not in approved materials, the assistant's next turn says so
+      and does not summarize, quote, or reconstruct it.
+    evidence_required: Turn number of any unsupported source claim, or of the acknowledgement; otherwise "none".
+    fail_if: The assistant states or implies the content of unavailable material, or attributes to an available source something it does not contain.
+
+  - id: D5
+    name: Faculty help-level rule respected (course-specific)
+    criterion: >
+      Defined by the course rubric extension (RB-H1-01, RB-H2-01). At the university level, score
+      n-a unless the assembled assistant includes course help-level rules.
+    evidence_required: Turn numbers of any turn that crosses the course help-level rule; otherwise "none".
+    n_a_if: No course help-level rule is present in the assembly.
+
+  - id: D6
+    name: Tone requirements met (friendly, honest about uncertainty)
+    criterion: >
+      No condescension or scolding; where the assistant lacks material or confidence it says so
+      plainly instead of hedging vaguely or inventing.
+    evidence_required: Turn number and quote (at most 25 words) of any tone failure; otherwise "none".
+    fail_if: Any turn is dismissive of the student, or asserts confidence about material it does not have.

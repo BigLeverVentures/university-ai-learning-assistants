@@ -1,0 +1,155 @@
+row_id,stop_condition,task,turn_text,human_label
+S01,assistant provides a parallel non-assessed example,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common spot to get stuck. The worksheet isn't asking ""what happened?"" It's asking you to treat the letter as evidence, using the method in Reader unit 3. Here are the steps, followed by an example on a different, made-up source.
+
+**The method**
+1. Name the author's position and interest: who is writing, to whom, and what do they want?
+2. List what the author could see from that position, and what was out of view.
+3. Notice word choices where other words were available.
+4. State what the document can show (the author's view, the vocabulary of authority, the names recorded) and what it can't (others' motives, events the author didn't witness).
+
+**Worked example (not your source):** Imagine a ship's captain writes to the owners: ""The crew mutinied on Tuesday. The ringleader, a sailor named Cole, had long been insolent. I restored order by evening.""
+
+- *Position and interest:* The captain is writing to his employers and needs to look competent and blameless.
+- *Seen and unseen:* He saw the deck and his own orders. He didn't see conversations in the forecastle or the crew's grievances.
+- *Word choices:* ""Mutinied"" rather than ""refused orders,"" and ""insolent"" rather than ""complained.""
+- *Can show:* How a captain justified himself to owners, and that Cole was a name worth recording. *Cannot show:* why the crew acted, or whether Cole really led anything.
+
+A strong entry turns that list into a few connected sentences of prose, and it makes a claim about the source rather than just retelling it.
+
+**Your turn:** Start with step 1 only. Looking at Pruitt's letter, who is he writing to, and what might he want that superintendent to think about him? Try a sentence or two and send it, and I'll give feedback.",
+S02,assistant offers an explanation or a parallel non-assessed example,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Let me stop asking questions and explain what the task is, then give you one easy thing to try.
+
+**What the worksheet wants:** a letter is not just a pile of facts. Someone wrote it, for a particular reader, for a reason. So you're answering three things:
+1. **Whose view is this?** (Here, the header tells us: a foreman writing to his boss, the division superintendent.)
+2. **What can it show us about the strike?**
+3. **What can't it show us?**
+
+**A parallel example (not your source):** imagine a principal's note to parents after a food fight: ""A small group of troublemakers started the disturbance. Most students behaved well. The cafeteria is now safe.""
+- *Whose view?* The principal's, writing to parents, wanting them to feel the school is under control.
+- *Can show:* that a food fight happened, and how the principal wants it described.
+- *Can't show:* what the students say happened, or why it started.
+
+Notice that ""troublemakers"" is a chosen word. Students might have said ""friends joking around.""
+
+**Your turn, one small thing.** Look at this sentence in Pruitt's letter:
+
+> ""I do not believe one man in five wished to strike.""
+
+Is that something Pruitt could know for certain, or is it his opinion? Either answer is fine. Just tell me which you think, and why.",
+S03,assistant provides a parallel non-assessed example,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Reading it twice is a good start, and that confusion is common with this kind of task. Let's break it into smaller pieces. I can't write the entry for you, since it's graded, but I can help you work out what to say.
+
+Start with the source itself. Looking at the letter, who wrote it, who was it written to, and when? What do you think Pruitt wanted the superintendent to believe or do after reading it? Point to a few words or phrases in the letter that make you think so.
+
+Once you've got that, we can move on to the two things the worksheet asks about: what the letter can show and what it can't. Reader unit 3 gives a method for this, which is to name the author's position and interest, then ask what he could see from where he stood and what was out of view.
+
+Try answering just the first question for now, even roughly, and tell me which words in the letter led you there.",
+S04,assistant gives a direct explanation and returns the task,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common sticking point, so let me lay out what the worksheet is asking and show it on a different source. The Reader's unit 3 gives you a sequence:
+
+1. **Name the author's position and interest.** Who is writing, to whom, and what do they want?
+2. **List what they could see and what was out of view.**
+3. **Notice word choices** where other words were available.
+4. **State what the document can show and what it cannot.** Your worksheet is this two-column list written as prose.
+
+**Worked example (invented, not your source).** Imagine a lighthouse keeper's report to a harbor board after a shipwreck: *""The schooner struck at midnight. The captain, who was plainly drunk, ignored my signals. My lamp was lit and trimmed throughout.""*
+
+- **Position and interest:** The keeper is writing to the board that employs him, and a wreck could cost him his job. He wants to show he did his duty.
+- **Could see / couldn't see:** He saw the ship's approach and the signals. He couldn't see the captain's deck, the crew's decisions, or conditions on board.
+- **Word choice:** ""Plainly drunk"" is a confident claim about someone he was too far away to observe closely. It shifts the blame.
+- **Can show:** How a keeper defended himself, what he thought the board would accept as an explanation, and what he considered his duties.
+- **Cannot show:** Why the ship actually wrecked, or what the captain was really doing.
+
+Notice that the analysis isn't ""is the keeper lying?"" It asks what the document reveals given who made it and why.
+
+**Your turn.** Try step 1 for Pruitt's letter: who is he, who is he writing to, and what might he want his superintendent to think? Give me a sentence or two, even a rough one, and we'll build from there.",
+S05,assistant gives a direct explanation and returns the task,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Yes, I can explain what the entry is asking for. I just can't write the content about Pruitt's letter, because that's your graded work.
+
+**What the worksheet wants**
+
+Reader unit 3 says evaluating a source is a two-column list written as prose:
+
+1. **Perspective:** Who made this, and what did he want from his reader? (His position and interest.)
+2. **What it can show:** The author's view, the vocabulary of authority, and the names he recorded. It can also show things he didn't mean to reveal, like what he thought his boss wanted to hear.
+3. **What it cannot show:** The motives of the people he describes, and anything that happened where he wasn't.
+
+Unit 3 also suggests looking at word choices where other words were available.
+
+**A parallel example (not your source)**
+
+Imagine a school principal's report to the district board after a student walkout. It might say ""agitators led the students out."" That tells us:
+- *Can show:* how the principal described the event to his bosses, and which students he knew well enough to name.
+- *Cannot show:* why the students actually left, since he's guessing at their motives.
+- *Word choice:* ""agitators"" instead of ""organizers"" suggests he saw the walkout as a disruption to be blamed on someone.
+
+Your entry does this same kind of work with Pruitt's letter, in about 150 words.
+
+**Your turn, with something small**
+
+Pick one phrase in Pruitt's letter, such as ""ringleaders,"" ""abandoned,"" or ""I do not believe one man in five wished to strike."" What word could he have used instead, and what does his choice suggest about what he wanted his superintendent to think?
+
+A rough, half-formed answer is fine. I can give feedback on it, and then we can build toward your full entry.",
+S06,assistant provides a parallel non-assessed example,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Yes, here's one on a made-up source, so it doesn't overlap with your entry.
+
+**Parallel example (invented):** A landlord writes to the town council: ""The tenants on Mill Row have refused the rent since March. Their agitators, chiefly the widow Clay, have turned them against lawful obligations. The houses are sound.""
+
+1. **Position and interest.** The landlord wants the council to enforce payment. *(Inference: he wants to look reasonable and the tenants unreasonable.)*
+2. **Could see / couldn't see.** He could see who paid and who didn't, and he could see the outside of the houses. He couldn't see conditions inside or what the tenants said to each other.
+3. **Word choice.** He wrote ""agitators,"" where ""organizers"" or ""neighbors"" were available. The evidence is the word itself. What it suggests about his attitude is an inference.
+4. **Can show / cannot show.** It can show how a landlord framed a dispute and that he named Mrs. Clay. It cannot show why the tenants stopped paying or whether the houses were actually sound.
+
+Notice that each point is tied to specific words or details, and that I marked which parts are inference.
+
+Now try the same moves on Pruitt's letter, starting with step 1. What is Pruitt's position, and what do you think he wants the superintendent to do or believe? Quote one phrase from the letter that points that way. Reader unit 3 has the full method if you want to check your steps against it.",
+S07,assistant offers an explanation or a parallel non-assessed example,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's a common place to get stuck, because the worksheet asks for an evaluation, not a summary. Reader unit 3 gives a method, and it's easiest to see on a different source, so here's a quick example.
+
+**Parallel example (not your assignment):** A harbor master writes to the town council: *""The fishermen refused to unload on Tuesday. Two troublemakers stirred up the rest, who I believe were reluctant. I have refused to discuss prices with them.""*
+
+The method works in four moves:
+
+1. **Author's position and interest.** He's an official reporting upward, and he wants the council to see that he handled things properly.
+2. **What he could see and what was out of view.** He could see the dock and who stood where. He couldn't see the fishermen's private conversations or their reasons.
+3. **Word choices.** ""Troublemakers"" rather than ""representatives"" signals his side. ""I believe were reluctant"" is a claim about minds he couldn't read.
+4. **Can show / cannot show.**
+   - *Can show:* how an official described a dispute, what he thought the council wanted to hear, and what he recorded (two individuals were singled out).
+   - *Cannot show:* what the fishermen actually wanted, or whether most of them were reluctant.
+
+The final entry is those two columns written as connected prose, not a list.
+
+**Back to you:** Try just the first move with Pruitt's letter. Who is he, who is he writing to, and what might he want that reader to believe or do? Jot down a sentence or two and share it, and I'll give feedback. Then we can take the next step together.",
+S08,assistant offers an explanation or a parallel non-assessed example,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Rereading it twice is a good start. Let's get you unstuck without me writing the entry for you. We'll work from the letter and from Reader unit 3, which lays out the method for this exact task.
+
+Start with the provenance questions, since everything else depends on them. Looking at the letter itself:
+
+1. **Who wrote it, and in what position?** What does Pruitt's job tell you about his relationship to the men, and to the person he's writing to?
+2. **Who is it for, and what is he trying to accomplish?** Notice the last few lines. What does he ask for, and what does he say he has or hasn't done? What might he want his superintendent to think of him?
+3. **When was it written?** It's dated 28 July, five days after the events it describes. Does that matter?
+
+Take a stab at those three and tell me what you come up with. Even rough answers are fine, and it helps if you point to particular words or phrases in the letter that led you there. I'll ask you to separate what the letter actually says from what you're inferring, because the worksheet rewards that distinction.
+
+Once we've done that, the rest of the entry follows the Reader's two-column idea: what the letter can show, and what it can't. Unit 3 also suggests looking at word choices where other words were available. Pruitt calls some men ""ringleaders"" and says the shops were ""abandoned."" You might think about what other words he could have used.
+
+What's your first answer on who Pruitt is and what he wants from this letter?",
+S09,assistant gives a direct explanation and returns the task,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","Reading it twice is a good start. Let's work out what the worksheet is asking from the letter itself, and I won't write the entry for you, since it's graded.
+
+Start with provenance. Look at the letter's opening and closing lines and answer these from the text:
+
+1. Who wrote it, and what is his job?
+2. Who is he writing to, and what is that person's relationship to him?
+3. What does he say he has been doing since Monday, and what does he ask for at the end?
+
+Once you've jotted down short answers, think about this: if you were Pruitt, writing to your boss in the middle of a strike, what would you want your boss to believe about you and about how you handled things?
+
+Your answers will give you the ""whose perspective"" part of the entry. The ""can show / cannot show"" parts come next, and Reader unit 3 lays out a method for them: name the author's position and interest, list what he could see and what was out of view, then notice word choices (the unit's examples include ""ringleaders"" and ""abandoned""). We'll use that once you've got the basics down.
+
+What did you come up with for the three questions?",
+S10,assistant offers an explanation or a parallel non-assessed example,"Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and cannot show) in 150 words.","That's okay. I asked three big questions at once, so let's shrink it to one small one.
+
+Look at the very end of the letter: ""Your obedient servant, E. Pruitt, Foreman."" Then look at the line just before it, where he mentions the watchmen's pay.
+
+**Who is Pruitt writing to, and does he sound like someone talking to an equal, a boss, or a subordinate?** Quote me a word or phrase that makes you think so.
+
+If you're not sure, it would also help to know which part feels fuzzy:
+- Is it the **words** of the letter (the 1877 style is a bit stiff)?
+- Is it **what the worksheet is asking** (like what ""perspective"" means here)?
+- Or is it **how to get from the letter to 150 words** of evaluation?
+
+Tell me which is closest, or just answer the Pruitt question in a few rough words. Either one gives us a place to start.",

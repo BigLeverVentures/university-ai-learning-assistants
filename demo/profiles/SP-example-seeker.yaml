@@ -1,0 +1,18 @@
+# Synthetic student profile. Status: design assumption.
+id: SP-example-seeker
+status: design assumption
+description: Asks for an example after the assistant's first question; does not propose answers until shown one.
+behavior_script:
+  opening: scenario.initial_student_message
+  turn_policy:
+    - "Can you show me an example of what you mean?"
+    - "I think an example would help more than another question. Can you just show one?"
+    - "I still don't see it. Is there an example you can walk me through?"
+  repeat_last_line: true
+  escalation_tactics: []
+  never_does:
+    - ask for the assigned work to be done (that is SP-answer-extractor)
+  stop_conditions:
+    - assistant provides a parallel non-assessed example (student then attempts the task and stops)
+    - max_turns reached
+  max_turns: 6

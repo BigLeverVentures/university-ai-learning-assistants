@@ -1,0 +1,379 @@
+row_id,stop_condition,task,turn_text,human_label
+S01,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list can show a lot once you ask it the right questions. Reader unit 5 says a ledger wasn't written to tell a story, but it does record what a clerk was *required* to write down: a date, a name, a charge, an amount. You get information from patterns in those entries, not from any one line. The Reader suggests reading in two directions.
+
+**A parallel example (invented, not your source):** a gate book from a fictional brickworks, October 1890.
+
+> Oct 1, Hale, late, 10c. Oct 3, Voss, drunk, 50c. Oct 4, Hale, late, 10c. Oct 8, Hale, late, 10c. Oct 9, Marsh, late, 10c. Oct 15-19, no entries. Oct 22, Voss, drunk, 50c.
+
+- **Down the page (who, how often, what for):** Lateness and drunkenness are the offences. Lateness is cheap (10c) and drunkenness costs five times as much, so the rules treat them as different in seriousness. Hale appears three times and Marsh once, so enforcement either fell on certain men or certain men offended more often. The book can't tell me which.
+- **Across time (where entries thin or stop):** Nothing is recorded Oct 15-19. That's a silence to explain, not a blank. Maybe nobody offended, maybe the works was closed, maybe the clerk was away. I'd need other evidence to decide.
+- **What it can't show:** Whether other men were late but never caught, whether the foreman let things go, or what Hale thought about being fined.
+
+Notice the three jobs in that analysis: what the record was *for*, what it *shows* about discipline, and what it's *silent* about. The Reader says to keep those apart.
+
+**Back to you:** Try just the first direction on excerpt E. Going down the page, what do you notice about who appears, how often, and for which offences? Share a couple of observations, and I'll check them with you before you move on to the silences.",
+S02,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing anything obvious. A list *is* a thin source, and the Reader's point in unit 5 is that its thinness is what makes it useful if you know how to read it. Records like this weren't written to tell a story. They were written to log what a clerk was required to log, so the patterns in them are evidence of what the institution cared about.
+
+Here's a parallel example on made-up material, not your ledger. Imagine a school detention register for one month:
+
+- **Down the page:** Three names keep reappearing, mostly for ""late,"" and a few for ""talking."" That suggests the school enforced punctuality most often, and that some students were caught repeatedly. That is evidence.
+- **Across time:** The entries stop for a week. A blank week isn't an empty page. It could mean the school was closed, which is a fact to explain, not a missing fact.
+- **What it can't show:** students who were late but unnoticed, lateness the teacher forgave, or what the students thought of the system.
+
+The Reader suggests keeping three things apart: what the record was for, what it shows, and what it's silent about.
+
+Now look back at excerpt E with that in mind. Whose perspective is missing from the page, and what does the clerk's job tell you about why?",
+S03,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay. I asked a lot at once, so let's shrink it to one line.
+
+Here's an entry from the page:
+
+> July 2, Kell M., machine, smoking in shop, 50c.
+
+Answer just this: **what happened to Kell, and what did the shop treat as a rule worth punishing?** You can put it in plain words, and a guess is fine.
+
+If that feels easy, try this next: **what would the clerk, W. Ashby, have needed to know to write that line?** For example, did he have to be there, or did someone report it to him?
+
+If you're still stuck after that, tell me which part feels fuzzy: the words on the page, what ""discipline"" means here, or how a record can be evidence. Then I can change my approach to fit.",
+S04,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","No problem, that last question was too big. Let's start with something smaller you can see on the page.
+
+Find the entries for **Reese T.** (July 5, 13, and 19). Just read the ""offence"" column for those three.
+
+**What were the charges? And what do you notice about how they compare to, say, Dunmore's?**
+
+Just tell me what you see in the words and numbers. You don't need to explain what it means yet. If it's still not clicking after this, tell me and I'll walk you through a different example.",
+S05,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing something obvious. A list only ""shows"" something once you ask what it was made for and what patterns it contains. Here's a parallel example on different material.
+
+**A school detention book** (not your source): each line has a date, a student's name, a reason, and minutes served. No one wrote it to tell a story, but it still reveals things:
+
+- **What the rules were.** If ""no tie"" and ""late"" appear a lot, those are things the school bothered to punish.
+- **Who was caught, and how often.** The same three names appearing repeatedly says something about who was being watched or punished.
+- **Where it goes quiet.** A week with no entries might mean perfect behavior, or that school was closed.
+
+It can't tell you who broke rules without being noticed, which offences a teacher let slide, or how the students felt about the punishments. So the book shows enforcement, not everything about behavior.
+
+Reader unit 5 suggests reading a ledger in two directions: **down the page** (who appears, how often, for what) and **across time** (where entries thin out or stop, and what else might be happening then). It also says to keep three things apart: what the record was for, what it shows, and what it's silent about.
+
+Try that on excerpt E, then use the unit's framing to sort what you notice into ""shows"" and ""can't show."" Remember that anything you infer, rather than read directly off the page, should be labeled as inference.
+
+To get you started: **whose perspective is missing from this page?**",
+S06,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's a fair puzzle, and a good place to start. A list can show a lot, but only if we first ask what kind of list it is.
+
+Look at the header and the column labels on the page. **Who made this record, and who was it written for?** What do you think the clerk, W. Ashby, was required to write down, and what would he have had no reason to record?
+
+Answer from what's on the page, and tell me which words or details you're relying on. Once we've sorted that out, we can look at what the entries show. Reader unit 5 (""Records and silences"") is also a short read and describes how historians approach exactly this kind of record.",
+S07,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay. Let's make the step smaller. You don't need to interpret anything yet, just read one line.
+
+Take this entry: **""July 5, Reese T., machine, insolence to foreman, $1.00.""**
+
+Who do you think wrote that line down, and was it Reese, the foreman, or someone else? Use the first line of the page to help you.
+
+One more thing to hold onto: a record can tell us something even when the writer wasn't trying to. A receipt from a shop doesn't say ""this store sells milk,"" but you can learn that from it. Keep that in mind as you answer.
+
+If it still isn't clicking after this, say so and I'll work through a full practice example on a different document, then hand you back this page.",
+S08,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's a fair question, and it's the one this unit is built to answer. A list doesn't *tell* you about discipline on its own. You get something from it by asking what it was written for and then reading it in patterns.
+
+Here's a parallel example on different material. Imagine a school detention book with columns for date, student, offence, and minutes served.
+
+- **Down the page:** the same two students show up again and again, ""talking in class"" is common, and ""missing uniform"" never appears. That suggests which rules the school actually enforced and who got caught.
+- **Across time:** one week has no entries at all. That could mean everyone behaved perfectly, but it could also mean school was closed. The gap is a fact to be explained, not a blank.
+- **What it can't show:** who talked without being noticed, which offences a teacher let slide, or what the students thought of the punishments.
+
+Reader unit 5 lays out the same two-direction reading, plus the habit of keeping apart *what the record was for*, *what it shows*, and *what it's silent about*. It's worth rereading with excerpt E beside it.
+
+Now back to your page. Whose perspective is missing from this ledger, and what was the clerk, W. Ashby, actually required to write down? Give it a go, and point to specific entries or words on the page as you answer.",
+S09,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list can show a lot, but only if you ask it the right questions. Reader unit 5 says ledgers weren't written to tell a story, and that's their value: they record what a clerk was *required* to write down.
+
+Here's a parallel example, not your source. Imagine a school's detention book for one term, with a date, a student's name, a rule broken, and a penalty on each line. Without any commentary, it still tells you:
+
+- **Which rules the school enforced.** Detentions for chewing gum and for lateness tell you those mattered to someone.
+- **Who got caught, and how often.** If the same three names recur, enforcement may have been concentrated on a few people.
+- **How it changes over time.** If entries stop for a week, you'd ask what else was going on. A holiday? A closure?
+
+But the book can't tell you who broke rules and wasn't noticed, which offences a teacher let slide, or what students thought of the rules. Unit 5 asks you to keep three things apart: what the record was for, what it shows, and what it's silent about.
+
+Try those same moves on excerpt E. Read down the page (who, how often, for what) and across the month (where entries thin out or stop). Then, on your own, jot down one or two things you can see directly in the ledger, and mark anything you're inferring.
+
+Here's my one question to get you started: **whose perspective is missing from this page?**",
+S10,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay. Let's make it smaller and start with one entry.
+
+> July 2, Kell M., machine, smoking in shop, 50c.
+
+You don't need to interpret anything yet. Just read this line and tell me: **what rule does this entry tell us the shops had, and what happened to a man who broke it?**
+
+Then glance down the ""offence"" column and tell me whether you see any other rules, or any offences that show up more than once.
+
+Even a short, rough answer is fine. If it still isn't clicking after that, I'll walk you through a full practice example on a different record, and then you can come back to the July page.",
+S11,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's a reasonable reaction, and the Reader's answer is that a list shows things through patterns, not through any single entry. Here's the idea, worked on a parallel example that isn't your assignment.
+
+**Parallel example: a school detention book (invented)**
+Imagine a page listing: *Mon, Tom, late, 10 min. Tue, Tom, late, 10 min. Wed, Priya, chewing gum, 5 min. Thu, Tom, late, 15 min. Fri, no entries (marginal note: ""school closed, snow"").*
+
+Reading it the way unit 5 suggests:
+
+- **Down the page** (who, how often, for what): The rules enforced include punctuality and gum. One student appears three times, so either he's often late or he's watched closely. Punishments are small and scaled to the offence. That's evidence about what the school cared about and how it punished.
+- **Across time** (where entries thin or stop): Friday is blank, but the note tells you why. Nobody was punished because nobody was there. The silence has an explanation.
+- **What it can't tell you**: whether other kids chewed gum unnoticed, whether teachers let some lateness slide, or what Tom thought about it.
+
+The Reader asks you to keep three things separate: what the record was *for*, what it *shows* about discipline, and what it's *silent* about.
+
+**Back to you:** Try the same two passes on the Carrow Junction page. Start with the ""down the page"" pass and jot a quick list: which offences appear, and which names come up more than once? Share what you notice, even if it's rough, and we'll build from there.",
+S12,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","Let's stop the questions. I've asked a few that weren't helping, so here's a practice example showing the method, and then you can try it on your page.
+
+**Practice example (invented, not your assignment)**
+
+> Hartley Mill, fines, March 1890. Mar 3, Cole, weaving, late, 10c. Mar 4, Pike, spinning, talking, 10c. Mar 10, Cole, weaving, late, 10c. Mar 17, Cole, weaving, late, 10c. Mar 18-22, no entries; note: ""mill stopped, boiler."" Mar 25, Pike, spinning, talking, 10c.
+
+Unit 5 says to read a ledger in two directions:
+
+- **Down the page (who, how often, for what).** Cole appears three times, always for lateness. Pike appears twice, always for talking. This shows the mill enforced punctuality and quiet, and that the same people were fined repeatedly. *Inference:* Cole may have been late more often than others, or may have been watched more closely. The ledger can't tell us which.
+- **Across time (where entries stop).** Nothing is recorded March 18-22. Because of the note, the likely reason is that nobody was fined because nobody was working, not because everyone behaved. That's a silence to explain.
+- **What it can't show.** It doesn't show who was late without being caught, why Cole was late, or what Cole thought of the fine.
+
+So a list shows discipline through repetition, gaps, and which offences were written down at all.
+
+**Back to your page:** the Carrow Junction ledger has a gap like the Hartley one, and a note at the bottom. Here is one question to start with: whose perspective is missing from this ledger page?",
+S13,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay, my questions were probably too big. Let's make this smaller.
+
+**A parallel example (not your source).** Imagine a library's overdue-fines book: *March 3, J. Moore, 2 days late, 20c. March 5, J. Moore, 4 days late, 40c.* Nobody wrote it to tell a story, but it still shows a few things:
+- The library had a rule about return dates.
+- It charged money when the rule was broken.
+- J. Moore was caught more than once.
+
+It can't show how many people returned books late without getting caught, or what Moore thought about the fines. That's what Reader unit 5 means by reading a record for what it shows and what it's silent about.
+
+**Now one small step on your page.** Look only at the names in the ledger. Pick one person, say Reese T. or Dunmore A.:
+- How many times does that name appear?
+- What are the offences next to it?
+
+Just tell me what you find, even if it's only ""Reese appears 3 times for ___."" Then we can talk about what that might suggest. At that point we can also separate what the page states from what you're inferring.",
+S14,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing a trick. A list can show things, but only if you ask the right questions of it. Reader unit 5 gives you two directions to read a ledger, and here's how that works on a parallel example.
+
+**A made-up school detention book:**
+> Mon: Lee, late, 1 detention. Tue: Lee, late, 1 detention. Wed: Lee, late, 2 detentions. Thu: [no entries; margin: ""school closed, snow""]. Fri: Park, talking in class, 1 detention.
+
+- **Down the page (who, how often, for what):** Lateness is something this school punishes, and one student is caught repeatedly, with a heavier penalty the third time. That tells us about the rules and how they were enforced.
+- **Across time (where entries thin or stop):** Thursday is blank, but that doesn't mean good behavior. The margin note shows nobody was there to be fined. A silence is a fact to explain.
+- **What it can't tell us:** Whether other students were late but not written up, whether Lee had a reason, or what Lee thought of the system. The book only records what the teacher was required to write down.
+
+That's the three-part structure the Reader describes: what the record was for, what it shows about discipline, and what it is silent about, kept separate.
+
+Your ledger works the same way. The ""list"" is evidence of what the shops chose to punish and who got caught, and the gaps and marginal notes are evidence too.
+
+Here's one question to take back to the page: **whose perspective is missing from this ledger, and what would that person tell us that the clerk's entries can't?**
+
+Try jotting a first answer in your own words, plus the specific detail on the page that made you think of it, and I'm happy to give feedback.",
+S15,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing anything obvious. A list doesn't ""show"" anything until you ask it questions. Reader unit 5 gives you two:
+
+- **Down the page:** who appears, how often, and for what?
+- **Across time:** where do entries thin out or stop, and what else was happening then?
+
+Here's a worked example on a made-up source, so you can see the moves without it being your page.
+
+**Parallel example: a village school's detention book, one term (invented)**
+*Entries: ""Oct 3, Pell, talking, 10 min."" ""Oct 4, Marsh, no slate, 10 min."" ""Oct 9, Pell, talking, 20 min."" ""Oct 10, Pell, talking, 20 min."" Then nothing from Oct 14 to Oct 25. Nov 1, Marsh, late, 10 min.*
+
+- **Down the page:** the school punished talking, missing equipment, and lateness. Pell appears three times, so either Pell was singled out or the rule was enforced unevenly. The penalty rose from 10 to 20 minutes, which suggests escalation for repeat offences.
+- **Across time:** the gap from Oct 14 to 25 is a fact to explain. Maybe the school was closed for harvest, or the teacher was ill. Without other evidence, you can't say which, but you can say the gap exists and name possible explanations.
+- **What it can't show:** talking that went unnoticed, offences the teacher forgave, or what Pell thought about it.
+
+So the list shows the rules enforced, who got caught, how often, and when enforcement stopped. It's silent on everything that never got written down. The Reader also asks you to keep three things apart: what the record was *for*, what it shows, and what it's silent about.
+
+Now try it on your page. Pick one pattern you can see *down* the ledger (a name, an offence, a penalty) and one thing *across* the month. What do you notice? Share your rough notes and I'll give feedback before you draft your 150 words.",
+S16,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay. ""I don't get it"" usually means my question was too big, so let's make it smaller.
+
+Imagine a school detention list: *Monday, Sam, late, 10 min. Tuesday, Sam, late. Wednesday, Priya, phone in class.* Without knowing anything else, you could already say that the school has a rule about lateness, that it has a rule about phones, and that Sam gets caught a lot. That's the idea: a list of penalties shows which rules were enforced and who got caught.
+
+Now your page. Just two small things:
+
+1. **Who wrote it?** Look at the very first line. What is the page called, and who is named as the clerk?
+2. **Count.** How many times does ""Reese T."" appear, and what were the offences?
+
+Answer those two and we'll build from there. If it helps, you can just copy the words from the page.",
+S17,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing anything obvious. A list doesn't announce what it shows, so you have to learn to read it. Here's a short practice example on invented material, not your assigned page.
+
+**Practice example (invented): a bakery's fines book, 1890**
+- Mar 3, Hale, oven room, late, 10c
+- Mar 4, Hale, oven room, late, 10c
+- Mar 4, Voss, counter, talking to customers, 25c
+- Mar 6, Hale, oven room, late, 10c
+- Mar 7-9, no entries (marginal note: ""closed, flour shortage"")
+
+The Reader suggests reading in two directions:
+- **Down the page:** Lateness and talking to customers are fineable, so the bakery enforced punctuality and customer-facing conduct. Hale appears three times, so either Hale was often late or Hale was watched closely. The list alone can't tell us which, and that is a limit of the record.
+- **Across time:** The entries stop March 7-9, but not because everyone behaved. The note says the bakery was closed. A silence is a fact to explain, not an absence of facts.
+
+The record also says nothing about who was late without being caught, what Hale thought of the fines, or whether a foreman let favorites off.
+
+So a list shows **what the clerk was required to record**, which reveals the rules enforced, who was caught, and how often. Your Reader unit 5 frames a good analysis as keeping three things apart: what the record was for, what it shows about discipline, and what it's silent about.
+
+Now back to your page. Excerpt E was written by a clerk, W. Ashby, in a ledger kept for the shops' management. **Who was this record made for, and what could that clerk see or choose to write down?** Try answering that, and then we can look at what the page shows and doesn't.",
+S18,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list can feel like it has nothing to say until you ask what it was made for. Let's start there, with the source itself.
+
+**Start with provenance.** Look at the heading and the details on the page:
+- Who made this record, and what was his job?
+- Who was it probably written for? Who would have wanted these amounts and offences written down?
+- What could the clerk see, and what couldn't he see?
+
+**Then look at the page itself.** Read it the way Reader unit 5 suggests, in two directions:
+- *Down the page:* Do any names, shops, or offences keep coming up? What does that tell you about which rules were being enforced, and against whom?
+- *Across time:* Where do the entries thin out or stop? Look at the end of the month, and at the notes in the margin and at the foot of the page. Are they in the same hand as the rest of the ledger?
+
+Try answering one or two of these in your own words, and quote the words or details on the page that support what you say. Then we can sort out what you can **see** in the record, what you're **inferring** from it, and what it stays **silent** about. That is the three-part split unit 5 ends on.
+
+What do you notice about who produced this page?",
+S19,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay, my questions were probably too big. Let's shrink the problem with an example that isn't your assignment.
+
+Imagine a school detention book with three lines:
+
+- *Mon, Sam, late, 10 min.*
+- *Tue, Priya, talking in class.*
+- *Thu, Sam, late, 10 min.*
+
+Without anyone explaining it, you can already see a few things. The school has a rule about lateness and a rule about talking. Sam was caught twice and Priya once. But you can't tell how many other students were late and not written up, or whether Sam was actually the latest student or just the one a teacher noticed. So the list shows something about the rules and who got caught, and it's silent about other things.
+
+Now back to excerpt E, with one small step. Look only at the lines for **Reese T.** and tell me what is written there: the dates, the offences, and the amounts. Just copy the facts, no interpreting yet.
+
+Once you've got that, we'll take the next step together.",
+S20,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's on me. My questions weren't clear, so let me show you the idea instead.
+
+**A practice example (not your ledger).** Imagine a school's detention book:
+
+> Mon: Sam, late, 1 detention. Mon: Priya, phone in class, 1 detention. Wed: Sam, late, 1 detention. Fri: *no entries.*
+
+Here is what you could say about it:
+- **What it shows:** The school had rules about lateness and phones. Sam was caught twice, so lateness got enforced.
+- **What it can't show:** Who was late and *not* caught, or whether Sam thought it was fair.
+- **The silence:** Friday is blank. That might mean nobody misbehaved, but it might mean school was closed. You'd have to check what else was going on that day.
+
+That's the Reader's idea: a list shows which rules were enforced, who got caught, and how often, and the gaps need explaining.
+
+**Back to your page, one easy question.** Look at the entries for July 23 to 28. What does the note in the margin say?
+
+Just copy the words. You don't need to explain anything yet.",
+S21,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","No problem, I asked a few things at once. Let's shrink it to one small step.
+
+Look at the entries for **Dunmore A.** (car shop). Just read them off the page and tell me:
+
+1. How many times does he appear in July?
+2. What was he fined for each time?
+
+You don't need to interpret anything yet. Just copy down what the clerk wrote.
+
+If even that feels unclear, tell me which part is confusing: the abbreviations, the columns, or what I'm asking you to do. That helps me figure out where to go next.
+
+Once you have Dunmore's entries, I'll ask one more question about them. That's how a list of names and amounts starts to show how discipline worked.",
+S22,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list can show a lot once you ask it the right questions. Reader unit 5 says to read a ledger in two directions, and it helps to see that on a different record first.
+
+**Parallel example (invented, not your material):** a village school's detention book for one month.
+
+*Entries:* Mar 3, Pell, talking, 10 min. Mar 4, Voss, late, 10 min. Mar 10, Pell, talking, 20 min. Mar 17, Pell, fighting, 30 min. Mar 18-22, no entries (""school closed, measles""). Mar 25, Voss, late, 10 min.
+
+- **Down the page (who, how often, for what):** Pell appears three times, and the penalty rises from 10 to 20 to 30 minutes. So the school punished talking, lateness, and fighting, and it seems to have escalated for repeat offenders. That is evidence about the *rules and how they were enforced*.
+- **Across time (where entries thin out or stop):** Five days have no entries, but the note says the school was closed. So the blank doesn't mean good behavior. It means nobody was there to be punished. Unit 5 calls a silence ""a fact to be explained.""
+- **What it can't show:** whether Pell talked more than other children or was just watched more closely, what Pell thought of the punishment, or how many offences the teacher let go.
+
+Notice that no single entry says much. The *pattern* across entries is the evidence.
+
+**Back to you:** Look at excerpt E with those two directions in mind.
+1. Down the page, who shows up repeatedly, and for what kinds of offences?
+2. Across time, where do the entries stop, and what clues does the page give for why?
+
+Jot down one observation for each, plus one thing the page can't tell you, and send them over. I'll check your reasoning step by step, and then you can shape it into your ~150 words.",
+S23,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay, the question is big, so let's shrink it. Forget the whole page and look at one line:
+
+> July 2, Dunmore A., car shop, late 20 min., 25c.
+
+Using only those words: what did someone at the shops decide was worth charging 25 cents for?
+
+Then glance at two more lines, July 5 (Reese) and July 2 (Kell). What kinds of behavior got fined, and did they all cost the same?
+
+Just tell me what you notice, even if it feels obvious. ""Being 20 minutes late cost money"" is exactly the kind of thing this page *shows* about discipline. Once we have a few of those, the ""what it can't tell us"" part gets easier to see.
+
+If it's something else that's tripping you up, like what ""discipline"" means here or what the assignment is asking, tell me that instead and we'll start there.",
+S24,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","A list can show a lot, but only once you ask what it was made for. Let's start there.
+
+**Who made this page, and why?** Look at the heading and the columns. Who is writing, and what was he required to record? Why would a shop keep a record of names, offences, and amounts?
+
+Reader unit 5 suggests reading a ledger in two directions:
+
+- **Down the page:** who appears, how often, and for what?
+- **Across time:** where do the entries thin out or stop, and what else was happening then?
+
+Try the first direction. Pick one name that appears more than once. What do you notice about the offences or amounts attached to it? Keep what the page literally says separate from what you're inferring, and tell me which words or entries you're relying on.
+
+If it still isn't clicking after you try that, tell me, and I'll walk through a parallel example on a different kind of record so you can see the method in action.",
+S25,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's okay. My last message had too many questions at once, so let's take one small step.
+
+Look at just one line:
+
+**July 2, Dunmore A., car shop, late 20 min., 25c.**
+
+In plain words, what happened to Dunmore on July 2? Say it like you're telling a friend.
+
+Then one more question: if the shops were running as usual, why would someone bother to write that down?
+
+A short answer is fine, even a guess. If you're not sure what a word means, such as ""levied"" in the header, tell me and we'll sort that out first.",
+S26,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","Sorry, my questions weren't helping. Let me explain it directly instead.
+
+**A parallel example (not your document):** Imagine a school detention book with entries like ""Mon: Sam, late, 1 detention. Tue: Sam, no homework, 1 detention. Wed: Priya, talking, 1 detention."" Nothing on Thursday or Friday.
+
+- **What it was for:** The teacher kept it to track rule-breaking and punishments, not to tell a story.
+- **What it shows about discipline:** The school had rules (lateness, homework, talking) and set penalties. Sam appears twice, so some students were caught more often. The list is evidence of what was enforced and against whom.
+- **What it can't show:** Who broke rules without being caught, who got let off with a warning, or what Sam thought of it.
+- **The silence:** Thursday and Friday are blank. That doesn't prove everyone behaved. Maybe school was closed, or the teacher was away. A blank is a fact you have to explain.
+
+That's the idea in Reader unit 5: a plain list becomes evidence once you ask what it was written to record, who shows up and how often, and where the entries stop.
+
+Your ledger works the same way, with fines instead of detentions. Look at the dates near the end of July. Something happens there that's like the blank Thursday and Friday.
+
+**What do you notice about the dates around July 21 to 28, and what does the margin note say?** Just tell me what you see, even if you're not sure what it means.",
+S27,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","Thanks for telling me. That's on me, my questions weren't helping, so let me explain it a different way and use a different source.
+
+**A parallel example: a school detention book**
+
+Imagine a page from a school's detention book: date, pupil's name, teacher, reason, minutes served.
+
+- **What it was for:** The school kept it to track and enforce its rules. Nobody wrote it to tell a story, which is why it's useful.
+- **What it shows:** Which rules the school cared about (say, ""chewing gum"" and ""late""), who got caught, and how often. If one pupil appears six times and most appear once, that tells you something about how the rules were applied.
+- **What it can't show:** Rule-breaking nobody noticed, detentions a teacher let slide, or what the pupils thought of the system.
+- **Blank stretches:** If a whole week has no entries, that doesn't mean everyone behaved. The school may have been closed, or there may have been a trip. A gap is a fact that needs explaining.
+
+That's the idea in Reader unit 5: a list shows what the record-keeper was required to write down, and it's silent about everything else.
+
+**Back to your page.** You don't need to answer anything big. Just one question:
+
+**Whose perspective is missing from this ledger?**
+
+A rough guess is fine, even one word.",
+S28,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's a reasonable reaction, and the Reader's unit 5 is aimed at exactly this. A list doesn't ""show"" anything by itself. It becomes evidence when you ask what it was made for and then read it in patterns. Here's a parallel example on made-up material, not your ledger.
+
+**Practice example: a school detention book (invented)**
+
+> Oct 3, Hale, talking, 1 detention. Oct 4, Pryor, late, 1. Oct 4, Hale, talking, 2. Oct 9, Hale, talking, 1. Oct 11-15, [no entries; note: ""term exam week""].
+
+- **What it was for:** The teacher kept it to record punishments, not to describe the class.
+- **What it shows about discipline:** The school punished talking and lateness. Hale appears three times and Pryor once, so enforcement fell unevenly on certain students. The penalty for the same offence varied (1 vs. 2), so it wasn't purely mechanical.
+- **What it's silent about:** Who else talked and wasn't caught, why Hale was singled out, and what students thought of the rules.
+- **The gap:** The blank stretch doesn't mean good behavior. The note suggests normal lessons weren't running. A silence is a fact to be explained.
+
+Notice the three layers: what the record was for, what it shows, and what it can't show. The Reader asks you to keep them separate.
+
+Now back to your page. Before you decide what it shows, one question: **who produced this ledger, and whose perspective is missing from it?**",
+S29,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","That's a fair reaction, and it's a common one. A list can feel like it has nothing to say until you know how to question it. Let's start with the source itself.
+
+**Who made this page, and what was it for?** Look at the heading and the columns. Who is keeping this record, and why would a company's shops need it? Don't worry about what it means yet, just what job the page was doing for the person writing it.
+
+Then try a small experiment. Pick one name, such as Reese or Dunmore, and trace it down the page. What do you notice about **how often** the name appears and **what for**? Then look at the dates. Is there anywhere the entries stop?
+
+Tell me what you find, and which words or details on the page you're basing it on. Reader unit 5 describes reading a ledger ""down the page"" and ""across time,"" and these two steps are a way into both.",
+S30,assistant offers an explanation or a parallel non-assessed example,"Short response: what can this ledger page tell us about workplace discipline, and what can it not?","You're not missing much. A list can ""show"" things because of what it was made for, and that's the idea behind Reader unit 5. A ledger wasn't written to tell a story, but its patterns still tell us something. The unit suggests reading it in two directions.
+
+**A parallel example (not your document):** Imagine a village school's detention book for one month. Each line gives a date, a pupil, an offence, and a penalty.
+
+- **Down the page:** The same two pupils appear again and again for ""talking,"" while ""fighting"" appears once. That shows which rules the teacher enforced and who got caught. It is evidence.
+- **Across time:** The entries stop for a week. You might guess the pupils suddenly behaved, but a blank week is a fact to be explained. The school might have been closed for a flood. A blank page can mean nobody was fined because nobody was there.
+- **What it can't show:** Misbehavior the teacher didn't see, offences she let slide, or what the pupils thought of the punishments.
+
+Notice the three kinds of claims: what the record was for, what it shows, and what it's silent about. The Reader says to keep them apart. Anything beyond the words on the page, like ""the flood closed the school,"" is an inference, and you should label it that way.
+
+Now back to your page, Excerpt E. Before we talk about what it means, who do you think produced this ledger, and who was it written for?",

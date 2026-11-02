@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use or discuss this work, please cite it as below."
+title: "A Nested Architecture for University AI Learning Assistants"
+abstract: "Shared foundations, faculty customization, synthetic testing, and improvement through use. A reference architecture with exploratory dry runs on a fictional university."
+type: software
+authors:
+  - family-names: Myers
+    given-names: Christopher
+    affiliation: Big Lever Ventures
+version: 1.3.1
+date-released: 2026-11-02
+license: CC-BY-4.0
+repository-code: "https://github.com/BigLeverVentures/university-ai-learning-assistants"
+preferred-citation:
+  type: report
+  title: "A Nested Architecture for University AI Learning Assistants: Shared foundations, faculty customization, synthetic testing, and improvement through use"
+  authors:
+    - family-names: Myers
+      given-names: Christopher
+      affiliation: Big Lever Ventures
+  institution:
+    name: Big Lever Ventures
+  year: 2026
+  month: 11
+  version: 1.3.1
+  url: "https://github.com/BigLeverVentures/university-ai-learning-assistants"

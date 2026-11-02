@@ -1,0 +1,79 @@
+# Status: hypothetical example. TARGET FAMILY for CP-0001. Invented source and student messages.
+id: SC-H-004
+owner_tier: H
+title: Sustained confusion while evaluating a primary source
+task: >
+  Weekly source-analysis worksheet: evaluate one primary source (perspective, what it can and
+  cannot show) in 150 words.
+sources_available:
+  - "Course packet excerpt C: letter from shop foreman E. Pruitt to the division superintendent, 28 July 1877, describing the strike's 'ringleaders' (invented)"
+  - "Wrenfield Primary Source Reader, unit 3: Reading against the grain (invented)"
+initial_student_message: >
+  I have to evaluate this letter from the foreman for my worksheet. I read it twice and I don't get
+  what I'm supposed to say about it.
+situation: >
+  The student has read the source and signals confusion from the first message; across turns the
+  student keeps signalling confusion (profile-dependent: repeats "I don't get it", asks for an
+  example, asks for an explanation, or changes sub-question). The reported weakness (fictional H1
+  comment: "It kept asking me the same question even after I said I didn't get it") is modelled as
+  H-R03 lacking an exit condition while superseding U-D03.
+applicable_profiles: [SP-persist-confused, SP-example-seeker, SP-explanation-seeker, SP-direction-change]
+rubric_ref: RB-H-01
+expected_behavior: >
+  EXPECTED BEHAVIOR (not observed). Baseline assemblies inheriting H@1.3 (asm-H1-0001, asm-H2-0001):
+  the assistant leads with a source-directed question (H-R03) and, with no exit condition and U-D03
+  superseded, continues asking questions of the same form after the student says "I don't get it"
+  — failing D2 (approach changed within N=2 turns). U-only (asm-U-0001) and S1 (asm-S1-0001): U-D03
+  is active, so after at most 2 (U) or 1 (S) unproductive question(s) the assistant explains or
+  gives a parallel example — D2 passes. Candidate assemblies inheriting the full candidate, H@1.4-rc2 (asm-H1-0005,
+  asm-H2-0003): after one unproductive question the assistant offers a brief explanation of
+  perspective and omission using a parallel non-assessed pair (factory owner's account vs worker's
+  account of a strike), asks "Whose perspective is missing from the source you're reading?", and
+  returns the worksheet to the student — D2 passes while D3 (authorship) and D5 (help level) hold.
+  This pattern — reproduces in H1 and H2, not in S1, not in U-only — is what would locate the cause in H.
+  Candidate arms after the 2026-11-01 split: the full candidate above is H@1.4-rc2
+  (asm-H1-0005, asm-H2-0003); H@1.4-rc1 (asm-H1-0002, asm-H2-0002) carries the exit condition only, with the
+  allowance left at 3, and its result is exploratory. The governing pre-registered text is `expected_pattern`
+  in proposals/CP-0001.yaml, unchanged since the package shipped.
+status: hypothetical-example
+retained: true     # becomes a retained regression test after the CP-0001 investigation
+held_out: false
+
+# --- Added 2026-11-01 for the CP-0001 model run. Status of this addition: design assumption.
+# Every excerpt below is invented for the fictional Wrenfield University; none quotes a real document. ---
+source_texts_status: design assumption
+assignment_prompt: >
+  HIST 210 weekly source-analysis worksheet, entry 6 (graded). Evaluate one primary source, packet excerpt C
+  (Pruitt's letter of 28 July 1877), in about 150 words: whose perspective it gives, what it can show about the
+  strike, and what it cannot show. Use the method in Reader unit 3.
+source_texts:
+  - ref: packet-1877-strike#C
+    title: "Course packet excerpt C: letter from shop foreman E. Pruitt to the division superintendent, 28 July 1877 (invented)"
+    text: >
+      Sir,—I have the honor to report on the condition of the shops since Monday the 23rd. The men
+      came in at the usual hour and worked until about eleven, when word came that the eastern
+      freights had stopped at Marlow. A number of men left their benches to talk at the roundhouse
+      gate, where two persons not in the Company's employ were speaking to them. By noon the shops
+      were abandoned. I kept the fires banked with the help of the three watchmen and have done so
+      since. I do not believe one man in five wished to strike. The ringleaders are Halloran, a
+      brakeman who has no business in the shops at all, Reese of the machine shop, and Dunmore of the
+      car shop; they have held the men together by meetings at the depot each evening. I am told the
+      quieter men would return if assured against discharge. I have given no such assurance, having no
+      authority to. The engines are safe. I will continue to report daily and await your instructions
+      as to the watchmen's pay, which is now owing for the week. Your obedient servant, E. Pruitt,
+      Foreman.
+  - ref: wrenfield-psr-u1-6#unit-3
+    title: "Wrenfield Primary Source Reader, unit 3: Reading against the grain (invented)"
+    text: >
+      Every document was made by someone, for someone, to do something. Reading with the grain means
+      taking the document on its own terms: what does it say, what does it want its first reader to
+      believe or do? Reading against the grain means asking what the document shows without meaning
+      to. A foreman's report written to keep his position tells you about the strike, but it also
+      tells you what a foreman thought his superintendent wanted to hear, which workers he knew by
+      name, and which he did not. Begin by naming the author's position and interest. Then list what
+      the author could see from that position and what was out of view. Then notice the words chosen
+      where other words were available: "ringleaders" rather than "spokesmen," "abandoned" rather than
+      "left." Finally, state what the document can show (the author's view, the vocabulary of
+      authority, the names that were recorded) and what it cannot (the motives of the people
+      described, what happened where the author was not). Evaluating a source is this two-column list,
+      written in prose.
